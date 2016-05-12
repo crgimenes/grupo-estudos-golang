@@ -3,7 +3,7 @@ Primeiros passos em Golang
 
 Exemplos simples e diretos para uso nas minhas aulas no ABC Makerspace.
 
-- Instalando
+- [Instalando](instalando.md)... Como e onde baixar e instalar!
 - Configurando o ambiente
 - Olá Mundo
 

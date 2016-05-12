@@ -1,0 +1,21 @@
+# Instalando
+
+## Download
+
+### Microsoft Windows
+Faça o download do arquivo [go1.6.2.windows-amd64.msi](https://storage.googleapis.com/golang/go1.6.2.windows-amd64.msi).
+Apos executar o instalador Go estará instalada no diretório "C:\Go"
+
+### Mac OS X
+Faça o download do arquivo [go1.6.2.darwin-amd64.pkg](https://storage.googleapis.com/golang/go1.6.2.darwin-amd64.pkg).
+Apos executar o instaldor Go estará instalada no diretório "/usr/local/go"
+
+### Linux
+[go1.6.2.linux-amd64.tar.gz](https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz)
+Apos executar o instaldor Go estará instalada no diretório "/usr/local/go"
+
+### Direto pelos fontes
+Você também pode baixar os fontes e instalar você mesmo.
+[go1.6.2.src.tar.gz](https://storage.googleapis.com/golang/go1.6.2.src.tar.gz)
+
+[Inicio <-](README.md) [Configurando <-](configurando.md)
