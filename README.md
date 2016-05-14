@@ -5,7 +5,8 @@ Exemplos simples e diretos para uso nas minhas aulas no ABC Makerspace.
 
 - [Instalando](instalando.md). Como e onde baixar e instalar.
 - [Configurando](configurando.md) o ambiente de desenvolvimento.
-- [Olá Mundo](ola_mundo.md)
+- [Olá Mundo](ola_mundo.md). Nosso primeiro exemplo... um clássico :D
+- [Variáveis](variaveis.md)
 
 ---
 
