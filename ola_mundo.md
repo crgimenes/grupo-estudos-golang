@@ -26,5 +26,5 @@ go build ola_mundo.go
 
 Agora o programa pode ser executado simplesmente sendo chamado na linha de comando e não precisa mais do ambiente do Go instalado.
 
-
-[Configurando <-](configurando.md) | [Variáveis ->](variaveis.md)
+---
+[Inicio](README.md) | [Configurando <-](configurando.md) | [Variáveis ->](variaveis.md)

@@ -26,4 +26,4 @@ export GOPATH=~/projeto
 ```
 
 ---
-[Inicio](README.md) | [Configurando <-](configurando.md) | [Olá Mundo ->](ola_mundo.md)
+[Inicio](README.md) | [Instalando <-](instalando.md) | [Olá Mundo ->](ola_mundo.md)
