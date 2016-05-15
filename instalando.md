@@ -35,4 +35,9 @@ Você também pode baixar os fontes e instalar você mesmo.
 [go1.6.2.src.tar.gz](https://storage.googleapis.com/golang/go1.6.2.src.tar.gz)
 
 ---
+Se você não quiser fazer a instalação para testar os exemplos você pode usar o [The Go Playground](https://play.golang.org)
+
+
+
+---
 [Inicio <-](README.md) | [Configurando ->](configurando.md)

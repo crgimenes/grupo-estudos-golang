@@ -1,14 +1,10 @@
-# Variáveis
-
-
-```
 package main
 
 import (
 	"fmt"
 )
 
-var ( // Declarando múltiplas variáveis
+var ( // Declarando multiplas variáveis
 	nome       string = "Cesar"
 	valor      int    = 42
 	a1, a2, a3        = 10, 20, 30
@@ -36,8 +32,3 @@ func main() {
 
 	ola()
 }
-```
-
-
----
-[Inicio](README.md) | [Olá Mundo <-](ola_mundo.md)
