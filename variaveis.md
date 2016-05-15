@@ -1,5 +1,6 @@
 # Variáveis
 
+Go é fortemente tipada, isso significa que os tipos das variáveis são bem definidos e não podem mudar durante o programa.
 
 ```
 package main
