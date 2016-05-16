@@ -3,10 +3,11 @@ Primeiros passos em Golang
 
 Exemplos simples e diretos para uso nas minhas aulas no ABC Makerspace.
 
-- [Instalando](instalando.md). Como e onde baixar e instalar.
-- [Configurando](configurando.md) o ambiente de desenvolvimento.
-- [Olá Mundo](ola_mundo.md). Nosso primeiro exemplo... um clássico :D
+- [Instalando](instalando.md)
+- [Configurando](configurando.md)
+- [Olá Mundo](ola_mundo.md) Nosso primeiro exemplo... um clássico :D
 - [Variáveis](variaveis.md)
+- [Funções](funcoes.md)
 
 ---
 
