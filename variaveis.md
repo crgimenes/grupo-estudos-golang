@@ -41,4 +41,4 @@ func main() {
 
 
 ---
-[Inicio](README.md) | [Olá Mundo <-](ola_mundo.md)
+[Inicio](README.md) | [Olá Mundo <-](ola_mundo.md) | [Funções ->](funcoes.md)
