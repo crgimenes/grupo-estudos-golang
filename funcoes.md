@@ -21,7 +21,7 @@ func swap(x string, y string) (string, string) {
 	return y, x
 }
 
-// função que recebe uma função como parametro
+// função que recebe uma função como parâmetro
 func printFunc(f func(string) string, valor string) {
 	aux := f(valor)
 	fmt.Printf(aux)
