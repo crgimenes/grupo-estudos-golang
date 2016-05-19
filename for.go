@@ -9,6 +9,20 @@ func main() {
 
 	for i := 0; i < 10; i++ {
 		sum++
-		fmt.Printf("soma +1 = %v", sum)
+		fmt.Printf("soma +1 = %v\r\n", sum)
+	}
+
+	for {
+		sum--
+		fmt.Printf("soma -1 = %v\r\n", sum)
+
+		if sum == 0 {
+			break
+		}
+	}
+
+	potato := "Batata"
+	for a, b := range potato {
+		fmt.Printf("potato[%v] = %q\r\n", a, b)
 	}
 }

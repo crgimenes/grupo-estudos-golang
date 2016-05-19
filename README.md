@@ -9,6 +9,7 @@ Exemplos simples e diretos para uso nas minhas aulas no ABC Makerspace.
 - [Variáveis](variaveis.md)
 - [Funções](funcoes.md)
 - [Loop for](for.md)
+- [switch](switch.md)
 
 ---
 
