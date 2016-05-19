@@ -8,6 +8,7 @@ Exemplos simples e diretos para uso nas minhas aulas no ABC Makerspace.
 - [Olá Mundo](ola_mundo.md) Nosso primeiro exemplo... um clássico :D
 - [Variáveis](variaveis.md)
 - [Funções](funcoes.md)
+- [Loop for](for.md)
 
 ---
 

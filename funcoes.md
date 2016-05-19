@@ -46,4 +46,4 @@ func main() {
 ```
 
 ---
-[Inicio](README.md) | [Variáveis <-](variaveis.md)
+[Inicio](README.md) | [Variáveis <-](variaveis.md) | [for ->](for.md)
