@@ -1,7 +1,7 @@
 # Go Hands On
 Primeiros passos em Golang
 
-Exemplos simples e diretos para uso nas minhas aulas no ABC Makerspace.
+Exemplos simples e diretos para uso nas minhas aulas.
 
 - [Instalando](instalando.md)
 - [Configurando](configurando.md)
