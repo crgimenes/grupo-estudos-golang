@@ -8,7 +8,7 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Printf("Olá Mundo!\n")
+    fmt.Printf("Olá Mundo!\r\n")
 }
 ```
 
@@ -16,6 +16,12 @@ Para rodar use o seguinte comando:
 
 ```
 go run ola_mundo.go
+```
+
+Quando usamos o comando run, na verdade go compila o programa para um diretório de trabalho. para go exibir esse diretório é só passar o parâmetro --work na linha de comando.
+
+```
+go run --work ola_mundo.go
 ```
 
 Para compilar o programa em um executável independente use o seguinte comando:

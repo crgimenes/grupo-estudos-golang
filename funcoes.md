@@ -1,9 +1,5 @@
 # Funções
 
-Funções tem o seguinte modelo:
-
-Entradas -> Processamento -> Saídas
-
 Go permite que uma função tenha mais de um retorno o que facilita bastante e torna o código mais limpo.
 
 ```
