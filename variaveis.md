@@ -4,20 +4,23 @@ Go é fortemente tipada, isso significa que os tipos das variáveis são bem def
 
 Tipos de variáveis em Go:
 
-bool
-string
+**bool**
+
+**string**
 
 Varias formas de inteiro:
-int  int8  int16  int32  int64
-uint uint8 uint16 uint32 uint64 uintptr
 
-byte na verdade é um alias para uint8
+**int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr**
 
-rune é um alias int32 e é usada para armazenar Unicode
 
-float32 float64
+**byte** na verdade é um alias para **uint8**
 
-complex64 complex128
+**rune** é um alias **int32** e é usada para armazenar Unicode
+
+**float32 float64**
+
+**complex64 complex128**
 
 
 ```

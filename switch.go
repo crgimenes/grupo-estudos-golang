@@ -19,6 +19,6 @@ func main() {
 	case "linux":
 		fmt.Printf("almost...\r\n")
 	default:
-		fmt.Printf("NO... sorry...\r\n")
+		fmt.Printf("not at all...\r\n")
 	}
 }
