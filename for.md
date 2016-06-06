@@ -34,4 +34,4 @@ func main() {
 ```
 
 ---
-[Inicio](README.md) | [Variáveis <-](funcoes.md) | [switch ->](switch.md)
+[Inicio](README.md)

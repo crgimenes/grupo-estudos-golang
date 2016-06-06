@@ -10,6 +10,12 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [Funções](funcoes.md)
 - [Loop for](for.md)
 - [switch](switch.md)
+- [defer](defer.md)
+- [goroutines](goroutines.md)
+- [select](select.md)
+- [package](package.md)
+- [time](time.md) Nem tudo são flores.
+
 
 ---
 

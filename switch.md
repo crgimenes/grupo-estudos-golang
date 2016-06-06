@@ -34,4 +34,4 @@ func main() {
 
 
 ---
-[Inicio](README.md) | [for loop <-](for.md) | [Funções ->](funcoes.md)
+[Inicio](README.md)
