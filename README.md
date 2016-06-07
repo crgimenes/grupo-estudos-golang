@@ -15,7 +15,7 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [select](select.md)
 - [package](package.md)
 - [time](time.md) Nem tudo são flores.
-
+- [godoc](godoc.md)
 
 ---
 

@@ -30,5 +30,10 @@ Leia os fontes!
 https://golang.org/src/time/format.go
 
 
+Existem também muitas implementações de strftime para mascarar esse problema e formatar datas de um modo mais tradicional.
+
+https://godoc.org/?q=strftime
+
+
 ---
 [Inicio](README.md)

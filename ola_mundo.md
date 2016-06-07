@@ -32,5 +32,16 @@ go build ola_mundo.go
 
 Agora o programa pode ser executado simplesmente sendo chamado na linha de comando e não precisa mais do ambiente do Go instalado.
 
+
+## Boas praticas
+
+Um pouco de boas praticas.
+Go tem uma ferramenta de formatação de código que deixa seu código direitinho no formato padronizado... então larga a mão de ser teimoso e roda um go fmt.
+
+```
+go fmt ola_mundo.go
+```
+
+
 ---
 [Inicio](README.md)
