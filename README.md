@@ -1,4 +1,5 @@
 # Go Hands On
+
 Primeiros passos em Golang
 
 Exemplos simples e diretos para uso nas minhas aulas.
@@ -16,6 +17,7 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [package](package.md)
 - [time](time.md) Nem tudo são flores.
 - [godoc](godoc.md)
+- [http](http.md)
 
 ---
 
