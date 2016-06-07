@@ -65,7 +65,7 @@ func main() {
 }
 ```
 
-(Neste vídeo)[https://www.youtube.com/watch?v=H2jULD66BII] eu mostro esse exemplo funcionando.
+[Neste vídeo](https://www.youtube.com/watch?v=H2jULD66BII) eu mostro esse exemplo funcionando.
 
 
 
