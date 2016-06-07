@@ -61,7 +61,7 @@ func main() {
 	fmt.Printf("valor de x = %v\r\n", x)
 	fmt.Printf("valor de y = %v\r\n", y)
 
-	fmt.Printf("valor de s = %q\r\n", s)
+	fmt.Printf("valor de s = %q\r\n", a)
 
 	ola()
 }
