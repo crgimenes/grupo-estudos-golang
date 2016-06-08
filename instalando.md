@@ -40,4 +40,4 @@ Se você não quiser fazer a instalação para testar os exemplos você pode usa
 
 
 ---
-[Inicio <-](README.md)
+[Inicio](README.md)
