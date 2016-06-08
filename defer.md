@@ -11,21 +11,6 @@ if err != nil {
 defer f.Close()
 
 ```
-<<<<<<< HEAD
-=======
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	for i := 0; i < 5; i++ {
-		defer fmt.Printf("%d\r\n", i)
-	}
-}
-```
->>>>>>> origin/master
 
 ---
 [Inicio](README.md)
