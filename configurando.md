@@ -20,8 +20,8 @@ No Mac, Linux e BSD você pode adicionar essas variáveis no arquivo de configur
 Exemplo:
 
 ```
-export GOROOT=/usr/local/go
 export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
 export GOPATH=~/projeto
 ```
 
