@@ -19,6 +19,9 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [time](time.md) Nem tudo são flores.
 - [godoc](godoc.md)
 - [http](http.md)
+---
+### Bonus!
+- [Go com C](go_com_c.md), especial para quem quer brincar com IoT!
 
 ---
 
