@@ -9,7 +9,7 @@ import (
 	"fmt"
 )
 
-func soma(x int, y int) int {
+func sum(x int, y int) int {
 	return x + y
 }
 
@@ -31,7 +31,7 @@ func main() {
 		return "Olá " + v + "!\r\n"
 	}
 
-	fmt.Printf("Soma 1+1 = %v\r\n", soma(1, 1))
+	fmt.Printf("Soma 1+1 = %v\r\n", sum(1, 1))
 
 	r1, r2 := swap("A", "B")
 	fmt.Printf("troca 1, 2 = %v, %v\r\n", r1, r2)
