@@ -34,7 +34,7 @@ func main() {
 	fmt.Printf("Soma 1+1 = %v\r\n", sum(1, 1))
 
 	r1, r2 := swap("A", "B")
-	fmt.Printf("troca 1, 2 = %v, %v\r\n", r1, r2)
+	fmt.Printf("troca A, B = %v, %v\r\n", r1, r2)
 
 	printFunc(f, "Cesar")
 
