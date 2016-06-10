@@ -34,30 +34,12 @@ Você também pode baixar os fontes e instalar você mesmo.
 
 [go1.6.2.src.tar.gz](https://storage.googleapis.com/golang/go1.6.2.src.tar.gz)
 
-
----
-## Testando a instalação
-
-Depois de instalado você pode verificar se Go esta respondendo corretamente pelo comando
-
-```
-go version
-```
-
 ---
 ## git
 
 Para seguir os exemplos que envolvem baixar pacotes diretamente do github é necessário ter o git instalado, você pode baixar uma versão para o seu sistema no site oficial.
 
 [https://git-scm.com](https://git-scm.com)
-
-Caso já não esteja você também precisa instalar o git na variavel PATH do seu sistema.
-
-Para testar execute:
-
-```
-git --version
-```
 
 ---
 Se você não quiser fazer a instalação para testar os exemplos você pode usar o [The Go Playground](https://play.golang.org)
