@@ -25,5 +25,22 @@ export GOROOT=/usr/local/go
 export GOPATH=~/projeto
 ```
 
+Caso ainda não esteja você também precisa instalar o git na variavel PATH do seu sistema.
+
+---
+## Testando a instalação
+
+Depois de instalado e configurado você pode verificar se Go esta respondendo corretamente pelo comando
+
+```
+go version
+```
+
+Para testar o git execute:
+
+```
+git --version
+```
+
 ---
 [Inicio](README.md)
