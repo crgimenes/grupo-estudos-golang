@@ -27,8 +27,8 @@ func main() {
 	}
 
 	potato := "Batata"
-	for a, b := range potato {
-		fmt.Printf("potato[%v] = %q\r\n", a, b)
+	for k, v := range potato {
+		fmt.Printf("potato[%v] = %q\r\n", k, v)
 	}
 }
 ```

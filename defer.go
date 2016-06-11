@@ -5,8 +5,12 @@ import (
 )
 
 func main() {
+
+	defer func() {
+		fmt.Printf("Fim da função main\r\n")
+	}()
+
 	for i := 0; i < 5; i++ {
 		defer fmt.Printf("%d\r\n", i)
 	}
 }
-
