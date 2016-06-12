@@ -12,5 +12,6 @@ func main() {
 
 	for i := 0; i < 5; i++ {
 		defer fmt.Printf("%d\r\n", i)
+		fmt.Printf("dentro do for %d\r\n", i)
 	}
 }
