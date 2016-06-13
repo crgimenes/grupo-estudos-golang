@@ -29,7 +29,7 @@ Sim eu sei que é estranho mas é isso mesmo, você coloca seu código em C dent
 
 Uma boa pratica é colocar nesse comentário apenas um arquivo de include do C com as rotinas que você quer consumir em Go e as diretivas de processamento, mas para rotinas muito pequenas e exemplos como esses, tudo bem colocar direto no código.
 
-Agora vamos ver um exemplo um pouco mais complexo, usando uma bilbioteca externa para fazer um LED piscar no [Intel Edison](https://software.intel.com/pt-br/iot/hardware/edison).
+Agora vamos ver um exemplo um pouco mais complexo, usando uma biblioteca externa para fazer um LED piscar no [Intel Edison](https://software.intel.com/pt-br/iot/hardware/edison).
 
 ```
 package main
