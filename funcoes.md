@@ -26,15 +26,15 @@ func printFunc(f func(string) string, valor string) {
 func main() {
 	fmt.Printf("Funções!\r\n")
 
-	// função anonima que vamos passar para printFunc
-	f := func(v string) string {
-		return "Olá " + v + "!\r\n"
-	}
-
 	fmt.Printf("Soma 1+1 = %v\r\n", sum(1, 1))
 
 	r1, r2 := swap("A", "B")
 	fmt.Printf("troca A, B = %v, %v\r\n", r1, r2)
+
+	// função anonima que vamos passar para printFunc
+	f := func(v string) string {
+		return "Olá " + v + "!\r\n"
+	}
 
 	printFunc(f, "Cesar")
 
