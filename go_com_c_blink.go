@@ -6,10 +6,10 @@ package main
 
     mraa_gpio_context led;
 
-	void config(void) {
+    void config(void) {
         led = mraa_gpio_init(13);
         mraa_gpio_dir(led, MRAA_GPIO_OUT);
-	}
+    }
 
     void blink(int b) {
         mraa_gpio_write(led,b);
@@ -24,6 +24,7 @@ import (
 )
 
 func main() {
+	C.config()
 	for {
 		fmt.Print("blink!\r\n")
 		C.blink(1)
