@@ -58,6 +58,7 @@ import (
 )
 
 func main() {
+	C.config()
 	for {
 		fmt.Print("blink!\r\n")
 		C.blink(1)
