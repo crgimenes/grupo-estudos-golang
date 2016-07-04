@@ -1,6 +1,6 @@
 # http
 
-Pilhas inclusas!
+### Pilhas inclusas!
 
 Go vem com um conjunto enorme de bibliotecas padrão e mais milhares de bibliotecas criadas pela comunidade.
 
@@ -24,6 +24,26 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 ```
+
+### Servindo arquivos
+
+```
+package main
+
+import (
+  "log"
+  "net/http"
+)
+
+func main() {
+  assets := http.FileServer(http.Dir("assets/"))
+  http.Handle("/", assets)
+
+  log.Fatal(http.ListenAndServe(":8080", nil))
+}
+```
+
+
 
 ---
 [Inicio](README.md)
