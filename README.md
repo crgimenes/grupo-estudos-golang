@@ -19,7 +19,7 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [time](time.md) Nem tudo são flores.
 - [godoc](godoc.md)
 - [http](http.md)
-
+- [tratando sinais](signals.md)
 ---
 
 ### Bonus!
