@@ -50,5 +50,6 @@ func main() {
 		fmt.Printf("ciclo de trabalho: %f\r\n", duty)
 	}
 
+	C.writePWM(0)
 	C.stopPWM()
 }
