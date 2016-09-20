@@ -2,11 +2,11 @@
 
 Para que o ambiente de desenvolvimento funcione corretamente é necessário configurar algumas variáveis de ambiente.
 
-GOROOT deve apontar para o diretório de instalação de Go, você só precisa se preocupar com essa variável se você preferiu instalar a linguagem em outro diretório, o padrão é /usr/local/go/bin ou C:\\Go no caso do Windows.
+**GOROOT** deve apontar para o diretório de instalação de Go, você só precisa se preocupar com essa variável se você preferiu instalar a linguagem em outro diretório, o padrão é /usr/local/go/bin ou C:\\Go no caso do Windows.
 
-PATH deve apontar para o diretório onde os binários foram instalados normalmente /usr/local/go/bin ou C:\\Go\\bin.
+**PATH** deve apontar para o diretório onde os binários foram instalados normalmente /usr/local/go/bin ou C:\\Go\\bin.
 
-GOPATH deve apontar para seu diretório de trabalho.
+**GOPATH** deve apontar para seu diretório de trabalho.
 
 ## Windows
 
@@ -25,7 +25,7 @@ export GOROOT=/usr/local/go
 export GOPATH=~/projeto
 ```
 
-Caso ainda não esteja você também precisa instalar o git na variavel PATH do seu sistema.
+Caso ainda não esteja você também precisa apontar o git na variavel PATH do seu sistema.
 
 ---
 ## Testando a instalação
