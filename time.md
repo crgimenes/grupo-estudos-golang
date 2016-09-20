@@ -26,7 +26,7 @@ func main() {
 
 Felizmente essa ca... vai servir para aprender um conceito importante de Go.
 
-Leia os fontes!
+**Leia os fontes!**
 
 https://golang.org/src/time/format.go
 
