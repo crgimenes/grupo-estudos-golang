@@ -18,6 +18,8 @@ Para rodar use o seguinte comando:
 go run ola_mundo.go
 ```
 
+**Lembre!** Você esta usando um compilador, compiladores alteram arquivos executáveis... antivirus não gostam que se altere arquivos executáveis e as vezes bloqueiam o compilador sem dar nenhum alerta. *Desative seu antivirus antes de programar!*
+
 Quando usamos o comando run, na verdade go compila o programa para um diretório de trabalho. para go exibir esse diretório é só passar o parâmetro --work na linha de comando.
 
 ```
