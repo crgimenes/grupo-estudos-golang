@@ -11,7 +11,7 @@ Apos executar o instalador Go estará instalada em
 C:\Go
 ```
 
-*Lembre!* Você esta instalando um compilador, desative qualquer software antivirus antes de compilar seu seus projetos. Muitos antivirus simplesmente bloqueiam o compilador silenciosamente, sem nenhum alerta e daí o compilador não vai conseguir gerar o executável dos exemplos.
+**Lembre!** Você esta instalando um compilador, desative qualquer software antivirus antes de compilar seu seus projetos. Muitos antivirus simplesmente bloqueiam o compilador silenciosamente, sem nenhum alerta e daí o compilador não vai conseguir gerar o executável dos exemplos.
 
 ---
 ### Mac OS X
