@@ -44,6 +44,14 @@ Para seguir os exemplos que envolvem baixar pacotes diretamente do github é nec
 
 [https://git-scm.com](https://git-scm.com)
 
+
+---
+## Atom
+
+Você pode usar qualquer editor de texto puro para editar seu código fonte em Go, um que eu gosto é o Atom, é free e muito bom. Depois de instalar vá nas configurações do editor e procure pelos plugins de Go que achar interessante.
+
+[https://atom.io](https://atom.io)
+
 ---
 ### Mais eu não quero instalar nada!
 
