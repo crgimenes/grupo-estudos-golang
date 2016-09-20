@@ -31,6 +31,7 @@ func main() {
 }
 ```
 
+### Canais
 Agora vamos ver um exemplo mais complexo e aprender um pouco sobre canais.
 
 ```
@@ -67,6 +68,7 @@ func main() {
 
 [Neste vídeo](https://www.youtube.com/watch?v=H2jULD66BII) eu mostro esse exemplo funcionando.
 
+[Neste artigo](http://divan.github.io/posts/go_concurrency_visualize/) você vai ver uma ótima representação gráfica e muitos exemplos de Goroutines e canais.
 
 
 ---
