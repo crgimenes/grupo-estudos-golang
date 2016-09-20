@@ -20,7 +20,7 @@ go run ola_mundo.go
 
 **Lembre!** Você esta usando um compilador, compiladores alteram arquivos executáveis... antivirus não gostam que se altere arquivos executáveis e as vezes bloqueiam o compilador sem dar nenhum alerta. *Desative seu antivirus antes de programar!*
 
-Quando usamos o comando run, na verdade go compila o programa para um diretório de trabalho. para go exibir esse diretório é só passar o parâmetro --work na linha de comando.
+Quando usamos o comando run, na verdade go compila o programa para um diretório temporario. para go exibir esse diretório é só passar o parâmetro --work na linha de comando.
 
 ```
 go run --work ola_mundo.go
@@ -38,6 +38,7 @@ Agora o programa pode ser executado simplesmente sendo chamado na linha de coman
 ## Boas praticas
 
 Um pouco de boas praticas.
+
 Go tem uma ferramenta de formatação de código que deixa seu código direitinho no formato padronizado... então larga a mão de ser teimoso e roda um go fmt.
 
 ```
