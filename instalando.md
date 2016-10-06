@@ -59,4 +59,4 @@ Se você não quiser fazer a instalação para testar os exemplos você pode usa
 
 ---
 
-[< Inicio](README.md) - [Configurando >](https://github.com/crgimenes/Go-Hands-On/blob/master/configurando.md)
+[< Inicio](README.md) - [Configurando >](configurando.md)
