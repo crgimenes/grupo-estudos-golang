@@ -11,7 +11,7 @@ Apos executar o instalador Go estará instalada em
 C:\Go
 ```
 
-**Lembre!** Você esta instalando um compilador, desative qualquer software antivirus antes de compilar seu seus projetos. Muitos antivirus simplesmente bloqueiam o compilador silenciosamente, sem nenhum alerta e daí o compilador não vai conseguir gerar o executável dos exemplos.
+**Lembre!** Você esta instalando um compilador, desative qualquer software antivirus antes de compilar seus projetos. Muitos antivirus simplesmente bloqueiam o compilador silenciosamente, sem nenhum alerta e daí o compilador não vai conseguir gerar o executável dos exemplos.
 
 ---
 ### Mac OS X
@@ -38,7 +38,7 @@ Você também pode baixar os fontes e instalar você mesmo.
 [go1.7.1.src.tar.gz](https://storage.googleapis.com/golang/go1.7.1.src.tar.gz)
 
 ---
-## git
+## Git
 
 Para seguir os exemplos que envolvem baixar pacotes diretamente do github é necessário ter o git instalado, você pode baixar uma versão para o seu sistema no site oficial.
 
@@ -57,7 +57,6 @@ Você pode usar qualquer editor de texto puro para editar seu código fonte em G
 
 Se você não quiser fazer a instalação para testar os exemplos você pode usar o [The Go Playground](https://play.golang.org)
 
-
-
 ---
-[Inicio](README.md)
+
+[< Inicio](README.md) - [Configurando >](configurando.md)

@@ -23,7 +23,7 @@ uint uint8 uint16 uint32 uint64 uintptr**
 **complex64 complex128**
 
 
-```
+```go
 package main
 
 import (
@@ -68,7 +68,7 @@ func main() {
 	ola()
 }
 ```
-
-
 ---
 [Inicio](README.md)
+
+[< Olá Mundo](ola_mundo.md) - [Funções >](funcoes.md)
