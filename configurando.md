@@ -32,14 +32,16 @@ export GOPATH=~/projeto
 
 Depois de instalado e configurado você pode verificar se Go esta respondendo corretamente pelo comando
 
-```
+```bash
 go version
 ```
 
 Para testar o git execute:
 
-```
+```bash
 git --version
 ```
 ---
 [Inicio](README.md)
+
+[< Instalando](instalando.md) - [Olá Mundo >](ola_mundo.md)
