@@ -6,7 +6,8 @@ Exemplos simples e diretos para uso nas minhas aulas.
 
 - [Instalando](instalando.md)
 - [Configurando](configurando.md)
-- [Olá Mundo](ola_mundo.md) Nosso primeiro exemplo... um clássico :D
+- [Workspace](workspace.md)
+- [Olá Mundo](ola_mundo.md) Nosso primeiro exemplo... um clássico :smiley:
 - [Variáveis](variaveis.md)
 - [Funções](funcoes.md)
 - [Loop for](for.md)
