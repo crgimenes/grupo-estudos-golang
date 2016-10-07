@@ -3,7 +3,7 @@
 
 Select trabalha junto com canais para esperar retornos de canais específicos.
 
-```
+```go
 select {
 case msg1 := <-c1:
     fmt.Println("canal 1 retornou :", msg1)
