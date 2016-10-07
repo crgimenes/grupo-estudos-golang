@@ -2,7 +2,7 @@
 
 Go permite que uma função tenha mais de um retorno o que facilita bastante e torna o código mais limpo.
 
-```
+```go
 package main
 
 import (
