@@ -4,7 +4,7 @@ Go tem uma forma... peculiar de formatar datas, e é simplesmente terrível!
 
 Você usa uma data específica para formatar datas no lugar do tradicional "dd/MM/yyyy" você usa "02/01/2006" isso parece altamente ilógico... se você é americano você pode lembrar de uma sequencia simples como  "01/02 03:04:05PM '06 -0700", mas não é nada intuitivo para o resto do planeta. Fazer o que né tinha que ter um WTF!
 
-```
+```go
 package main
 
 import (
