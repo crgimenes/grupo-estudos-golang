@@ -4,19 +4,19 @@ Tratar sinais é uma boa pratica, dessa forma você pode finalizar seu programa 
 
 Primeiro criamos um canal
 
-```
+```go
 sc := make(chan os.Signal, 1)
 ```
 
 Daí informamos qual o tipo de sinal estamos interessados, no caso ^C ou seja [SIGINT](https://en.wikipedia.org/wiki/Unix_signal#SIGINT).
 
-```
+```go
 signal.Notify(sc, os.Interrupt)
 ```
 
 Então basta ficar esperando o canal retornar
 
-```
+```go
 <-sc
 ```
 
@@ -26,7 +26,7 @@ Claro que você precisa tratar sinais em uma goroutine, dessa forma seu programa
 
 Agora vamos ver como tudo isso trabalha junto em um [programa completo](https://github.com/crgimenes/Go-Hands-On/blob/master/signals.go).
 
-```
+```go
 package main
 
 import (
