@@ -6,14 +6,14 @@ Basicamente você só precisa usar a clausula go na frente da função.
 
 Exemplo:
 
-```
+```go
 go nomeDaRotina()
 ```
 
 No exemplo abaixo demostramos que Go termina todas as threads quando main termina.
 Para ver o efeito remova a linha com o timer dentro de main.
 
-```
+```go
 package main
 
 import "time"
@@ -34,7 +34,7 @@ func main() {
 ### Canais
 Agora vamos ver um exemplo mais complexo e aprender um pouco sobre canais.
 
-```
+```go
 package main
 
 import (
