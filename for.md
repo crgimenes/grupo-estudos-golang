@@ -35,3 +35,5 @@ func main() {
 
 ---
 [Inicio](README.md)
+
+[< Funções](funcoes.md) - [switch >](switch.md)

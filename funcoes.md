@@ -1,6 +1,7 @@
 # Funções
 
-Go permite que uma função tenha mais de um retorno o que facilita bastante e torna o código mais limpo.
+* Retorno duplo - Facilita a escrita e torna o código mais limpo
+* Retorno assinado - Facilita a leitura do código
 
 ```go
 package main
@@ -9,12 +10,20 @@ import (
 	"fmt"
 )
 
+// Retorno simples
 func sum(x int, y int) int {
 	return x + y
 }
 
+// Retorno duplo
 func swap(x string, y string) (string, string) {
 	return y, x
+}
+
+//Retorno assinado
+func div(x, y int) (result int) {
+	result = x / y
+	return
 }
 
 // função que recebe uma função como parâmetro
@@ -43,3 +52,5 @@ func main() {
 
 ---
 [Inicio](README.md)
+
+[< Variáveis](variaveis.md) - [Loop for >](for.md)
