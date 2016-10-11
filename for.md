@@ -2,7 +2,7 @@
 
 Go só tem uma forma de loop, o for, mas em Go for é muito flexível.
 
-```
+```go
 package main
 
 import (
@@ -35,3 +35,5 @@ func main() {
 
 ---
 [Inicio](README.md)
+
+[< Funções](funcoes.md) - [switch >](switch.md)
