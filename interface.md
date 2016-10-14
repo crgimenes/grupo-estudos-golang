@@ -59,3 +59,8 @@ VerificandoSeEstaVivo(cachorro) // Está vivo.
 VerificandoSeEstaVivo(pedra) // erro: O tipo Pedra não é um Ser
 
 ```
+
+---
+[Inicio](README.md)
+
+[< defer](defer.md) - [error >](error.md)
