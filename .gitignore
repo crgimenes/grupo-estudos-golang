@@ -22,3 +22,5 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+change_author_commit.sh
