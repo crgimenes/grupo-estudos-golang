@@ -13,6 +13,7 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [Loop for](for.md)
 - [switch](switch.md)
 - [defer](defer.md)
+- [interface](interface.md)
 - [error](error.md)
 - [goroutines](goroutines.md)
 - [select](select.md)
