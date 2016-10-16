@@ -9,5 +9,13 @@ if err != nil {
 }
 ```
 
+Podemos gerar nossos erros :smile:, usando o pacote nativo **errors**
+
+```go
+err := errors.New("Novo erro")
+```
+
 ---
 [Inicio](README.md)
+
+[< interface](interface.md) - [goroutines >](goroutines.md)

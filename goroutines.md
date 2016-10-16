@@ -73,3 +73,5 @@ func main() {
 
 ---
 [Inicio](README.md)
+
+[< error](error.md) - [select >](select.md)
