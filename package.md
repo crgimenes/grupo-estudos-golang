@@ -2,7 +2,7 @@
 
 Go é organizada em pacotes, os nomes dos pacotes fornecem um contexto e um espaço de nomes.
 
-```
+```go
 import (
 	"fmt"
 )
@@ -18,7 +18,7 @@ go get github.com/crgimenes/rotateString
 
 Referencia completa ao pacote direto no código.
 
-```
+```go
 import (
 	"fmt"
 	r "github.com/crgimenes/rotateString"
@@ -34,7 +34,7 @@ go get -u github.com/crgimenes/rotateString
 
 Exemplo de uso do pacote rotateString
 
-```
+```go
 package main
 
 import (
@@ -52,3 +52,5 @@ func main() {
 
 ---
 [Inicio](README.md)
+
+[< select](select.md) - [time >](time.md)
