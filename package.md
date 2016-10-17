@@ -52,3 +52,5 @@ func main() {
 
 ---
 [Inicio](README.md)
+
+[< select](select.md) - [time >](time.md)
