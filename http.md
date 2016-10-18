@@ -7,7 +7,7 @@ Go vem com um conjunto enorme de bibliotecas padrão e mais milhares de bibliote
 por exemplo para criar um servidor http basta o seguinte:
 
 
-```
+```go
 package main
 
 import (
@@ -29,7 +29,7 @@ func main() {
 
 Esse é um exemplo bem simples de como servir arquivos. Nesse caso o diretório *assets* contem os arquivos que queremos servir.
 
-```
+```go
 package main
 
 import (
@@ -51,7 +51,7 @@ Esse exemplo mostra como adicionar cabeçalhos na resposta do servidor antes de 
 
 Como bonus adicionamos dois parâmetros para configurar a porta e o diretório com os assets.
 
-```
+```go
 package main
 
 import (
@@ -101,3 +101,5 @@ E então execute com:
 
 ---
 [Inicio](README.md)
+
+[< godoc](godoc.md) - [tratando sinais >](signals.md)
