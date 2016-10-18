@@ -23,4 +23,4 @@ godoc -http=:6060
 
 [Início](README.md)
 
-[< time](time.md) - [godoc >](godoc.md)
+[< time](time.md) - [http >](http.md)
