@@ -101,3 +101,5 @@ E então execute com:
 
 ---
 [Inicio](README.md)
+
+[< godoc](godoc.md) - [tratando sinais >](signals.md)
