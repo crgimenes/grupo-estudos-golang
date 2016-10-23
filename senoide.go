@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
-	fmt.Println("senoide")
+	fmt.Printf("# X\tY\n")
 
-	for i := 0.0; i < 100; i++ {
-		v := math.Sin(i / 10)
-		fmt.Println(v)
+	for x := 0.0; x < 100; x++ {
+		y := math.Sin(x / 10)
+		fmt.Println(x, y)
 	}
 }
