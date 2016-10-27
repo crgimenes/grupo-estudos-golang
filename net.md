@@ -4,7 +4,7 @@
 
 Um exemplo simples listando as interfaces de rede.
 
-```
+```go
 package main
 
 import (
