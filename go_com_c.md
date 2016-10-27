@@ -4,7 +4,7 @@ Go é ótimo mas as vezes é necessário usar alguma biblioteca de algum legado 
 
 Veja o exemplo:
 
-```
+```go
 package main
 
 /*
@@ -31,7 +31,7 @@ Uma boa pratica é colocar nesse comentário apenas um arquivo de include do C c
 
 Agora vamos ver um exemplo um pouco mais complexo, usando uma biblioteca externa para fazer um LED piscar no [Intel Edison](https://software.intel.com/pt-br/iot/hardware/edison).
 
-```
+```go
 package main
 
 /*
