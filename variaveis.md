@@ -39,10 +39,18 @@ var ( // Declarando multiplas variáveis
 const pi = 3.141592
 
 func main() {
+	// Declarando multiplas variáveis na mesma linha e atribuindo valor
 	var x, y int = 1, 2
 
+	// Declarando sem atribuir valor (Go sempre assume um valor automaticamente)
 	var a string
-	var s string
+	var s string 
+	
+	/*
+	A variavel "a" vai recebem um valor mas vamos deixar 
+	a variavel "s" sem valor propositalmente, no fim do programa 
+	vamos ver que uma string vazia foi atribuída a "s" automaticamente.
+	*/
 
 	a = "texto 1"
 	b := "texto 2"
