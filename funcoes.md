@@ -40,6 +40,8 @@ func main() {
 	r1, r2 := swap("A", "B")
 	fmt.Printf("troca A, B = %v, %v\r\n", r1, r2)
 
+	fmt.Printf("A divisão de 1 por 2 é = %v\r\n", div(2, 1))
+
 	// função anonima que vamos passar para printFunc
 	f := func(v string) string {
 		return "Olá " + v + "!\r\n"
