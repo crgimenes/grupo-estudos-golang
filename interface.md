@@ -1,8 +1,8 @@
 # interface
 
-A `interface` básicamente é como se fosse um contrato para funções que o recebem.
+A `interface` básicamente é como se fosse um contrato as para funções que o recebem.
 
-Para implementar uma `interface` primeiro precisamos tê-las:
+Para implementar uma `interface` primeiro precisamos declarar-la:
 
 ```go
 
