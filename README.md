@@ -25,9 +25,10 @@ Exemplos simples e diretos para uso nas minhas aulas.
 
 ---
 
-### Bonus!
+### Bônus!
 - [Go com C](go_com_c.md), especial para quem quer brincar com IoT!
 - [Net](net.md), listando interfaces de rede e IPs
+- [Go no Amazon Lambda](https://github.com/apex/apex) feito para quem quer usar o processamento por tempo da Amazon!
 
 ---
 
