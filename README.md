@@ -16,6 +16,7 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [interface](interface.md)
 - [error](error.md)
 - [goroutines](goroutines.md)
+- [goroutines waitgroup](goroutines_waitgroup.md)
 - [select](select.md)
 - [package](package.md)
 - [time](time.md) Nem tudo são flores.
