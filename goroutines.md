@@ -74,4 +74,4 @@ func main() {
 ---
 [Inicio](README.md)
 
-[< error](error.md) - [select >](select.md)
+[< error](error.md) - [goroutines waitgroup >](goroutines_waitgroup.md)
