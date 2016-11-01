@@ -44,11 +44,11 @@ func main() {
 
 	// Declarando sem atribuir valor (Go sempre assume um valor automaticamente)
 	var a string
-	var s string 
-	
+	var s string
+
 	/*
-	A variavel "a" vai recebem um valor mas vamos deixar 
-	a variavel "s" sem valor propositalmente, no fim do programa 
+	A variavel "a" vai recebem um valor mas vamos deixar
+	a variavel "s" sem valor propositalmente, no fim do programa
 	vamos ver que uma string vazia foi atribuída a "s" automaticamente.
 	*/
 
@@ -79,4 +79,4 @@ func main() {
 ---
 [Inicio](README.md)
 
-[< Olá Mundo](ola_mundo.md) - [Funções >](funcoes.md)
+[< Olá Mundo](ola_mundo.md) - [Struct >](struct.md)

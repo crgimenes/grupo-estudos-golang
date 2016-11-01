@@ -2,6 +2,7 @@
 
 * Retorno duplo - Facilita a escrita e torna o código mais limpo
 * Retorno assinado - Facilita a leitura do código
+* Passando valor por referencia
 
 ```go
 package main
@@ -10,26 +11,22 @@ import (
 	"fmt"
 )
 
-// Retorno simples
 func sum(x int, y int) int {
 	return x + y
 }
 
-// Retorno duplo
 func swap(x string, y string) (string, string) {
 	return y, x
-}
-
-//Retorno assinado
-func div(x, y int) (result int) {
-	result = x / y
-	return
 }
 
 // função que recebe uma função como parâmetro
 func printFunc(f func(string) string, valor string) {
 	aux := f(valor)
 	fmt.Printf(aux)
+}
+
+func printValorByRef(valor *string) {
+	fmt.Printf("Valor por referencia = %v\r\n", *valor)
 }
 
 func main() {
@@ -47,10 +44,13 @@ func main() {
 
 	printFunc(f, "Cesar")
 
+	valor := "Esse valor não vai ser copiado, só estamos passando o ponteiro"
+	printValorByRef(&valor)
+
 }
 ```
 
 ---
 [Inicio](README.md)
 
-[< Variáveis](variaveis.md) - [Loop for >](for.md)
+[< Struct](struct.md) - [Loop for >](for.md)

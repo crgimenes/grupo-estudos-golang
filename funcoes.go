@@ -18,6 +18,10 @@ func printFunc(f func(string) string, valor string) {
 	fmt.Printf(aux)
 }
 
+func printValorByRef(valor *string) {
+	fmt.Printf("Valor por referencia = %v\r\n", *valor)
+}
+
 func main() {
 	fmt.Printf("Funções!\r\n")
 
@@ -32,5 +36,8 @@ func main() {
 	}
 
 	printFunc(f, "Cesar")
+
+	valor := "Esse valor não vai ser copiado, só estamos passando o ponteiro"
+	printValorByRef(&valor)
 
 }

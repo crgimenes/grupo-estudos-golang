@@ -9,6 +9,7 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [Workspace](workspace.md)
 - [Olá Mundo](ola_mundo.md) Nosso primeiro exemplo... um clássico :smiley:
 - [Variáveis](variaveis.md)
+- [Struct](struct.md)
 - [Funções](funcoes.md)
 - [Loop for](for.md)
 - [switch](switch.md)
