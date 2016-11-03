@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Print("UNIX box?\r\n")
-	switch os := runtime.GOOS; os {
+	switch runtime.GOOS {
 	case "darwin":
 		fallthrough
 	case "freebsd":
