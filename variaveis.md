@@ -13,7 +13,6 @@ Varias formas de inteiro:
 **int  int8  int16  int32  int64
 uint uint8 uint16 uint32 uint64 uintptr**
 
-
 **byte** na verdade é um alias para **uint8**
 
 **rune** é um alias **int32** e é usada para armazenar Unicode
@@ -21,7 +20,6 @@ uint uint8 uint16 uint32 uint64 uintptr**
 **float32 float64**
 
 **complex64 complex128**
-
 
 ```go
 package main
@@ -31,9 +29,9 @@ import (
 )
 
 var ( // Declarando multiplas variáveis
-	nome       = "Cesar"
-	valor      = 42
-	a1, a2, a3 = 10, 20, 30
+	nome                   = "Cesar"
+	idade                  = 42
+	url, path, query, page = "example.org", "/search", "&q=golang", 1
 )
 
 const pi = 3.141592

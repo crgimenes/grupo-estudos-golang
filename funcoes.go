@@ -1,29 +1,30 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 // Retorno simples
-func sum(x int, y int) int {
-    return x + y
+func soma(x int, y int) int {
+	return x + y
 }
 
 // Retorno duplo
-func swap(x string, y string) (string, string) {
-    return y, x
+func troca(x string, y string) (string, string) {
+	return y, x
 }
 
 //Retorno assinado
-func div(x, y int) (result int) {
-    result = x / y
-    return
+func divide(x, y int) (resultado, resto int) { // os dois retornos são inteiros nesse exemplo
+	resto = x % y
+	resultado = x / y
+	return
 }
 
 // função que recebe uma função como parâmetro
-func printFunc(f func(string) string, valor string) {
-    aux := f(valor)
-    fmt.Printf(aux)
+func executaFuncao(f func(string) string, valor string) {
+	aux := f(valor)
+	fmt.Printf(aux)
 }
 
 func printValorByRef(valor *string) {
@@ -31,21 +32,23 @@ func printValorByRef(valor *string) {
 }
 
 func main() {
-    fmt.Printf("Funções!\r\n")
+	fmt.Printf("Funções!\r\n")
 
-    fmt.Printf("Soma 1+1 = %v\r\n", sum(1, 1))
+	fmt.Printf("Soma 1+1 = %v\r\n", soma(1, 1))
 
-    r1, r2 := swap("A", "B")
-    fmt.Printf("troca A, B = %v, %v\r\n", r1, r2)
+	b, a := troca("A", "B")
+	fmt.Printf("troca A, B = %v, %v\r\n", b, a)
 
-    fmt.Printf("A divisão de 1 por 2 é = %v\r\n", div(2, 1))
+	resu, rest := divide(5, 2)
+	fmt.Printf("A divisão de 5 por 2 é = %v\r\n", resu)
+	fmt.Printf("O resto da divisão de 5 por 2 é = %v\r\n", rest)
 
-    // função anonima que vamos passar para printFunc
-    f := func(v string) string {
-        return "Olá " + v + "!\r\n"
-    }
+	// função anonima que vamos passar para printFunc
+	ola := func(v string) string {
+		return "Olá " + v + "!\r\n"
+	}
 
-    printFunc(f, "Cesar")
+	executaFuncao(ola, "Cesar")
 
 	valor := "Esse valor não vai ser copiado, só estamos passando o ponteiro"
 	printValorByRef(&valor)
