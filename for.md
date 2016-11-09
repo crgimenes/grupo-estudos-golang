@@ -10,25 +10,25 @@ import (
 )
 
 func main() {
-	sum := 0
+	valor := 0
 
 	for i := 0; i < 10; i++ {
-		sum++
-		fmt.Printf("soma +1 = %v\r\n", sum)
+		valor++
+		fmt.Printf("valor +1 = %v\r\n", valor)
 	}
 
 	for {
-		sum--
-		fmt.Printf("soma -1 = %v\r\n", sum)
+		valor--
+		fmt.Printf("valor -1 = %v\r\n", valor)
 
-		if sum == 0 {
+		if valor == 0 {
 			break
 		}
 	}
 
 	potato := "Batata"
-	for k, v := range potato {
-		fmt.Printf("potato[%v] = %q\r\n", k, v)
+	for indice, letra := range potato {
+		fmt.Printf("potato[%v] = %q\r\n", indice, letra)
 	}
 }
 ```

@@ -5,9 +5,9 @@ import (
 )
 
 var ( // Declarando multiplas variáveis
-	nome       = "Cesar"
-	valor      = 42
-	a1, a2, a3 = 10, 20, 30
+	nome                   = "Cesar"
+	idade                  = 42
+	url, path, query, page = "example.org", "/search", "&q=golang", 1
 )
 
 const pi = 3.141592
