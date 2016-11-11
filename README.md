@@ -26,7 +26,12 @@ Exemplos simples e diretos para uso nas minhas aulas.
 - [tratando sinais](signals.md)
 
 ---
+### Comunidade
 
+- Participe do canal de [Go no Slack](https://invite.slack.golangbridge.org)
+- Vá aos [Meetups da comunidade brasileira](https://www.meetup.com/pt-BR/golangbr/)
+
+---
 ### Bônus!
 - [Go com C](go_com_c.md), especial para quem quer brincar com IoT!
 - [Net](net.md), listando interfaces de rede e IPs
