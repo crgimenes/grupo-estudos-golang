@@ -100,6 +100,6 @@ E então execute com:
 
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< godoc](godoc.md) - [tratando sinais >](signals.md)
+[< godoc](../godoc/) - [tratando sinais >](../signals/)

@@ -51,6 +51,6 @@ func main() {
 
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< select](select.md) - [time >](time.md)
+[< select](../select/) - [time >](../time/)

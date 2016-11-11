@@ -72,6 +72,6 @@ func main() {
 
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< error](error.md) - [goroutines waitgroup >](goroutines_waitgroup.md)
+[< error](../error/) - [goroutines waitgroup >](../goroutines_waitgroup/)

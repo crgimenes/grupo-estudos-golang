@@ -16,6 +16,6 @@ err := errors.New("Novo erro")
 ```
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< interface](interface.md) - [goroutines >](goroutines.md)
+[< interface](../interface/) - [goroutines >](../goroutines/)

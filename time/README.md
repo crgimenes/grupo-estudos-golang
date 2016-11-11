@@ -37,6 +37,6 @@ https://godoc.org/?q=strftime
 
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< package](package.md) - [godoc >](godoc.md)
+[< package](../package/) - [godoc >](../godoc/)

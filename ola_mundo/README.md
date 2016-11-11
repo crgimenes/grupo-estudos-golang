@@ -47,6 +47,6 @@ go fmt ola_mundo.go
 
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< Configurando](configurando.md) - [Variáveis >](variaveis.md)
+[< Configurando](../configurando.md) - [Variáveis >](../variaveis/)

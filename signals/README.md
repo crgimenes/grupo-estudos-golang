@@ -67,6 +67,6 @@ func main() {
 ```
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< http](http.md)
+[< http](../http/)

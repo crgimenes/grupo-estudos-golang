@@ -7,25 +7,25 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [Instalando](instalando.md)
 - [Configurando](configurando.md)
 - [Workspace](workspace.md)
-- [Olá Mundo](ola_mundo.md) Nosso primeiro exemplo... um clássico :smiley:
-- [Variáveis](variaveis.md)
-- [Struct](struct.md)
-- [Funções](funcoes.md)
-- [Loop for](for.md)
-- [switch](switch.md)
-- [defer](defer.md)
-- [interface](interface.md)
-- [error](error.md)
-- [goroutines](goroutines.md)
-- [goroutines waitgroup](goroutines_waitgroup.md)
-- [select](select.md)
-- [package](package.md)
-- [time](time.md) Nem tudo são flores.
-- [godoc](godoc.md)
-- [http](http.md)
-- [cliente http](http_get.md)
+- [Olá Mundo](./ola_mundo/) Nosso primeiro exemplo... um clássico :smiley:
+- [Variáveis](./variaveis/)
+- [Struct](./struct/)
+- [Funções](./funcoes/)
+- [Loop for](./for/)
+- [switch](./switch/)
+- [defer](./defer/)
+- [interface](./interface/)
+- [error](./error/)
+- [goroutines](./goroutines/)
+- [goroutines waitgroup](./goroutines_waitgroup/)
+- [select](./select/)
+- [package](./package/)
+- [time](./time/) Nem tudo são flores.
+- [godoc](./godoc/)
+- [http](./http/)
+- [cliente http](./http_get/)
 - [expressões regulares](./regexp/)
-- [tratando sinais](signals.md)
+- [tratando sinais](./signals/)
 
 ---
 ### Comunidade
@@ -35,8 +35,8 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 
 ---
 ### Bônus!
-- [Go com C](go_com_c.md), especial para quem quer brincar com IoT!
-- [Net](net.md), listando interfaces de rede e IPs
+- [Go com C](./go_com_c/), especial para quem quer brincar com IoT!
+- [Net](./net/), listando interfaces de rede e IPs
 - [Go no Amazon Lambda](https://github.com/apex/apex) feito para quem quer usar o processamento por tempo da Amazon!
 
 ---

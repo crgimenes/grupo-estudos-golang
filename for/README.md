@@ -34,6 +34,6 @@ func main() {
 ```
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< Funções](funcoes.md) - [switch >](switch.md)
+[< Funções](../funcoes/) - [switch >](../switch/)
