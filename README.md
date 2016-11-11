@@ -38,7 +38,8 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [Go no Amazon Lambda](https://github.com/apex/apex) feito para quem quer usar o processamento por tempo da Amazon!
 
 ---
-
 Esse material é Free, você pode usar da forma que preferir, apenas lembre de citar a fonte e não apenas copie, no lugar disso acrescente, melhore e compartilhe, assim todos ganhamos.
+
+[Veja aqui como contribuir](CONTRIBUTING.md)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
