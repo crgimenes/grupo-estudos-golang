@@ -23,6 +23,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [time](time.md) Nem tudo são flores.
 - [godoc](godoc.md)
 - [http](http.md)
+- [cliente http](http_get.md)
 - [tratando sinais](signals.md)
 
 ---
