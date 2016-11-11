@@ -2,7 +2,7 @@
 
 Primeiros passos em Golang
 
-Exemplos simples e diretos para uso nas minhas aulas.
+Uma coleção de exemplos simples e diretos para servir como referencia e material de estudo principalmente para quem esta iniciando na linguagem.
 
 - [Instalando](instalando.md)
 - [Configurando](configurando.md)
