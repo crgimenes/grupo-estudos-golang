@@ -124,6 +124,6 @@ func main() {
 ```
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< Variáveis](variaveis.md) - [Funções >](funcoes.md)
+[< Variáveis](../variaveis/) - [Funções >](../funcoes/)

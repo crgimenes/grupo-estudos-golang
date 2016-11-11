@@ -66,6 +66,6 @@ func main() {
 
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< error](error.md) - [select >](select.md)
+[< error](../error/) - [select >](../select/)

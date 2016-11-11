@@ -64,6 +64,6 @@ func main() {
 ```
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< Struct](struct.md) - [Loop for >](for.md)
+[< Struct](../struct/) - [Loop for >](../for/)

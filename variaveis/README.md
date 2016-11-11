@@ -75,6 +75,6 @@ func main() {
 }
 ```
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< Olá Mundo](ola_mundo.md) - [Struct >](struct.md)
+[< Olá Mundo](../ola_mundo/) - [Struct >](../struct/)

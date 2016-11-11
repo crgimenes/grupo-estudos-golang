@@ -52,6 +52,6 @@ func main() {
 ```
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< Loop for](for.md) - [defer >](defer.md)
+[< Loop for](../for/) - [defer >](../defer/)

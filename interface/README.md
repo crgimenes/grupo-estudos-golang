@@ -61,6 +61,6 @@ VerificandoSeEstaVivo(pedra) // erro: O tipo Pedra não é um Ser
 ```
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< defer](defer.md) - [error >](error.md)
+[< defer](../defer/) - [error >](../error/)

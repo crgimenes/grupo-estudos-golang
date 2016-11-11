@@ -13,6 +13,6 @@ case msg2 := <-c2:
 ```
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< goroutines](goroutines.md) - [package >](package.md)
+[< goroutines](../goroutines/) - [package >](../package/)
