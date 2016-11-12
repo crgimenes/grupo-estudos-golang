@@ -44,4 +44,4 @@ git --version
 ---
 [Inicio](README.md)
 
-[< Instalando](instalando.md) - [Olá Mundo >](ola_mundo.md)
+[< Instalando](instalando.md) - [Olá Mundo >](./ola_mundo/ola_mundo.md)
