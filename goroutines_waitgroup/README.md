@@ -68,4 +68,4 @@ func main() {
 ---
 [Inicio](../README.md)
 
-[< error](../goroutines/) - [select >](../select/)
+[< Goroutines](../goroutines/) - [Select >](../select/)
