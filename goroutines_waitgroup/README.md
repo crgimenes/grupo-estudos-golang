@@ -59,11 +59,8 @@ func main() {
 	println("Fim")
 	
 }
-
-
-
 ```
-
+[Playground](https://play.golang.org/p/z9P_CPTjkG)
 
 ---
 [Inicio](../README.md)
