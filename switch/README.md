@@ -21,13 +21,12 @@ func main() {
 	case "openbsd":
 		fallthrough
 	case "plan9":
-		fmt.Printf("YES!\r\n.")
+		fmt.Printf("YES!\r\n")
 	case "linux":
 		fmt.Printf("almost...\r\n")
 	default:
 		fmt.Printf("not at all...\r\n")
 	}
-}
 
 	fmt.Println("Checando números de 1 a 10\r\n")
 	fmt.Print("Digite um número: ")
@@ -46,10 +45,12 @@ func main() {
 	default:
 		fmt.Printf("%v não esta entre 1 e 10!\n\r", numero)
 	}
-	// A variável "numero" não existe fora do switch
+
 	// fmt.Println(numero)
 	// ./switch.go:44: undefined: numero
+}
 ```
+[Playground](https://play.golang.org/p/jMEurQcSlE)
 
 ---
 [Inicio](../README.md)
