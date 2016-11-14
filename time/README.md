@@ -23,6 +23,7 @@ func main() {
 	fmt.Println(t.Format("2006-01-02 15:04:05-0700"))
 }
 ```
+[Playground](https://play.golang.org/p/gBbxN8DLVL)
 
 Felizmente essa ca... vai servir para aprender um conceito importante de Go.
 
