@@ -46,6 +46,7 @@ func pegaImagens(textoHTML string) (retorno []string) {
 	return
 }
 ```
+[Playground](https://play.golang.org/p/b9J9ffTKnT)
 
 Você também pode testar via unit test
 
