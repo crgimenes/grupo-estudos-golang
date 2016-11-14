@@ -86,4 +86,4 @@ bodyString := string(bodyBytes)
 ---
 [Inicio](../README.md)
 
-[< godoc](../godoc/) - [tratando sinais >](../signals/)
+[< HTTP](../http/) - [Expressões Regulares >](../regexp/)
