@@ -102,4 +102,4 @@ E então execute com:
 ---
 [Inicio](../README.md)
 
-[< godoc](../godoc/) - [tratando sinais >](../signals/)
+[< Godoc](../godoc/) - [Cliente HTTP >](../http_get/)
