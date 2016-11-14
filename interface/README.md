@@ -59,6 +59,7 @@ VerificandoSeEstaVivo(cachorro) // Está vivo.
 VerificandoSeEstaVivo(pedra) // erro: O tipo Pedra não é um Ser
 
 ```
+[Playground](https://play.golang.org/p/VdEZ7M8wEi)
 
 ---
 [Inicio](../README.md)
