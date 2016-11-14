@@ -11,6 +11,7 @@ func main() {
     fmt.Printf("Olá Mundo!\r\n")
 }
 ```
+[Playground](https://play.golang.org/p/RslzBhPvsM)
 
 Para rodar use o seguinte comando:
 
