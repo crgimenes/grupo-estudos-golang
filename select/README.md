@@ -15,4 +15,4 @@ case msg2 := <-c2:
 ---
 [Inicio](../README.md)
 
-[< goroutines](../goroutines/) - [package >](../package/)
+[< Goroutines Waitgroup](../goroutines_waitgroup/) - [Package >](../package/)
