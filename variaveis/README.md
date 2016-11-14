@@ -74,6 +74,8 @@ func main() {
 	ola()
 }
 ```
+[Playground](https://play.golang.org/p/bO5l3agwAP)
+
 ---
 [Inicio](../README.md)
 
