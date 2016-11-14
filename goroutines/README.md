@@ -30,6 +30,7 @@ func main() {
 	println("fim")
 }
 ```
+[Playground](https://play.golang.org/p/4NYROfW7Ub)
 
 ### Canais
 Agora vamos ver um exemplo mais complexo e aprender um pouco sobre canais.
@@ -65,11 +66,11 @@ func main() {
 
 }
 ```
+[Playground](https://play.golang.org/p/kUgYknGoeN)
 
 [Neste vídeo](https://www.youtube.com/watch?v=H2jULD66BII) eu mostro esse exemplo funcionando.
 
 [Neste artigo](http://divan.github.io/posts/go_concurrency_visualize/) você vai ver uma ótima representação gráfica e muitos exemplos de Goroutines e canais.
-
 
 ---
 [Inicio](../README.md)
