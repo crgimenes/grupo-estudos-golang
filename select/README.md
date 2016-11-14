@@ -11,6 +11,7 @@ case msg2 := <-c2:
     fmt.Println("canal 2 retornou :", msg2)
 }
 ```
+[Playground](https://play.golang.org/p/C2RkmGcZBX)
 
 ---
 [Inicio](../README.md)
