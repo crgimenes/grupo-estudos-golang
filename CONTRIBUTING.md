@@ -33,6 +33,19 @@ Uma das características que é importante manter são exemplos curtos e de fác
 
 Exemplos rápidos, curtos, diretos e de fácil entendimento são nossa meta.
 
+## Arquivo README.md e Rodapé
+
+Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial na lista do arquivo README.md, a ideia é que os tutoriais estejam em ordem complexidade.
+
+No rodapé do seu tutorial coloque links para o inicio, tutorial anterior e proximo tutorial como nesse exemplo:
+
+```
+---
+[Inicio](../README.md)
+
+[< Struct](../struct/) - [Loop for >](../for/)
+```
+
 ## Enviando uma contribuição
 
 - Faça um _fork_ do projeto.
