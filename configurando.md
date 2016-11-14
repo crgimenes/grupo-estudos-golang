@@ -20,9 +20,9 @@ No Mac, Linux e BSD você pode adicionar essas variáveis no arquivo de configur
 Exemplo:
 
 ```bash
-export PATH=$PATH:/usr/local/go/bin
-export GOROOT=/usr/local/go
 export GOPATH=~/projeto
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
 ```
 
 **Obs:** Caso ainda não esteja você também precisa apontar o git na variavel PATH do seu sistema.
