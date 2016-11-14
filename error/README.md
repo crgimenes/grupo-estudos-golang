@@ -8,6 +8,7 @@ if err != nil {
     panic(err)
 }
 ```
+[Playground](https://play.golang.org/p/5hEzgU5pvy)
 
 Podemos gerar nossos erros :smile:, usando o pacote nativo **errors**
 
