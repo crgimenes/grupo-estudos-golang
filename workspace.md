@@ -17,4 +17,4 @@ em que o Go trabalha.
 
 [Inicio](README.md)
 
-[< Configurando](configurando.md) - [Olá Mundo >](ola_mundo.md)
+[< Configurando](configurando.md) - [Olá Mundo >](./ola_mundo/)
