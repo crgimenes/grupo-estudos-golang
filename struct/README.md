@@ -122,6 +122,7 @@ func main() {
 
 }
 ```
+[Playground](https://play.golang.org/p/f6CoEHK2Mh)
 
 ---
 [Inicio](../README.md)
