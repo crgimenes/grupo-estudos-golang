@@ -33,6 +33,10 @@ Uma das características que é importante manter são exemplos curtos e de fác
 
 Exemplos rápidos, curtos, diretos e de fácil entendimento são nossa meta.
 
+## Inclua seus exemplos no The Go Playground
+
+Inclua um link sob os exemplos que você escrever apontando para o https://play.golang.org, dessa fora o leitor pode testar seu exemplo imediatamente. Obviamente isso não é possivel com qualquer exemplo, mas onde for possivel é bom colocar.
+
 ## Arquivo README.md e Rodapé
 
 Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial na lista do arquivo README.md, a ideia é que os tutoriais estejam em ordem complexidade.
