@@ -34,6 +34,10 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - Vá aos [Meetups da comunidade brasileira](https://www.meetup.com/pt-BR/golangbr/)
 
 ---
+### Aprenda mais
+- [Awesome-go](https://github.com/avelino/awesome-go) Uma lista de impressionantes frameworks, bibliotecas e software escritos em Go.
+
+---
 ### Bônus!
 - [Go com C](./go_com_c/), especial para quem quer brincar com IoT!
 - [Net](./net/), listando interfaces de rede e IPs
