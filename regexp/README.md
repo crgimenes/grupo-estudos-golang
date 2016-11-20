@@ -70,4 +70,4 @@ go build
 ---
 [Inicio](../README.md)
 
-[< Cliente HTTP](../http_get/) - [Tratamento de sinais >](../signals/)
+[< Templates](../http_templates/) - [Tratamento de sinais >](../signals/)

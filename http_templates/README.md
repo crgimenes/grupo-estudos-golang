@@ -98,6 +98,6 @@ E por fim note que podemos utilizar a passagem de parâmetros diretamente via ur
 http://localhost:8080/?name=Edward
 
 ---
-[Inicio](README.md)
+[Inicio](../README.md)
 
-[< HTTP](../http/) - [Expressões Regulares >](../regexp/)
+[< Cliente Http](../http_get/) - [Expressões Regulares >](../regexp/)
