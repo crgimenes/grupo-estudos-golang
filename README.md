@@ -24,6 +24,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [godoc](./godoc/)
 - [http](./http/)
 - [cliente http](./http_get/)
+- [templates](./http_templates/)
 - [expressões regulares](./regexp/)
 - [tratando sinais](./signals/)
 
