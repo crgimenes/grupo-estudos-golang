@@ -10,16 +10,16 @@ type Aluno struct {
 	Idade int
 }
 
-type Ponto struct {
+type Localidade struct {
 	X     int    `json:"valor_x"`
 	Y     int    `json:"valor_y"`
-	Nome  string `json:"nome_do_ponto"`
+	Nome  string `json:"nome_da_localidade"`
 	valor int    // campo que inicia com letra minuscula é "private"
 }
 
-func (p *Ponto) Soma(ponto Ponto) {
-	p.X += ponto.X
-	p.Y += ponto.Y
+func (p *Localidade) Soma(l Localidade) {
+	p.X += l.X
+	p.Y += l.Y
 }
 
 func main() {
@@ -32,51 +32,51 @@ func main() {
 	fmt.Println("Aluno:", aluno)
 
 	// Declarando e atribuindo valores diretamente
-	meuPonto := Ponto{3, 4, "casa", 500}
+	minhaCasa := Localidade{3, 4, "casa", 500}
 
 	// Atribuindo uma estrutura vazia
 	estruturaVazia := Aluno{}
 
 	// Mais uma vez declarando e atribuindo usando os nomes dos campos
-	escolaPonto := Ponto{
+	escolaLocalidade := Localidade{
 		Y:    100,
 		X:    200,
 		Nome: "escola",
 	}
 
 	// Alocando e em seguida atribuindo valores
-	var outroPonto Ponto
-	outroPonto.X = 10
-	outroPonto.Y = 20
-	outroPonto.Nome = "trabalho"
+	var outraLocalidade Localidade
+	outraLocalidade.X = 10
+	outraLocalidade.Y = 20
+	outraLocalidade.Nome = "trabalho"
 
-	fmt.Println("meu ponto:", meuPonto)
-	fmt.Println("outro ponto:", outroPonto)
-	fmt.Println("escola:", escolaPonto)
+	fmt.Println("minha casa:", minhaCasa)
+	fmt.Println("outra localidade:", outraLocalidade)
+	fmt.Println("escola:", escolaLocalidade)
 	fmt.Println("aluno:", aluno)
 	fmt.Printf("estrutura vazia: %q\r\n", estruturaVazia)
 
-	meuPonto.Soma(outroPonto)
+	minhaCasa.Soma(outraLocalidade)
 
-	fmt.Println("meu ponto somado com outro ponto", meuPonto)
+	fmt.Println("localidade minha casa somada com outra localidade", minhaCasa)
 
-	fmt.Printf("meu ponto: %v\r\n", meuPonto)
-	fmt.Printf("meu ponto: %+v\r\n", meuPonto)
+	fmt.Printf("minha casa: %v\r\n", minhaCasa)
+	fmt.Printf("minha casa: %+v\r\n", minhaCasa)
 
 	// Brincando com JSON
-	j, err := json.Marshal(meuPonto)
+	j, err := json.Marshal(minhaCasa)
 	if err != nil {
 		panic(err)
 	}
 
-	fmt.Println("meu ponto json:", string(j))
+	fmt.Println("minha casa json:", string(j))
 
-	novoPonto := Ponto{}
-	err = json.Unmarshal(j, &novoPonto)
+	novaLocalidade := Localidade{}
+	err = json.Unmarshal(j, &novaLocalidade)
 	if err != nil {
 		panic(err)
 	}
 
-	fmt.Println("pondo depois do Unmarshal:", novoPonto)
+	fmt.Println("pondo depois do Unmarshal:", novaLocalidade)
 
 }
