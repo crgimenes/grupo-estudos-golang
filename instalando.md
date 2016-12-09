@@ -59,11 +59,19 @@ Para seguir os exemplos que envolvem baixar pacotes diretamente do github é nec
 
 
 ---
+# Ambiente de desenvolvimento
+
 ## Atom
 
 Você pode usar qualquer editor de texto puro para editar seu código fonte em Go, um que eu gosto é o Atom, é free e muito bom. Depois de instalar vá nas configurações do editor e procure pelos plugins de Go que achar interessante.
 
 [https://atom.io](https://atom.io)
+
+## Visual Studio Code
+
+Outro ótimo editor é o Visual Studio Code, assim como o Atom, depois de instalar o editor é necessário adicionar os plugins de Go.
+
+[https://code.visualstudio.com](https://code.visualstudio.com)
 
 ---
 ### Mas eu não quero instalar nada!
