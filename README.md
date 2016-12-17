@@ -15,6 +15,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [switch](./switch/)
 - [defer](./defer/)
 - [interface](./interface/)
+- [reflection](./reflection/)
 - [error](./error/)
 - [goroutines](./goroutines/)
 - [goroutines waitgroup](./goroutines_waitgroup/)
