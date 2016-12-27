@@ -62,6 +62,50 @@ func main() {
 ```
 [Playground](https://play.golang.org/p/z9P_CPTjkG)
 
+### Dica
+
+Se você usar em uma função separada lembre de passar a variável que contem o WaitGroup como um ponteiro (*sync.WaitGroup) isso é necessário pois por padrão o copia os parâmetros e nesse caso é necessário passar por referencia para que o decremento feito por .Done() funcione.
+
+Veja o exemplo abaixo:
+
+```go
+package main
+
+import (
+	"math/rand"
+	"sync"
+	"time"
+)
+
+func rotina(wg *sync.WaitGroup, x int) {
+	// Espera um tempo aleatório
+	rt := rand.Int31n(1000)
+	time.Sleep(time.Duration(rt) * time.Millisecond)
+
+	println("rotina", x)
+	wg.Done()
+}
+
+func main() {
+
+	println("Inicio")
+	rand.Seed(time.Now().Unix())
+
+	var wg sync.WaitGroup
+
+	wg.Add(3)
+
+	for i := 1; i < 4; i++ {
+		go rotina(&wg, i)
+	}
+
+	wg.Wait()
+
+	println("Fim")
+}
+```
+[Playground](https://play.golang.org/p/HfPHat7QZQ)
+
 ---
 [Inicio](../README.md)
 
