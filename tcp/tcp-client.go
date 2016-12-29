@@ -16,9 +16,9 @@ func main() {
 
 	for {
 		// lendo entrada do terminal
-		reader := bufio.NewReader(os.Stdin)
+		leitor := bufio.NewReader(os.Stdin)
 		fmt.Print("texto a ser enviado: ")
-		texto, erro2 := reader.ReadString('\n')
+		texto, erro2 := leitor.ReadString('\n')
 		if erro2 != nil {
 			fmt.Println(erro2)
 			os.Exit(3)
