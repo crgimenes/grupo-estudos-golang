@@ -11,7 +11,7 @@ var ErrPanettoneDeChocolate = errors.New("Panettone tem que ser apenas com passa
 // ErrPanettoneSeco se esse erro retornar verifique a origem
 var ErrPanettoneSeco = errors.New("Panettone ta seco")
 
-// Quem comprou o Panettone
+// Origem quem comprou o Panettone
 type Origem int
 
 // Lista as possiveis origens
