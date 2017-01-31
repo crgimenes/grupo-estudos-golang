@@ -67,6 +67,10 @@ Você pode usar qualquer editor de texto puro para editar seu código fonte em G
 
 [https://atom.io](https://atom.io)
 
+Sugestões de plugins:
+
+[https://atom.io/packages/go-plus](https://atom.io/packages/go-plus)
+
 ## Visual Studio Code
 
 Outro ótimo editor é o Visual Studio Code, assim como o Atom, depois de instalar o editor é necessário adicionar os plugins de Go.
