@@ -61,3 +61,7 @@ func TestDivideInteiros(t *testing.T) {
 
 > Como podemos ver no exemplo, em Go só precisamos descrever nos testes os casos de falha, 
 se algum caso de falha for satisfeito o código entrará no if e o teste falhará
+
+[Inicio](../README.md)
+
+[< tratando sinais](../signals/) - [instalando >](../instalando.md)
