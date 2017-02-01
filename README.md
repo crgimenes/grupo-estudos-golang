@@ -29,6 +29,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [ioutil](./ioutil/)
 - [expressões regulares](./regexp/)
 - [tratando sinais](./signals/)
+- [testes](./testing/)
 
 ---
 ### Comunidade
