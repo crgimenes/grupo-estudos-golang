@@ -62,6 +62,21 @@ func TestDivideInteiros(t *testing.T) {
 > Como podemos ver no exemplo, em Go só precisamos descrever nos testes os casos de falha, 
 se algum caso de falha for satisfeito o código entrará no if e o teste falhará
 
+## TestMain
+
+> É possivel criar uma função `Main` para nossos testes com isso conseguimos testar recursos globais de nossa aplicação e criar um `setup`e um `teardown`global para nossa base de testes.
+
+## Exemplo
+
+```go
+func TestMain(m *testing.M) {
+	log.Println("Start tests")
+	code := m.Run()
+	log.Println("Stop tests")
+	os.Exit(code)
+}
+```
+
 [Inicio](../README.md)
 
 [< tratando sinais](../signals/) - [instalando >](../instalando.md)

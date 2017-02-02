@@ -1,6 +1,8 @@
 package testing
 
 import (
+	"log"
+	"os"
 	"testing"
 )
 
@@ -30,4 +32,11 @@ func TestDivideInteiros(t *testing.T) {
 			t.Errorf("Esperava como err %v e obiteve %v\n", test.err, erro)
 		}
 	}
+}
+
+func TestMain(m *testing.M) {
+	log.Println("Start tests")
+	code := m.Run()
+	log.Println("Stop tests")
+	os.Exit(code)
 }
