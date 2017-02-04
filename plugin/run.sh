@@ -1,3 +1,3 @@
 #!/bin/bash
-docker run -it -v $(pwd)/exemplo1:/local go1_8
+docker run -it -v $(pwd):/go go1_8
 

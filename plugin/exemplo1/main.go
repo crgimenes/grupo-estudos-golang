@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello main!")
+	fmt.Println("Hello, main!")
 
 	var p *plugin.Plugin
 	var err error
