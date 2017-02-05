@@ -65,7 +65,7 @@ if err != nil {
 }
 ```
 
-A variável *s* do exemplo anterior é na verdade uma interface, então é necessário converter a variável para poder usar a função que Hello que veio do plugin. Vamos aproveitar a oportunidade para criar uma variável com o mesmo nome da função e assim poder chamar a função *sem arestas*
+A variável *s* do exemplo anterior é na verdade uma interface, então é necessário converter a variável para ter a mesma assinatura da função que Hello que veio do plugin. Vamos aproveitar a oportunidade para criar uma variável com o mesmo nome da função e assim poder chamar a função *sem arestas*
 
 ```go
 Hello := s.(func() error)
