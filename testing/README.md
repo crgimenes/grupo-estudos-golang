@@ -77,6 +77,7 @@ func TestMain(m *testing.M) {
 }
 ```
 
+---
 [Inicio](../README.md)
 
-[< tratando sinais](../signals/) - [instalando >](../instalando.md)
+[< tratando sinais](../signals/) - [pligin >](../plugin/)

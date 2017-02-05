@@ -31,6 +31,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [expressões regulares](./regexp/)
 - [tratando sinais](./signals/)
 - [testes](./testing/)
+- [plugin](./plugin/)
 
 ---
 ### Comunidade
