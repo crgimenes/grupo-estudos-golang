@@ -36,8 +36,11 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 ---
 ### Comunidade
 
-- Participe do canal de [Go no Slack](https://invite.slack.golangbridge.org)
+- Participe do canal de [Go no Slack](https://invite.slack.golangbridge.org), procure pelos canais #brazil e #brazilian-go-studies
 - Vá aos [Meetups da comunidade brasileira](https://www.meetup.com/pt-BR/golangbr/)
+
+#### Grupo de estudos
+- Todas as quintas-feiras as 20h00 um grupo programadores faz um hangout para estudar Go e bater papo os encontros e o tema da semana são combinados no #brazilian-go-studies.
 
 ---
 ### Aprenda mais
