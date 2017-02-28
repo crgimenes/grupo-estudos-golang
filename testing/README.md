@@ -80,4 +80,4 @@ func TestMain(m *testing.M) {
 ---
 [Inicio](../README.md)
 
-[< tratando sinais](../signals/) - [pligin >](../plugin/)
+[< tratando sinais](../signals/) - [plugin >](../plugin/)
