@@ -86,4 +86,4 @@ O recurso de plugins pode ser útil para criar sistemas menos monolíticos mas i
 ---
 [Inicio](../README.md)
 
-[< testing](../testing/) - [instalando >](../instalando.md)
+[< testing](../testing/) - [data race >](../data-race/)
