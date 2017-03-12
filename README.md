@@ -32,6 +32,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [tratando sinais](./signals/)
 - [testes](./testing/)
 - [plugin](./plugin/)
+- [data race](../data-race/)
 
 ---
 ### Comunidade
