@@ -46,6 +46,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 ---
 ### Aprenda mais
 - [Awesome-go](https://github.com/avelino/awesome-go) Uma lista de impressionantes frameworks, bibliotecas e software escritos em Go.
+- [60 days of go](https://github.com/cassiobotaro/60-days-of-go) Vários exemplos de Go em uma aventura em 60 dias!
 
 ---
 ### Bônus!
