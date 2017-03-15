@@ -26,6 +26,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [http](./http/)
 - [cliente http](./http_get/)
 - [templates](./http_templates/)
+- [Enviando e-mail via SMTP >](./smtp/)
 - [tcp](./tcp/)
 - [ioutil](./ioutil/)
 - [expressões regulares](./regexp/)
