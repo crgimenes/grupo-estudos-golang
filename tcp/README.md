@@ -139,4 +139,4 @@ preferencialmente em terminais diferentes para acompanhar o resultado.
 ---
 [Inicio](../README.md)
 
-[< Templates](../http_templates/) - [Trabalhando com Arquivo >](../ioutil/)
+[Enviando e-mail via SMTP >](../smtp/) - [Trabalhando com Arquivo >](../ioutil/)
