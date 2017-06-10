@@ -45,7 +45,7 @@ func main() {
 	var s string
 
 	/*
-	A variavel "a" vai recebem um valor mas vamos deixar
+	A variavel "a" vai rceber um valor mas vamos deixar
 	a variavel "s" sem valor propositalmente, no fim do programa
 	vamos ver que uma string vazia foi atribuída a "s" automaticamente.
 	*/
