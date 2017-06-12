@@ -1,4 +1,4 @@
-Esse material foi criado inicialmente para um workshop de duas horas e com o passar do tempo foi usando em outras demonstrações de Go e rapidamente começou a receber solicitações de itens que haviam sido deixados de fora porque não cabiam no formato de duas horas e também contribuições de outros programadores que acharam o material util.
+Esse material foi criado inicialmente para um workshop de duas horas e com o passar do tempo foi usado em outras demonstrações de Go e rapidamente começou a receber solicitações de itens que haviam sido deixados de fora porque não cabiam no formato de duas horas e também contribuições de outros programadores que acharam o material util.
 
 Como crescer é inevitável parece uma boa ideia abraçar essa oportunidade e extender o material para se tornar um repositório de código e exemplos que possa ser usado por todos para estudo e referencia.
 
