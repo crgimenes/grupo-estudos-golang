@@ -9,8 +9,8 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [Workspace](workspace.md)
 - [Olá Mundo](./ola_mundo/) Nosso primeiro exemplo... um clássico :smiley:
 - [Variáveis](./variaveis/)
-- [Struct](./struct/)
 - [Funções](./funcoes/)
+- [Struct](./struct/)
 - [Loop for](./for/)
 - [switch](./switch/)
 - [defer](./defer/)

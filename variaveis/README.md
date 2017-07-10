@@ -82,4 +82,4 @@ func main() {
 ---
 [Inicio](../README.md)
 
-[< Olá Mundo](../ola_mundo/) - [Struct >](../struct/)
+[< Olá Mundo](../ola_mundo/) - [Funções >](../funcoes/)

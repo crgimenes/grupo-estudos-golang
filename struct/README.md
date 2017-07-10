@@ -138,4 +138,4 @@ func main() {
 ---
 [Inicio](../README.md)
 
-[< Variáveis](../variaveis/) - [Funções >](../funcoes/)
+[< Funções](../funcoes/) - [Loop for >](../for/)
