@@ -20,6 +20,17 @@ type Localidade struct {
 }
 ```
 
+Você também pode adicionar etiquetas (tags) aos seus campos para gerar/ler arquivos JSON, para salvar/ler documentos do MongoDB, campos de banco de dados com sqlx. Esses recursos leem essas etiquetas e automaticamente fazem o binding/unbinding dos dados da Struct para esses estruturas externas a aplicação. A instrução *omitempty* é para que o binder ignore esse campo quando o valor dele for vazio
+
+```go
+type Localidade struct {
+	X     int    `json:"valor_x" bson:"valor_x" db:"valorX"`
+	Y     int    `json:"valor_y" bson:"valor_y" db:"valorY"`
+	Nome  string `json:"nome_da_localidade,omitempty" bson:"nome_da_localidade,omitempty" db:"nomeDaLocalidade,omitempty"`
+	valor int    // campo que inicia com letra minuscula é "private"
+}
+```
+
 Você pode criar funções para atuar especificamente sobre sua struct como funções membro de uma classe.
 
 ```go
@@ -127,4 +138,4 @@ func main() {
 ---
 [Inicio](../README.md)
 
-[< Variáveis](../variaveis/) - [Funções >](../funcoes/)
+[< Funções](../funcoes/) - [Loop for >](../for/)
