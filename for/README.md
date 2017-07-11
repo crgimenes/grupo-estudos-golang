@@ -42,7 +42,7 @@ func main() {
 	}
 }
 ```
-[Playground](https://play.golang.org/p/8kOxVxdGWT)
+[Playground](https://play.golang.org/p/47Yf0l5hnx)
 
 ---
 [Inicio](../README.md)
