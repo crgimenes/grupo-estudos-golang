@@ -42,7 +42,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - Vá aos [Meetups da comunidade brasileira](https://www.meetup.com/pt-BR/golangbr/)
 
 #### Grupo de estudos
-- Todas as quintas-feiras as 20h00 um grupo programadores faz um hangout para estudar Go e bater papo os encontros e o tema da semana são combinados no #brazilian-go-studies.
+- Todas as quintas-feiras as 22h00 um grupo programadores faz um hangout para estudar Go e bater papo os encontros e o tema da semana são combinados no #brazilian-go-studies.
 
 - Pagina no Facebook [https://www.facebook.com/gophers.br/](https://www.facebook.com/gophers.br/)
 
