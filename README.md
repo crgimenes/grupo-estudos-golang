@@ -36,6 +36,13 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [data race](./data-race/)
 
 ---
+### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
+
+- As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de comando e aqui você vamos fazer uma reimplementação escrita em Go.
+
+- [goaleatorio](./goaleatorio) Gera um número aleatório
+
+---
 ### Comunidade
 
 - Participe do canal de [Go no Slack](https://invite.slack.golangbridge.org), procure pelos canais #brazil e #brazilian-go-studies
