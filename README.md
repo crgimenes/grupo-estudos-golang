@@ -38,7 +38,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
 
-- As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de comando e aqui você vamos fazer uma reimplementação escrita em Go.
+As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de comando e aqui você vamos fazer uma reimplementação escrita em Go.
 
 - [goaleatorio](./goaleatorio) Gera um número aleatório
 
