@@ -61,6 +61,7 @@ As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de coma
 ---
 ### Bônus!
 - [Go com C](./go_com_c/), especial para quem quer brincar com IoT!
+- [Go com Lua](./lua/), integrando lua no seu codigo Go
 - [Net](./net/), listando interfaces de rede e IPs
 - [Go no Amazon Lambda](https://github.com/apex/apex) feito para quem quer usar o processamento por tempo da Amazon!
 
