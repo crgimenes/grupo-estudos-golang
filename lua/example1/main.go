@@ -16,6 +16,7 @@ func main() {
 		`)
 	if err != nil {
 		fmt.Println(err)
+		return
 	}
 	ola := l.GetGlobal("ola")
 	fmt.Println(ola.String())
