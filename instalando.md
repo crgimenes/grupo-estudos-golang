@@ -71,6 +71,16 @@ Outro ótimo editor é o Visual Studio Code, assim como o Atom, depois de instal
 
 [https://code.visualstudio.com](https://code.visualstudio.com)
 
+## Sublime Text
+
+Se você busca o máximo de simplicidade, o Sublime poderá lhe atender. Além de ser um ótimo editor, ele também permite a intalação de plugins que auxiliam no desenvolvimento em Go.
+
+[https://www.sublimetext.com/](https://www.sublimetext.com/)
+
+Sugestões de plugins:
+
+[https://github.com/DisposaBoy/GoSublime](https://github.com/DisposaBoy/GoSublime)
+
 ---
 ### Mas eu não quero instalar nada!
 
