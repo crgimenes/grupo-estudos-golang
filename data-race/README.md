@@ -65,4 +65,4 @@ func main() {
 ---
 [Inicio](../README.md)
 
-[< plugin](../plugin/) - [instalando >](../instalando.md)
+[< plugin](../plugin/) - [crc >](../crc/)

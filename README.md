@@ -34,6 +34,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [testes](./testing/)
 - [plugin](./plugin/)
 - [data race](./data-race/)
+- [crc](./crc/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
