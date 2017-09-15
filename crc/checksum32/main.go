@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	valor := "isto é um teste"
+	valor := "Isto é um teste"
 	checksum := crc32.ChecksumIEEE([]byte(valor))
 	fmt.Printf("Checksum 32 bits: 0x%X\n", checksum)
 
