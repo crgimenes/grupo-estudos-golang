@@ -20,4 +20,4 @@ func main() {
 ---
 [Inicio](../README.md)
 
-[< data-race](../data-race/) - [instalando >](../instalando.md)
+[< data-race](../data-race/) - [zop >](../zip/)
