@@ -78,3 +78,8 @@ func walker(m interface{}, r map[string]int) {
 	}
 }
 ```
+
+---
+[Inicio](../README.md)
+
+[< crc](../zip/) - [instalando >](../instalando.md)

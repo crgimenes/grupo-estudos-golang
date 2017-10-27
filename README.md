@@ -36,6 +36,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [data race](./data-race/)
 - [crc](./crc/)
 - [zip](./zip/)
+- [wikipedia](./wikipedia/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)

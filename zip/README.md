@@ -144,8 +144,7 @@ func main() {
 }
 ```
 
-
 ---
 [Inicio](../README.md)
 
-[< crc](../crc/) - [instalando >](../instalando.md)
+[< crc](../crc/) - [wikipedia >](./wikipedia/)
