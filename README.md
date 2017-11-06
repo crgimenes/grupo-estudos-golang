@@ -48,7 +48,7 @@ As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de coma
 ---
 ### Comunidade
 
-- Participe do canal de [Go no Slack](https://invite.slack.golangbridge.org), procure pelos canais #brazil e #brazilian-go-studies
+- Participe do canal de [Go no Slack](https://invite.slack.golangbridge.org), procure pelos canais #brazil e [#brazilian-go-studies](http://gophers.slack.com/messages/brasilian-go-studies)
 - Vá aos [Meetups da comunidade brasileira](https://www.meetup.com/pt-BR/golangbr/)
 
 #### Grupo de estudos
