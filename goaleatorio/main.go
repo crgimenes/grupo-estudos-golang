@@ -9,7 +9,7 @@ import (
 )
 
 /*
-inspurado por http://funcoeszz.net/man.html#zzaleatorio
+inspirado por http://funcoeszz.net/man.html#zzaleatorio
 */
 
 func main() {
