@@ -28,7 +28,7 @@ func main() {
 
 	valores := re.FindAll(contents, -1)
 
-	fmt.Println(" Preço do dolar Banco Central.")
+	fmt.Println(" Preço do dólar Banco Central.")
 	fmt.Println(" R$:", string(valores[0][:]), "para compra.")
 	fmt.Println(" R$:", string(valores[1][:]), "para Venda.")
 
