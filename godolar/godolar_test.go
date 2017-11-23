@@ -134,6 +134,7 @@ func TestResponseTratamento(t *testing.T) {
 
 }
 
+/*
 func TestBuscaRequest(t *testing.T) {
 	_, err := BuscaRequest()
 	if err != nil {
@@ -141,3 +142,4 @@ func TestBuscaRequest(t *testing.T) {
 	}
 
 }
+*/
