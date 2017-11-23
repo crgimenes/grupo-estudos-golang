@@ -1,4 +1,4 @@
-package godolar
+package main
 
 import (
 	"errors"
