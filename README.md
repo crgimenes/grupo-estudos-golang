@@ -44,6 +44,8 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de comando e aqui vamos fazer uma reimplementação escrita em Go.
 
 - [goaleatorio](./goaleatorio) Gera um número aleatório
+- [godolar](./godolar) Busca a cotação do dólar
+
 
 ---
 ### Comunidade
