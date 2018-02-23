@@ -15,3 +15,8 @@ func divideInteiros(dividendo, divisor int) (quociente int, resto int, err error
 	resto = dividendo % divisor
 	return
 }
+
+func sum(a, b int) (ret int) {
+	ret = a + b
+	return
+}

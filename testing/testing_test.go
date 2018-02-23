@@ -1,6 +1,7 @@
 package testing
 
 import (
+	"fmt"
 	"log"
 	"os"
 	"testing"
@@ -31,6 +32,64 @@ func TestDivideInteiros(t *testing.T) {
 		if erro != test.err {
 			t.Errorf("Esperava como err %v e obiteve %v\n", test.err, erro)
 		}
+	}
+}
+
+func TestSum(t *testing.T) {
+	type args struct {
+		a int
+		b int
+	}
+	type expected struct {
+		ret int
+	}
+	tests := []struct {
+		name     string
+		args     args
+		want     expected
+		setup    func()
+		tearDown func()
+	}{
+		{
+			name: "test 1+1",
+			args: args{
+				a: 1,
+				b: 1,
+			},
+			want: expected{
+				ret: 2,
+			},
+			setup: func() {
+				fmt.Println("setup do teste 1+1")
+			},
+			tearDown: func() {
+				fmt.Println("tearDown do teste 1+1")
+			},
+		},
+		{
+			name: "test 2+2",
+			args: args{
+				a: 2,
+				b: 2,
+			},
+			want: expected{
+				ret: 4,
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if tt.setup != nil {
+				tt.setup()
+			}
+			ret := sum(tt.args.a, tt.args.b)
+			if ret != tt.want.ret {
+				t.Errorf("sum() = %v, want %v", ret, tt.want.ret)
+			}
+			if tt.tearDown != nil {
+				tt.tearDown()
+			}
+		})
 	}
 }
 
