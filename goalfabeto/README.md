@@ -1,135 +1,115 @@
-package goalfabeto
+# Go Alfabeto
+
+    Go Alfabeto é a versão em Go do zzalfabeto.
+    Funções ZZ é um conjunto dos mais variados aplicativos, escritos em shell script, 
+	com as mais variadas aplicações. Dentre ele, o zzalfabeto, objeto deste estudo.
+
+## O ZZAlfabeto!
+    Abaixo, temos a codificação original, do miniaplicativo.
+    
+```sh
+zzalfabeto ()
+{
+	zzzz -h alfabeto "$1" && return
+
+	local char letra
+
+	local coluna=1
+	local dados="\
+A:Alpha:Apples:Ack:Ace:Apple:Able/Affirm:Able:Aveiro:Alan:Adam:.-
+B:Bravo:Butter:Beer:Beer:Beer:Baker:Baker:Bragança:Bobby:Boy:-...
+C:Charlie:Charlie:Charlie:Charlie:Charlie:Charlie:Charlie:Coimbra:Charlie:Charles:-.-.
+D:Delta:Duff:Don:Don:Dog:Dog:Dog:Dafundo:David:David:-..
+E:Echo:Edward:Edward:Edward:Edward:Easy:Easy:Évora:Edward:Edward:.
+F:Foxtrot:Freddy:Freddie:Freddie:Freddy:Fox:Fox:Faro:Frederick:Frank:..-.
+G:Golf:George:Gee:George:George:George:George:Guarda:George:George:--.
+H:Hotel:Harry:Harry:Harry:Harry:How:How:Horta:Howard:Henry:....
+I:India:Ink:Ink:Ink:In:Item/Interrogatory:Item:Itália:Isaac:Ida:..
+J:Juliet:Johnnie:Johnnie:Johnnie:Jug/Johnny:Jig/Johnny:Jig:José:James:John:.---
+K:Kilo:King:King:King:King:King:King:Kilograma:Kevin:King:-.-
+L:Lima:London:London:London:Love:Love:Love:Lisboa:Larry:Lincoln:.-..
+M:Mike:Monkey:Emma:Monkey:Mother:Mike:Mike:Maria:Michael:Mary:--
+N:November:Nuts:Nuts:Nuts:Nuts:Nab/Negat:Nan:Nazaré:Nicholas:Nora:-.
+O:Oscar:Orange:Oranges:Orange:Orange:Oboe:Oboe:Ovar:Oscar:Ocean:---
+P:Papa:Pudding:Pip:Pip:Peter:Peter/Prep:Peter:Porto:Peter:Paul:.--.
+Q:Quebec:Queenie:Queen:Queen:Queen:Queen:Queen:Queluz:Quincy:Queen:--.-
+R:Romeo:Robert:Robert:Robert:Roger/Robert:Roger:Roger:Rossio:Robert:Robert:.-.
+S:Sierra:Sugar:Esses:Sugar:Sugar:Sugar:Sugar:Setúbal:Stephen:Sam:...
+T:Tango:Tommy:Toc:Toc:Tommy:Tare:Tare:Tavira:Trevor:Tom:-
+U:Uniform:Uncle:Uncle:Uncle:Uncle:Uncle:Uncle:Unidade:Ulysses:Union:..-
+V:Victor:Vinegar:Vic:Vic:Vic:Victor:Victor:Viseu:Vincent:Victor:...-
+W:Whiskey:Willie:William:William:William:William:William:Washington:William:William:.--
+X:X-ray/Xadrez:Xerxes:X-ray:X-ray:X-ray:X-ray:X-ray:Xavier:Xavier:X-ray:-..-
+Y:Yankee:Yellow:Yorker:Yorker:Yoke/Yorker:Yoke:Yoke:York:Yaakov:Young:-.--
+Z:Zulu:Zebra:Zebra:Zebra:Zebra:Zebra:Zebra:Zulmira:Zebedee:Zebra:--.."
+
+# Escolhe o alfabeto a ser utilizado
+case "$1" in
+	--militar | --radio | --fone | --telefone | --otan | --nato | --icao | --itu | --imo | --faa | --ansi)
+		coluna=2 ; shift ;;
+	--romano | --latino           ) coluna=1  ; shift ;;
+	--royal | --royal-navy        ) coluna=3  ; shift ;;
+	--signalese | --western-front ) coluna=4  ; shift ;;
+	--raf24                       ) coluna=5  ; shift ;;
+	--raf42                       ) coluna=6  ; shift ;;
+	--raf43 | --raf               ) coluna=7  ; shift ;;
+	--us41 | --us                 ) coluna=8  ; shift ;;
+	--pt | --portugal             ) coluna=9  ; shift ;;
+	--name | --names              ) coluna=10 ; shift ;;
+	--lapd                        ) coluna=11 ; shift ;;
+	--morse                       ) coluna=12 ; shift ;;
+esac
+
+if test "$1"
+then
+	# Texto informado, vamos fazer a conversão
+	# Deixa uma letra por linha e procura seu código equivalente
+	echo "$*" |
+		zzmaiusculas |
+		sed 's/./&\ /g' |
+		while IFS='' read -r char
+		do
+			letra=$(echo "$char" | sed 's/[^A-Z]//g')
+			if test -n "$letra"
+			then
+				echo "$dados" | grep "^$letra" | cut -d : -f $coluna
+			else
+				test -n "$char" && echo "$char"
+			fi
+		done
+else
+	# Apenas mostre a tabela
+	echo "$dados" | cut -d : -f $coluna
+fi
+}
+```
+## Exemplo de Implementação
+
+```go
+package main
 
 import (
-	"fmt"
-	"sort"
+	"os"
+	"strings"
+
+	"github.com/paulopraxedes/estudos/go/goalfabeto"
 )
-
-/**
- * mapDados = Objeto do tipo Mapa, que representa os alfabetos possíveis
- */
-var mapDados = map[int][]string{
-	0:  {"A", "Alpha", "Apples", "Ack", "Ace", "Apple", "Able/Affirm", "Able", "Aveiro", "Alan", "Adam", ".-"},
-	1:  {"B", "Bravo", "Butter", "Beer", "Beer", "Beer", "Baker", "Baker", "Bragança", "Bobby", "Boy", "-..."},
-	2:  {"C", "Charlie", "Charlie", "Charlie", "Charlie", "Charlie", "Charlie", "Charlie", "Coimbra", "Charlie", "Charles", "-.-."},
-	3:  {"D", "Delta", "Duff", "Don", "Don", "Dog", "Dog", "Dog", "Dafundo", "David", "David", "-.."},
-	4:  {"E", "Echo", "Edward", "Edward", "Edward", "Edward", "Easy", "Easy", "Évora", "Edward", "Edward", "."},
-	5:  {"F", "Foxtrot", "Freddy", "Freddie", "Freddie", "Freddy", "Fox", "Fox", "Faro", "Frederick", "Frank", "..-."},
-	6:  {"G", "Golf", "George", "Gee", "George", "George", "George", "George", "Guarda", "George", "George", "--."},
-	7:  {"H", "Hotel", "Harry", "Harry", "Harry", "Harry", "How", "How", "Horta", "Howard", "Henry", "...."},
-	8:  {"I", "India", "Ink", "Ink", "Ink", "In", "Item/Interrogatory", "Item", "Itália", "Isaac", "Ida", ".."},
-	9:  {"J", "Juliet", "Johnnie", "Johnnie", "Johnnie", "Jug/Johnny", "Jig/Johnny", "Jig", "José", "James", "John", ".---"},
-	10: {"K", "Kilo", "King", "King", "King", "King", "King", "King", "Kilograma", "Kevin", "King", "-.-"},
-	11: {"L", "Lima", "London", "London", "London", "Love", "Love", "Love", "Lisboa", "Larry", "Lincoln", ".-.."},
-	12: {"M", "Mike", "Monkey", "Emma", "Monkey", "Mother", "Mike", "Mike", "Maria", "Michael", "Mary", "--"},
-	13: {"N", "November", "Nuts", "Nuts", "Nuts", "Nuts", "Nab/Negat", "Nan", "Nazaré", "Nicholas", "Nora", "-."},
-	14: {"O", "Oscar", "Orange", "Oranges", "Orange", "Orange", "Oboe", "Oboe", "Ovar", "Oscar", "Ocean", "---"},
-	15: {"P", "Papa", "Pudding", "Pip", "Pip", "Peter", "Peter/Prep", "Peter", "Porto", "Peter", "Paul", ".--."},
-	16: {"Q", "Quebec", "Queenie", "Queen", "Queen", "Queen", "Queen", "Queen", "Queluz", "Quincy", "Queen", "--.-"},
-	17: {"R", "Romeo", "Robert", "Robert", "Robert", "Roger/Robert", "Roger", "Roger", "Rossio", "Robert", "Robert", ".-."},
-	18: {"S", "Sierra", "Sugar", "Esses", "Sugar", "Sugar", "Sugar", "Sugar", "Setúbal", "Stephen", "Sam", "..."},
-	19: {"T", "Tango", "Tommy", "Toc", "Toc", "Tommy", "Tare", "Tare", "Tavira", "Trevor", "Tom", "-"},
-	20: {"U", "Uniform", "Uncle", "Uncle", "Uncle", "Uncle", "Uncle", "Uncle", "Unidade", "Ulysses", "Union", "..-"},
-	21: {"V", "Victor", "Vinegar", "Vic", "Vic", "Vic", "Victor", "Victor", "Viseu", "Vincent", "Victor", "...-"},
-	22: {"W", "Whiskey", "Willie", "William", "William", "William", "William", "William", "Washington", "William", "William", ".--"},
-	23: {"X", "X-ray/Xadrez", "Xerxes", "X-ray", "X-ray", "X-ray", "X-ray", "X-ray", "Xavier", "Xavier", "X-ray", "-..-"},
-	24: {"Y", "Yankee", "Yellow", "Yorker", "Yorker", "Yoke/Yorker", "Yoke", "Yoke", "York", "Yaakov", "Young", "-.--"},
-	25: {"Z", "Zulu", "Zebra", "Zebra", "Zebra", "Zebra", "Zebra", "Zebra", "Zulmira", "Zebedee", "Zebra", "--.."},
-}
-
-/**
-ordenaTabela - função que ordena a lista, de modo crescente, para uma melhor leitura
+/*
+ * O programa deverá funcionar da seguinte forma:
+    > O usuário poderá consultar toda a tabela de alfabetos = go run main.go
+    > O usuário poderá consultar a tabela de um específico alfabeto = go run main.go <tipo_alfabeto>
+    > O usuário poderá consultar a codificação resultante, baseado no tipo do alfabeto e a palavra a ser codificada = go run main.go <tipo_alfabeto> <nome_a_ser_codificado>
 */
-func ordenaTabela(tabela map[int][]string) (keys []int) {
-	for valor := range tabela {
-		keys = append(keys, valor)
-	}
-	sort.Ints(keys)
-	return
-}
-
-/*MostraTabela - função que imprime a tabela gerada.
-Tendo uma única coluna, imprime o valor do índice
-Tendo mais que uma coluna, imprime o slice inteiro
-*/
-func MostraTabela(tabela map[int][]string) {
-	if tabela == nil {
-		tabela = mapDados
-	}
-	for valor := range ordenaTabela(tabela) {
-		if len(tabela[valor]) > 1 {
-			fmt.Printf("%+s\r\n", tabela[valor])
-		} else {
-			fmt.Printf("%+s\r\n", tabela[valor][0])
-		}
+func main() {
+	if len(os.Args) == 1 { // Sem parâmetro
+		goalfabeto.MostraTabela()
+	} else if len(os.Args) == 2 { // <tipo_alfabeto>
+		goalfabeto.MostraAlfabeto(strings.ToLower(os.Args[1]))
+	} else if len(os.Args) == 3 { // <tipo_alfabeto> <nome_a_ser_codificado>
+		goalfabeto.MostraAlfabetoFormatado(strings.ToLower(os.Args[1]), strings.ToUpper(os.Args[2]))
 	}
 }
-
-/**
-populaMapa - função que popula um mapa reduzido com o resultado do mapa maior
-*/
-func populaMapa(tabela map[int][]string, index int) (mapa map[int][]string) {
-	mapa = map[int][]string{}
-	for key := range tabela {
-		var vet []string
-		vet = append(vet, tabela[key][index])
-		mapa[key] = vet
-	}
-	return mapa
-}
-
-/**
-convertePalavra - função que converte a palavra desejada ao alfabeto desejado
-*/
-func convertePalavra(tabela map[int][]string, palavra string) {
-	for _, caractere := range palavra {
-		for index := range mapDados {
-			if string(caractere) == mapDados[index][0] {
-				fmt.Printf("%s\r\n", tabela[index][0])
-			}
-		}
-	}
-}
-
-/*MontaAlfabeto - função que monta o mapa com alfabeto desejado
- */
-func MontaAlfabeto(tipo string, valor string) {
-	tabela := map[int][]string{}
-	switch tipo {
-	case "--romano", "--latino":
-		tabela = populaMapa(mapDados, 0)
-	case "--militar", "--radio", "--fone", "--telefone", "--otan", "--nato", "--icao", "--itu", "--imo", "--faa", "--ansi":
-		tabela = populaMapa(mapDados, 1)
-	case "--royal", "--royal-navy":
-		tabela = populaMapa(mapDados, 2)
-	case "--signalese", "--western-front":
-		tabela = populaMapa(mapDados, 3)
-	case "--raf24":
-		tabela = populaMapa(mapDados, 4)
-	case "--raf42":
-		tabela = populaMapa(mapDados, 5)
-	case "--raf43", "--raf":
-		tabela = populaMapa(mapDados, 6)
-	case "--us41", "--us":
-		tabela = populaMapa(mapDados, 7)
-	case "--pt", "--portugal":
-		tabela = populaMapa(mapDados, 8)
-	case "--name", "--names":
-		tabela = populaMapa(mapDados, 9)
-	case "--lapd":
-		tabela = populaMapa(mapDados, 10)
-	case "--morse":
-		tabela = populaMapa(mapDados, 11)
-	}
-
-	if valor != "" {
-		convertePalavra(tabela, valor)
-	} else {
-		MostraTabela(tabela)
-	}
-}
-
-//GETMap - função GET que retorna a tabela de alfabetos disponíveis
-func GETMap() map[int][]string {
-	return mapDados
-}
+```
+---
+O Projeto ZZ está disponível no [GitHub](https://github.com/funcoeszz/funcoeszz).
+Para contribuições, leiam o [README.md](https://github.com/funcoeszz/funcoeszz/blob/master/README.md)
