@@ -53,3 +53,15 @@ func responde(w http.ResponseWriter) {
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(ret) // nolint
 }
+
+func clienteHttp(token, method, url string, body io.Reader) (resp *http.Response, err error) {
+	req, err := http.NewRequest(method, url, body)
+	if err != nil {
+		return
+	}
+	req.Header.Add("Authorization", token)
+
+	client := http.Client{}
+	resp, err = client.Do(req)
+	return
+}

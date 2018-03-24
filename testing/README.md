@@ -157,18 +157,20 @@ Como a função recebe a interface *http.ResponseWriter* podemos passar qualquer
 w := httptest.NewRecorder()
 ```
 
+#### Mock de servidor
 
+O pacote httptest também uma forma de fazer mock de servidores dessa forma podemos facilmente testar os nossos clientes.
 
+```go
+	serverOk := httptest.NewServer(
+		http.HandlerFunc(
+			func(w http.ResponseWriter, r *http.Request) {
+				fmt.Fprintln(w, "ok")
+			}))
+	defer serverOk.Close()
+```
 
-
-
-
-
-
-
-
-
-
+E então basta passar para o cliente que esta sendo testado a URL do servidor de testes que no caso do nosso exemplo esta em `serverOk.URL`
 
 
 ---

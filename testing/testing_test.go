@@ -3,8 +3,10 @@ package testing
 import (
 	"bytes"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
+	"net/http"
 	"net/http/httptest"
 	"os"
 	"testing"
@@ -178,5 +180,68 @@ func Test_responde(t *testing.T) {
 
 	if w.Header().Get("Content-Type") != "application/json" {
 		t.Errorf("responde(): expected Content-Type application/json, but got %q", w.Header().Get("Content-Type"))
+	}
+}
+
+func Test_clienteHttp(t *testing.T) {
+	serverOk := httptest.NewServer(
+		http.HandlerFunc(
+			func(w http.ResponseWriter, r *http.Request) {
+				fmt.Fprintln(w, "ok")
+			}))
+	defer serverOk.Close()
+
+	serverErr := httptest.NewServer(
+		http.HandlerFunc(
+			func(w http.ResponseWriter, r *http.Request) {
+				http.Error(w, "error", http.StatusInternalServerError)
+				fmt.Fprintln(w, "error")
+			}))
+	defer serverErr.Close()
+
+	type args struct {
+		token  string
+		method string
+		url    string
+		body   io.Reader
+	}
+	tests := []struct {
+		name       string
+		args       args
+		wantStatus int
+		wantErr    bool
+	}{
+		{
+			name:       "StatusOK",
+			wantErr:    false,
+			wantStatus: http.StatusOK,
+			args: args{
+				token:  "test",
+				method: http.MethodGet,
+				url:    serverOk.URL,
+			},
+		},
+		{
+			name:       "StatusInternalServerError",
+			wantErr:    false,
+			wantStatus: http.StatusInternalServerError,
+			args: args{
+				token:  "test",
+				method: http.MethodGet,
+				url:    serverErr.URL,
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			gotResp, err := clienteHttp(tt.args.token, tt.args.method, tt.args.url, tt.args.body)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("clienteHttp() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if gotResp.StatusCode != tt.wantStatus {
+				t.Errorf("clienteHttp() = %v, want %v", gotResp.StatusCode, tt.wantStatus)
+			}
+		})
 	}
 }
