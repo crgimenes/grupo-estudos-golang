@@ -2,8 +2,10 @@ package testing
 
 import (
 	"bytes"
+	"encoding/json"
 	"errors"
 	"io"
+	"net/http"
 )
 
 var errDivisaoInvalida = errors.New("divisão invalida")
@@ -40,4 +42,14 @@ func leEFecha(r io.ReadCloser) (ret string) {
 
 	ret = buf.String()
 	return
+}
+
+func responde(w http.ResponseWriter) {
+	ret := struct {
+		Msg string `json:"message"`
+	}{
+		Msg: "algo muito importante",
+	}
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(ret) // nolint
 }

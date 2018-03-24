@@ -134,6 +134,29 @@ r := ioutil.NopCloser(bytes.NewReader([]byte("hello world")))
 ```
 
 
+#### Mock http.ResponseWriter
+
+
+Muito parecido com o exemplo anterior podemos querer fazer mock de alguma resposta que enviamos via http para o cliente. Veja a função abaixo:
+
+```go
+func responde(w http.ResponseWriter) {
+	ret := struct {
+		Msg string `json:"message"`
+	}{
+		Msg: "algo muito importante",
+	}
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(ret) // nolint
+}
+```
+
+Como a função recebe a interface *http.ResponseWriter* podemos passar qualquer interface que implemente as funções necessárias e o pacote httptest já fornece uma implementação para usarmos.
+
+```go
+w := httptest.NewRecorder()
+```
+
 
 
 

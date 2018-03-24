@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"net/http/httptest"
 	"os"
 	"testing"
 )
@@ -161,5 +162,21 @@ func Test_leEFecha(t *testing.T) {
 	got := leEFecha(r)
 	if got != expected {
 		t.Errorf("leEFecha() = %v, want %v", got, expected)
+	}
+}
+
+func Test_responde(t *testing.T) {
+	w := httptest.NewRecorder()
+	expected := "{\"message\":\"algo muito importante\"}\n"
+
+	responde(w)
+	b := w.Body.Bytes()
+
+	if string(b) != expected {
+		t.Errorf("responde(): expected %q, but got %q", expected, string(b))
+	}
+
+	if w.Header().Get("Content-Type") != "application/json" {
+		t.Errorf("responde(): expected Content-Type application/json, but got %q", w.Header().Get("Content-Type"))
 	}
 }
