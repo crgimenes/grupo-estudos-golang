@@ -99,8 +99,7 @@ func Test_divideInteiros(t *testing.T) {
 }
 ```
 
-> Como podemos ver no exemplo, em Go só precisamos descrever nos testes os casos de falha, 
-se algum caso de falha for satisfeito o código entrará no if e o teste falhará
+> Como podemos ver no exemplo, em Go só precisamos descrever nos testes os casos de falha, se algum caso de falha for satisfeito o código entrará no if e o teste falhará
 
 ## TestMain
 
@@ -173,9 +172,7 @@ E precisamos implementar a interface de acordo, para isso no pacote *ioutil* a b
 r := ioutil.NopCloser(bytes.NewReader([]byte("hello world")))
 ```
 
-
 #### Mock http.ResponseWriter
-
 
 Muito parecido com o exemplo anterior podemos querer fazer mock de alguma resposta que enviamos via http para o cliente. Veja a função abaixo:
 
@@ -212,6 +209,114 @@ O pacote httptest também uma forma de fazer mock de servidores dessa forma pode
 
 E então basta passar para o cliente que esta sendo testado a URL do servidor de testes que no caso do nosso exemplo esta em `serverOk.URL`
 
+
+#### Mock usando interfaces
+
+Um exemplo mais completo mas ainda simples de mock usando interfaces é o teste da função *closer()*
+
+```go
+func closer(body io.Closer) {
+	err := body.Close()
+	if err != nil {
+		log.Errorln(err)
+	}
+}
+```
+
+Criamos duas interfaces, uma para o caso de erro e outra para sucesso e então testamos cada uma.
+
+```go
+type closerSuccess struct {
+}
+
+func (c closerSuccess) Close() (err error) {
+	return
+}
+
+type closerError struct {
+}
+
+func (c closerError) Close() (err error) {
+	err = errors.New("closer error")
+	return
+}
+```
+
+Como closer não retorna nada a unica forma de validar seu funcionamento é capturando o stdout, existe um exemplo muito completo de teste capturando o stdout no pacote nuveo/log em http://github.com/nuveo/log
+
+Veja como ficou o teste
+
+```go
+func Test_closer(t *testing.T) {
+
+	getStdout := func(obj io.Closer) (out []byte, err error) {
+		rescueStdout := os.Stdout
+		defer func() { os.Stdout = rescueStdout }()
+		r, w, err := os.Pipe()
+		if err != nil {
+			return nil, err
+		}
+		os.Stdout = w
+
+		closer(obj)
+
+		err = w.Close()
+		if err != nil {
+			return
+		}
+		out, err = ioutil.ReadAll(r)
+		return
+	}
+
+	cs := closerSuccess{}
+	ce := closerError{}
+
+	type args struct {
+		body io.Closer
+	}
+	type expected struct {
+		err bool
+	}
+	tests := []struct {
+		name string
+		args args
+		want expected
+	}{
+		{
+			name: "success",
+			args: args{
+				body: cs,
+			},
+			want: expected{
+				err: false,
+			},
+		},
+		{
+			name: "error",
+			args: args{
+				body: ce,
+			},
+			want: expected{
+				err: true,
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			out, err := getStdout(tt.args.body)
+			if err != nil {
+				t.Error(err)
+				return
+			}
+
+			if (len(out) > 0) != tt.want.err {
+				fmt.Printf("out: %q\n", string(out))
+				t.Errorf("closer() unexpected log %q", string(out))
+			}
+		})
+	}
+}
+```
 
 ---
 [Inicio](../README.md)

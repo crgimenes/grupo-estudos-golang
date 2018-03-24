@@ -6,6 +6,8 @@ import (
 	"errors"
 	"io"
 	"net/http"
+
+	"github.com/nuveo/log"
 )
 
 var errDivisaoInvalida = errors.New("divisão invalida")
@@ -64,4 +66,11 @@ func clienteHttp(token, method, url string, body io.Reader) (resp *http.Response
 	client := http.Client{}
 	resp, err = client.Do(req)
 	return
+}
+
+func closer(body io.Closer) {
+	err := body.Close()
+	if err != nil {
+		log.Errorln(err)
+	}
 }
