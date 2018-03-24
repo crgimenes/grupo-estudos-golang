@@ -210,7 +210,7 @@ O pacote httptest também uma forma de fazer mock de servidores dessa forma pode
 E então basta passar para o cliente que esta sendo testado a URL do servidor de testes que no caso do nosso exemplo esta em `serverOk.URL`
 
 
-#### Mock usando interfaces
+#### Mock com uma interface simples
 
 Um exemplo mais completo mas ainda simples de mock usando interfaces é o teste da função *closer()*
 
