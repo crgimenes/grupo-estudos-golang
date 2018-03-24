@@ -3,6 +3,7 @@ package testing
 import (
 	"bytes"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"os"
 	"testing"
@@ -147,6 +148,17 @@ func Test_leitor(t *testing.T) {
 	r := bytes.NewReader([]byte(expected))
 
 	got := leitor(r)
+	if got != expected {
+		t.Errorf("leitor() = %v, want %v", got, expected)
+	}
+}
+
+func Test_leEFecha(t *testing.T) {
+	expected := "hello world"
+
+	r := ioutil.NopCloser(bytes.NewReader([]byte(expected)))
+
+	got := leEFecha(r)
 	if got != expected {
 		t.Errorf("leitor() = %v, want %v", got, expected)
 	}

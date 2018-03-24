@@ -90,6 +90,8 @@ Criar um mocks para simular situações e partes de código é uma parte importa
 
 ### Mock usando interfaces
 
+#### io.Reader
+
 É normal quando estamos trabalhando com serviços receber um reader que vamos ler como um array de bytes, felizmente o Go prove uma interface pronta para isso.
 
 ```go
@@ -101,15 +103,36 @@ func leitor(r io.Reader) (ret string)  {
 }
 ```
 
-Como `r` é uma interface podemos passar qualquer elemento que implemente a interface Reader.
+Como `r` é uma interface podemos passar qualquer elemento que implemente a interface *io.Reader*.
 
 ```go
 r := bytes.NewReader([]byte("hello world"))
 ```
 
+#### io.ReaderCloser
 
+Vamos ver novamente o exemplo anterior mas agora com a interface *io.ReadCloser*
 
+```go
+func leEFecha(r io.ReadCloser) (ret string) {
+	buf := new(bytes.Buffer)
+	buf.ReadFrom(r)
 
+	// note que agora alem de ler
+	// vamos fechar o descritor
+	r.Close()
+
+	s := buf.String()
+	fmt.Println(s)
+	return
+}
+```
+
+E precisamos implementar a interface de acordo, para isso no pacote *ioutil* a biblioteca padrão já fornece uma interface que faz mock do closer que a nossa simples string não vai implementar. Veja como fica:
+
+```go
+r := ioutil.NopCloser(bytes.NewReader([]byte("hello world")))
+```
 
 
 

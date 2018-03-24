@@ -3,6 +3,7 @@ package testing
 import (
 	"bytes"
 	"errors"
+	"fmt"
 	"io"
 )
 
@@ -27,5 +28,18 @@ func leitor(r io.Reader) (ret string) {
 	buf := new(bytes.Buffer)
 	buf.ReadFrom(r) // nolint
 	ret = buf.String()
+	return
+}
+
+func leEFecha(r io.ReadCloser) (ret string) {
+	buf := new(bytes.Buffer)
+	buf.ReadFrom(r)
+
+	// note que agora alem de ler
+	// vamos fechar o descritor
+	r.Close()
+
+	s := buf.String()
+	fmt.Println(s)
 	return
 }
