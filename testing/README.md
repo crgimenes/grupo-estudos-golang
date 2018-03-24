@@ -148,7 +148,7 @@ Como `r` é uma interface podemos passar qualquer elemento que implemente a inte
 r := bytes.NewReader([]byte("hello world"))
 ```
 
-#### io.ReaderCloser
+#### io.ReadCloser
 
 Vamos ver novamente o exemplo anterior mas agora com a interface *io.ReadCloser*
 
