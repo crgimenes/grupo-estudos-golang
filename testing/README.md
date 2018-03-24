@@ -318,6 +318,24 @@ func Test_closer(t *testing.T) {
 }
 ```
 
+# Dicas
+
+- Um utilitário muito interessante para ver a cobertura dos seus testes é o goconvey em https://github.com/smartystreets/goconvey
+
+- Também podemos usar uma pequena macro bash que ajuda a ver a cobertura de testes bem rapido:
+
+```bash
+# dica de https://stackoverflow.com/a/27284510/2960664
+gocover () {
+    t="/tmp/go-cover.$$.tmp"
+    go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
+}
+```
+
+
+
+
+
 ---
 [Inicio](../README.md)
 
