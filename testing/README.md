@@ -30,31 +30,71 @@ func divideInteiros(dividendo, divisor int) (quociente int, resto int, err error
 - Teste:
 
 ```go
-func TestDivideInteiros(t *testing.T) {
-	for _, test := range []struct {
-		// Struct que define os dados de entrada e saida necessarios para os testes
+func Test_divideInteiros(t *testing.T) {
+	type args struct {
 		dividendo int
 		divisor   int
+	}
+	type expected struct {
 		quociente int
 		resto     int
 		err       error
+	}
+	tests := []struct {
+		name string
+		args args
+		want expected
 	}{
 		// Casos de teste para a função
-		{10, 0, 0, 0, errDivisaoInvalida},
-		{10, 2, 5, 0, nil},
-		{7, 2, 3, 1, nil},
-	} {
-		// faz interação sobre os casos de testes
-		q, r, erro := divideInteiros(test.dividendo, test.divisor)
-		if q != test.quociente {
-			t.Errorf("Esperava como quociente %d e obiteve %d\n", test.quociente, q)
-		}
-		if r != test.resto {
-			t.Errorf("Esperava como resto %d e obiteve %d\n", test.resto, r)
-		}
-		if erro != test.err {
-			t.Errorf("Esperava como err %v e obiteve %v\n", test.err, erro)
-		}
+		{
+			name: "divide por zero",
+			want: expected{
+				err: errDivisaoInvalida,
+			},
+			args: args{
+				dividendo: 10,
+				divisor:   0,
+			},
+		},
+		{
+			name: "divisão sem resto",
+			want: expected{
+				err:       nil,
+				resto:     0,
+				quociente: 5,
+			},
+			args: args{
+				dividendo: 10,
+				divisor:   2,
+			},
+		},
+		{
+			name: "divisão com resto",
+			want: expected{
+				err:       nil,
+				resto:     1,
+				quociente: 3,
+			},
+			args: args{
+				dividendo: 7,
+				divisor:   2,
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			gotQuociente, gotResto, err := divideInteiros(tt.args.dividendo, tt.args.divisor)
+			if err != tt.want.err {
+				t.Errorf("divideInteiros() error = %v, wantErr %v", err, tt.want.err)
+				return
+			}
+			if gotQuociente != tt.want.quociente {
+				t.Errorf("divideInteiros() gotQuociente = %v, want %v", gotQuociente, tt.want.quociente)
+			}
+			if gotResto != tt.want.resto {
+				t.Errorf("divideInteiros() gotResto = %v, want %v", gotResto, tt.want.resto)
+			}
+		})
 	}
 }
 ```
