@@ -122,8 +122,7 @@ func leEFecha(r io.ReadCloser) (ret string) {
 	// vamos fechar o descritor
 	r.Close()
 
-	s := buf.String()
-	fmt.Println(s)
+	ret = buf.String()
 	return
 }
 ```
