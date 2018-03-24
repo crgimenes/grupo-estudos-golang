@@ -1,6 +1,7 @@
 package testing
 
 import (
+	"bytes"
 	"fmt"
 	"log"
 	"os"
@@ -137,5 +138,16 @@ func Test_divideInteiros(t *testing.T) {
 				t.Errorf("divideInteiros() gotResto = %v, want %v", gotResto, tt.want.resto)
 			}
 		})
+	}
+}
+
+func Test_leitor(t *testing.T) {
+	expected := "hello world"
+
+	r := bytes.NewReader([]byte(expected))
+
+	got := leitor(r)
+	if got != expected {
+		t.Errorf("leitor() = %v, want %v", got, expected)
 	}
 }

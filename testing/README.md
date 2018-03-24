@@ -3,7 +3,7 @@
 > Todo arquivo de testes deve ter o sufixo `_test.go` para o `go test` (ferramenta do go pra executar testes) enxergar o arquivo e suas
 funções devem ter a assinatura `func Test...(t *testing.T)` para serem consideradas testes.
 
-# Exemplo
+## Exemplo
 
 - Função a ser testada:
 
@@ -66,7 +66,7 @@ se algum caso de falha for satisfeito o código entrará no if e o teste falhar�
 
 > É possivel criar uma função `Main` para nossos testes com isso conseguimos testar recursos globais de nossa aplicação e criar um `setup`e um `teardown`global para nossa base de testes.
 
-## Exemplo
+### Exemplo
 
 ```go
 func TestMain(m *testing.M) {
@@ -76,6 +76,55 @@ func TestMain(m *testing.M) {
 	os.Exit(code)
 }
 ```
+
+---
+
+## Mock
+
+Existem algumas definições para *mock* mas a que mais se encaixa no que queremos é essa daqui:
+
+> *adjective*
+> 1. not authentic or real, but without the intention to deceive
+
+Criar um mocks para simular situações e partes de código é uma parte importante dos testes e aqui vamos ver algumas formas de fazer isso.
+
+### Mock usando interfaces
+
+É normal quando estamos trabalhando com serviços receber um reader que vamos ler como um array de bytes, felizmente o Go prove uma interface pronta para isso.
+
+```go
+func leitor(r io.Reader) (ret string)  {
+	buf := new(bytes.Buffer)
+	buf.ReadFrom(r)
+	ret = buf.String()
+	return
+}
+```
+
+Como `r` é uma interface podemos passar qualquer elemento que implemente a interface Reader.
+
+```go
+r := bytes.NewReader([]byte("hello world"))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 [Inicio](../README.md)
