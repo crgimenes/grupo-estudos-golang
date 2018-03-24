@@ -160,6 +160,6 @@ func Test_leEFecha(t *testing.T) {
 
 	got := leEFecha(r)
 	if got != expected {
-		t.Errorf("leitor() = %v, want %v", got, expected)
+		t.Errorf("leEFecha() = %v, want %v", got, expected)
 	}
 }
