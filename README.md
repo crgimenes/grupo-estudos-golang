@@ -62,6 +62,7 @@ As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de coma
 ### Aprenda mais
 - [Awesome-go](https://github.com/avelino/awesome-go) Uma lista de impressionantes frameworks, bibliotecas e software escritos em Go.
 - [60 days of go](https://github.com/cassiobotaro/60-days-of-go) Vários exemplos de Go em uma aventura em 60 dias!
+- [Guia de estilo para pacotes Go](https://medium.com/@avelino0/guia-de-estilo-para-pacotes-go-7e3ef10c017f) dicas importantes de como formatar seus pacotes Go.
 
 ---
 ### Bônus!
