@@ -10,3 +10,5 @@ Para executar basta
 go get ./...
 go run main.go
 ```
+
+Se quiser ver um exemplo um pouco mais avançado usando HTTPS e servindo múltiplos domínios vá para [go-br/server](https://github.com/go-br/server)
