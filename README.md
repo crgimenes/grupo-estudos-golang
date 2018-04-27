@@ -37,6 +37,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [crc](./crc/)
 - [zip](./zip/)
 - [wikipedia](./wikipedia/)
+- [XML](./xml/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
