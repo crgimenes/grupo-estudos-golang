@@ -1,4 +1,4 @@
-# Gera um número aleatório.
+# Gera um número aleatório
 
 Sem argumentos, comporta-se igual a $RANDOM.
 Apenas um argumento, número entre 0 e o valor fornecido.

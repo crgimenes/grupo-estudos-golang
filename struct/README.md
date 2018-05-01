@@ -134,8 +134,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/_TiiFcxGx_)
-
----
-[Inicio](../README.md)
-
-[< Funções](../funcoes/) - [Loop for >](../for/)

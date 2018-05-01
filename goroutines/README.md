@@ -71,8 +71,3 @@ func main() {
 [Neste vídeo](https://www.youtube.com/watch?v=H2jULD66BII) eu mostro esse exemplo funcionando.
 
 [Neste artigo](http://divan.github.io/posts/go_concurrency_visualize/) você vai ver uma ótima representação gráfica e muitos exemplos de Goroutines e canais.
-
----
-[Inicio](../README.md)
-
-[< error](../error/) - [goroutines waitgroup >](../goroutines_waitgroup/)

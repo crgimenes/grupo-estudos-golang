@@ -96,8 +96,3 @@ fmt.Println(http.ListenAndServe(":8080", nil))
 
 E por fim note que podemos utilizar a passagem de parâmetros diretamente via url
 http://localhost:8080/?name=Edward
-
----
-[Inicio](../README.md)
-
-[< Cliente Http](../http_get/) - [Enviando e-mail via SMTP >](../smtp/)

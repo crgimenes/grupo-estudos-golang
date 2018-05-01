@@ -65,8 +65,3 @@ func main() {
 
 }
 ```
-
----
-[Inicio](../README.md)
-
-[< Expressões Regulares](../regexp/) [testes >](../testing/)

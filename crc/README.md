@@ -16,8 +16,3 @@ func main() {
     fmt.Printf("Checksum: 0x%x\n", checksum)
 }
 ```
-
----
-[Inicio](../README.md)
-
-[< data-race](../data-race/) - [zop >](../zip/)

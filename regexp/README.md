@@ -66,8 +66,3 @@ Ou então compilar e executar da seguinte maneira:
 go build
 ./regexp
 ```
-
----
-[Inicio](../README.md)
-
-[< Trabalhando com Arquivo](../ioutil/) - [Tratamento de Sinais >](../signals/)

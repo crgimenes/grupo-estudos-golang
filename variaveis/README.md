@@ -78,8 +78,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/bO5l3agwAP)
-
----
-[Inicio](../README.md)
-
-[< Olá Mundo](../ola_mundo/) - [Funções >](../funcoes/)

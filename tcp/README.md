@@ -133,10 +133,3 @@ func main() {
 
 Para ter uma boa experiência deste exemplo, execute primeiramente o tcp-server e em seguida o tcp-client
 preferencialmente em terminais diferentes para acompanhar o resultado.
-
-
-
----
-[Inicio](../README.md)
-
-[< Enviando e-mail via SMTP](../smtp/) - [Trabalhando com Arquivo >](../ioutil/)

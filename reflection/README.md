@@ -57,9 +57,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/0v0KLs3UuN)
-
-
----
-[Inicio](../README.md)
-
-[< interface](../interface/) - [error >](../error/)

@@ -128,8 +128,3 @@ Append....
 
 }
 ```
-
----
-[Inicio](../README.md)
-
-[< Trabalhando com Tcp](../tcp/) - [Expressões Regulares >](../regexp/) 

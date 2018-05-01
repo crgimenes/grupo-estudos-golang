@@ -87,10 +87,3 @@ func main() {
 	}
 }
 ```
-
-
-
----
-[Inicio](../README.md)
-
-[< package](../package/) - [godoc >](../godoc/)

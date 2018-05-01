@@ -51,8 +51,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/jMEurQcSlE)
-
----
-[Inicio](../README.md)
-
-[< Loop for](../for/) - [defer >](../defer/)

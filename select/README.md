@@ -12,8 +12,3 @@ case msg2 := <-c2:
 }
 ```
 [Playground](https://play.golang.org/p/C2RkmGcZBX)
-
----
-[Inicio](../README.md)
-
-[< Goroutines Waitgroup](../goroutines_waitgroup/) - [Package >](../package/)

@@ -2,7 +2,7 @@
 
 Exemplos simples de contexto
 
-```
+```go
 import (
 	"bufio"
 	"context"

@@ -105,8 +105,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/HfPHat7QZQ)
-
----
-[Inicio](../README.md)
-
-[< Goroutines](../goroutines/) - [Select >](../select/)

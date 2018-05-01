@@ -6,7 +6,7 @@ Brincando com ler dados da wikipedia
 curl https://en.wikipedia.org/w/api.php\?action\=opensearch\&format\=json\&search\=golang
 ```
 
-```
+```go
 package main
 
 import (
@@ -78,8 +78,3 @@ func walker(m interface{}, r map[string]int) {
 	}
 }
 ```
-
----
-[Inicio](../README.md)
-
-[< crc](../zip/) - [instalando >](../instalando.md)

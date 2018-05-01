@@ -77,13 +77,6 @@ println(resp.StatusCode)
 
 Após esta verificação, fazemos a leitura da resposta em um processo de conversão byte para string com o auxílio da biblioteca ioutil.
 ```go
-bodyBytes, err2 := ioutil.ReadAll(resp.Body) 
-bodyString := string(bodyBytes) 
+bodyBytes, err2 := ioutil.ReadAll(resp.Body)
+bodyString := string(bodyBytes)
 ```
-
-
-
----
-[Inicio](../README.md)
-
-[< HTTP](../http/) - [Templates >](../http_templates/)

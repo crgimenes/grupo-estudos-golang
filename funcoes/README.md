@@ -65,8 +65,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/6PhuELUaYq)
-
----
-[Inicio](../README.md)
-
-[< Variáveis](../variaveis/) - [Struct >](../struct/)

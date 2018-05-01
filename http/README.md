@@ -94,12 +94,3 @@ E então execute com:
 ```
 ./http3 --help
 ```
-
-
-
-
-
----
-[Inicio](../README.md)
-
-[< Godoc](../godoc/) - [Cliente HTTP >](../http_get/)

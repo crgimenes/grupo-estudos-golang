@@ -82,8 +82,3 @@ if err != nil {
 ```
 
 O recurso de plugins pode ser útil para criar sistemas menos monolíticos mas isso não parece mais tão relevante como teria sido no passado, hoje em dia onde tudo roda em containers autocontidos carregar uma biblioteca dinamicamente não é mais tão importante. Esse recurso também pode ser útil para distribuir binários de parte do sistema sem precisar enviar os fontes.
-
----
-[Inicio](../README.md)
-
-[< testing](../testing/) - [data race >](../data-race/)

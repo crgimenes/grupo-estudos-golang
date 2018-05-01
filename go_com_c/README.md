@@ -68,7 +68,3 @@ func main() {
 	}
 }
 ```
-
-
----
-[Inicio](../README.md)

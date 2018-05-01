@@ -29,7 +29,7 @@ if err != nil {
 log.Print(string(buf[:n]))
 ```
 
-## Fechando 
+## Fechando
 
 É muito importante sempre fechar a porta serial porque esse se ela ficar aberta nenhum programa vai conseguir usar ela.
 
@@ -39,4 +39,3 @@ if err != nil {
 	log.Fatal(err)
 }
 ```
-

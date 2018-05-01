@@ -42,10 +42,3 @@ func main() {
 ```
 
 E é isso... simples assim!
-
-
-
----
-[Inicio](../README.md)
-
-[< templates](../http_templates/) - [Trabalhando com Tcp >](../tcp/)

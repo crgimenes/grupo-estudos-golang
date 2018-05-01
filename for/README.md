@@ -43,8 +43,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/47Yf0l5hnx)
-
----
-[Inicio](../README.md)
-
-[< Funções](../funcoes/) - [switch >](../switch/)

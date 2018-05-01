@@ -143,8 +143,3 @@ func main() {
     }
 }
 ```
-
----
-[Inicio](../README.md)
-
-[< crc](../crc/) - [wikipedia >](./wikipedia/)

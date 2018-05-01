@@ -331,12 +331,3 @@ gocover () {
     go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
 }
 ```
-
-
-
-
-
----
-[Inicio](../README.md)
-
-[< tratando sinais](../signals/) - [plugin >](../plugin/)
