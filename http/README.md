@@ -1,10 +1,8 @@
 # http
 
-### Pilhas inclusas!
-
 Go vem com um conjunto enorme de bibliotecas padrão e mais milhares de bibliotecas criadas pela comunidade.
 
-por exemplo para criar um servidor http basta o seguinte:
+Por exemplo para criar um servidor http basta o seguinte:
 
 
 ```go
@@ -70,7 +68,6 @@ func setHSTSHeader(h http.Handler) http.HandlerFunc {
 }
 
 func main() {
-
 	var port = flag.String("port", "9999", "Define what TCP port to bind to")
 	var root = flag.String("root", "assets/", "Define the root filesystem path")
 
@@ -85,12 +82,12 @@ func main() {
 
 Esse ultimo exemplo fica melhor se compilarmos com:
 
-```
+```sh
 go build http3.go
 ```
 
 E então execute com:
 
-```
+```sh
 ./http3 --help
 ```

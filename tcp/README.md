@@ -1,8 +1,6 @@
-# tcp
+# tcp Trabalhando com o protocolo tcp
 
-### Trabalhando com o protocolo tcp
-
-Go através do pacote net provê interfaces de acesso a I/O, incluindo a pilha TCP/IP, UDP, resolução por nome de domínio e UNIX Sockets. 
+Go através do pacote net provê interfaces de acesso a I/O, incluindo a pilha TCP/IP, UDP, resolução por nome de domínio e UNIX Sockets.
 
 Neste exemplo, iremos criar um cliente TCP/IP e um servidor TCP/IP.
 
@@ -69,9 +67,6 @@ func main() {
 		conexao.Write([]byte(novamensagem + "\n"))
 	}
 }
-
-
-
 ```
 
 Cliente.
@@ -84,8 +79,6 @@ O protocolo de comunicação que nosso cliente deverá trabalhar será este:
 
 
 ```go
-
-
 package main
 
 import "net"
@@ -126,9 +119,6 @@ func main() {
 		fmt.Print("Resposta do servidor: " + mensagem)
 	}
 }
-
-
-
 ```
 
 Para ter uma boa experiência deste exemplo, execute primeiramente o tcp-server e em seguida o tcp-client

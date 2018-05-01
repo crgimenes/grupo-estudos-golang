@@ -1,4 +1,4 @@
-# Busca cotação do dolar.
+# Busca cotação do dolar
 
 Sem argumentos, Busca cotação do dólar no Banco Central.
 

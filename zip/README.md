@@ -2,8 +2,7 @@
 
 Como comprimir e descomprimir arquivos zip
 
-
-## Comprimir 
+## Comprimir
 
 ```go
 package main

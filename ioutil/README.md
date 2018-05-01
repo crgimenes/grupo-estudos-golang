@@ -1,8 +1,7 @@
 
-# ioutil
-### Escrevendo em arquivo!
+# ioutil Escrevendo em arquivo!
 
-Dentro do pacote ioutil, Go fornece os métodos WriteFile, Write e WriteString. 
+Dentro do pacote ioutil, Go fornece os métodos WriteFile, Write e WriteString.
 
 No exemplo abaixo podemos ver o uso do método WriteFile. 
 WriteFile grava os dados em um arquivo previamente nomeado. 

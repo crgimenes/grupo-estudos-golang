@@ -1,8 +1,6 @@
-# http
+# http Uso do Get
 
-### Uso do Get!
-
-Dentro do pacote HTTP, Go fornece o método Get que permite facilmente sua utilização para consumo de requisições web. 
+Dentro do pacote HTTP, Go fornece o método Get que permite facilmente sua utilização para consumo de requisições web.
 
 No exemplo abaixo podemos ver o uso do método Get para uma requisição de um determinado feed de noticias:
 

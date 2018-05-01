@@ -1,11 +1,12 @@
 # Go English
 
-    Go English é a versão em Go do zzenglish.
-    Funções ZZ é um conjunto dos mais variados aplicativos, 
-	escritos em shell script, com as mais variadas aplicações. Dentre eles, o zzenglish, objeto deste estudo.
+Go English é a versão em Go do zzenglish.
 
-## O ZZEnglish!
-    Abaixo, temos a codificação original, do miniaplicativo.
+Funções ZZ é um conjunto dos mais variados aplicativos, escritos em shell script, com as mais variadas aplicações. Dentre eles, o zzenglish, objeto deste estudo.
+
+## O ZZEnglish
+
+Abaixo, temos a codificação original, do miniaplicativo.
     
 ```sh
 zzenglish ()
@@ -54,6 +55,7 @@ zzenglish ()
 		zzsqueeze -l
 }
 ```
+
 ## Exemplo de Implementação
 
 ```go
@@ -118,6 +120,7 @@ func formatBody(body []byte) (b string) {
 	return b[strings.Index(b, "definitions")-5 : strings.LastIndex(b, "Questions")]
 }
 ```
+
 ---
 O Projeto ZZ está disponível no [GitHub](https://github.com/funcoeszz/funcoeszz).
 Para contribuições, leiam o [README.md](https://github.com/funcoeszz/funcoeszz/blob/master/README.md)

@@ -1,6 +1,5 @@
 # XML
 
-
 Este é um exemplo de como ler um feed RSS2 e interpretar o retorno para extrair os dados que queremos.
 
 Primeiro criamos as structs que vão conter os dados vindos do XML

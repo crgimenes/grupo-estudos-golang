@@ -1,6 +1,5 @@
 # select
 
-
 Select trabalha junto com canais para esperar retornos de canais específicos.
 
 ```go

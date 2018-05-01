@@ -1,5 +1,7 @@
 # Funções
 
+Descreve o funcionamento de funções em Golang
+
 * No Go não há metodos, só funções
 * Retorno multiplo - Facilita a escrita e torna o código mais limpo
 * Retorno assinado - Facilita a leitura do código

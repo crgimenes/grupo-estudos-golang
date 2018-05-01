@@ -1,6 +1,6 @@
 # Testes
 
-> Todo arquivo de testes deve ter o sufixo `_test.go` para o `go test` (ferramenta do go pra executar testes) enxergar o arquivo e suas
+Todo arquivo de testes deve ter o sufixo `_test.go` para o `go test` (ferramenta do go pra executar testes) enxergar o arquivo e suas
 funções devem ter a assinatura `func Test...(t *testing.T)` para serem consideradas testes.
 
 ## Exemplo

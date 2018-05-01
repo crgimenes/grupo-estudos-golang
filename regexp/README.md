@@ -1,4 +1,4 @@
-## Expressões Regulares
+# Expressões Regulares
 
 Um exemplo simples usando o package regexp para extrair informação de um texto.
 

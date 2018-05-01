@@ -35,7 +35,6 @@ go build ola_mundo.go
 
 Agora o programa pode ser executado simplesmente sendo chamado na linha de comando e não precisa mais do ambiente do Go instalado.
 
-
 ## Boas praticas
 
 Um pouco de boas praticas.

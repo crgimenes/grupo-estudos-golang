@@ -43,12 +43,6 @@ Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial
 
 No rodapé do seu tutorial coloque links para o inicio, tutorial anterior e proximo tutorial como nesse exemplo:
 
-```
----
-[Inicio](../README.md)
-
-[< Struct](../struct/) - [Loop for >](../for/)
-```
 
 ## Enviando uma contribuição
 

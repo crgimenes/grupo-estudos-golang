@@ -1,8 +1,6 @@
-# http
+# http Uso de Templates
 
-### Uso de Templates!
-
-Templates em Go são utilizados para gerar websites com conteúdo dinâmicos. 
+Templates em Go são utilizados para gerar websites com conteúdo dinâmicos.
 
 Iremos neste exemplo, criar um webserver que irá manipular requisições web, apresentando um cabeçalho padrão e respondendo a solicitações de páginas html
 

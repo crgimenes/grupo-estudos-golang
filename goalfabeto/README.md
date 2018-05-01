@@ -1,12 +1,13 @@
 # Go Alfabeto
 
-    Go Alfabeto é a versão em Go do zzalfabeto.
-    Funções ZZ é um conjunto dos mais variados aplicativos, escritos em shell script, 
-	com as mais variadas aplicações. Dentre ele, o zzalfabeto, objeto deste estudo.
+Go Alfabeto é a versão em Go do zzalfabeto.
 
-## O ZZAlfabeto!
-    Abaixo, temos a codificação original, do miniaplicativo.
-    
+Funções ZZ é um conjunto dos mais variados aplicativos, escritos em shell script, com as mais variadas aplicações. Dentre ele, o zzalfabeto, objeto deste estudo.
+
+## O ZZAlfabeto
+
+Abaixo, temos a codificação original, do miniaplicativo.
+
 ```sh
 zzalfabeto ()
 {
@@ -110,6 +111,7 @@ func main() {
 	}
 }
 ```
+
 ---
 O Projeto ZZ está disponível no [GitHub](https://github.com/funcoeszz/funcoeszz).
 Para contribuições, leiam o [README.md](https://github.com/funcoeszz/funcoeszz/blob/master/README.md)

@@ -1,8 +1,6 @@
 # Goroutines
 
-Go tem um sistema de multitarefa leve e bastante poderoso e simples de usar.
-Basicamente você só precisa usar a clausula go na frente da função.
-
+Go tem um sistema de multitarefa leve e bastante poderoso e simples de usar. Basicamente você só precisa usar a clausula go na frente da função.
 
 Exemplo:
 

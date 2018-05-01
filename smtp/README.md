@@ -1,8 +1,6 @@
-# smtp
+# smtp Enviando Email
 
-### Enviando Email!
-
-Com grande elegância e poucas linhas, golang através pacote net/smtp fornece as funções necessárias para disparo de e-mails. 
+Com grande elegância e poucas linhas, golang através pacote net/smtp fornece as funções necessárias para disparo de e-mails.
 
 No exemplo abaixo podemos ver o uso do método SendMail em ação:
 
