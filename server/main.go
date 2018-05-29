@@ -22,7 +22,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		log.Errorln(err)
 	}
 	defer closer(r.Body)
-	fmt.Println(string(b))
+	fmt.Printf("client enviou: %q\n", string(b))
 	w.Write([]byte("ok\n"))
 }
 
