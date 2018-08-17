@@ -7,10 +7,11 @@ import (
 )
 
 func chkMap(payload map[string]interface{}) (ret bool) {
-	lmt, lmtOk := payload["Limit"]
-	pct, pctOk := payload["Value"]
-	if lmtOk && pctOk {
-		if pct.(float64) < lmt.(float64) {
+	limit, lmtOk := payload["Limit"]
+	value, valOk := payload["Value"]
+	if lmtOk && valOk {
+		// Se qualquer valor passar do limite retorna true
+		if value.(float64) < limit.(float64) {
 			ret = true
 			return
 		}
