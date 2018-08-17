@@ -1,0 +1,240 @@
+{
+    "id": 14,
+    "payload": [
+        {
+            "result": {
+                "Power and Energy": {
+                    "Biochemical Conversion": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Energy Storage": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "MHD and Related Conversion": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Nuclear Conversion": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Photovoltaic Conversion": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Power Management and Distribution": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Renewable Energy": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Thermodynamic Conversion": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Thermoelectric Conversion": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Wireless Distribution": {
+                        "Limit": 99,
+                        "Value": 0
+                    }
+                },
+                "Propulsion": {
+                    "Aerobrake": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Aircraft Engines": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Beamed Energy": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Chemical": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Electromagnetic Thrusters": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Electrostatic Thrusters": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Feed System Components": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Fundamental Propulsion Physics": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "High Energy Propellants": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Launch Assist": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "MHD": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Micro Thrusters": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Monopropellants": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Nuclear": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Propellant Storage": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Solar": {
+                        "Limit": 99,
+                        "Value": 0
+                    }
+                },
+                "Robotics": {
+                    "Human-Robotic Interfaces": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Integrated Robotic Concepts and Systems": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Intelligence": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Manipulation": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Mobility": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Perception": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Teleoperation": {
+                        "Limit": 99,
+                        "Value": 0
+                    }
+                },
+                "Sensors and Sources": {
+                    "Biochemical": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Gravitational": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "High-Energy": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Large Antennas and Telescopes": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Microwave": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Optical": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Particle and Fields": {
+                        "Limit": 99,
+                        "Value": 0
+                    }
+                },
+                "Metadata": {
+                    "SystemID": 21,
+                    "FileID": "F8923338-A345-466D-946A-9f37912dABC7",
+                    "SubModule": "7C2A949B-F710-4314-C4f7-CD4282e5a659"
+                },
+                "Structures": {
+                    "Airframe": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Airlocks": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Controls-Structures Interaction": {
+                        "Limit": 99,
+                        "Value": 0
+                    }
+                },
+                "Avionics and Astrionics": {
+                    "Airport Infrastructure and Safety": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Attitude Determination and Control": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Guidance": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "On-Board Computing and Data Management": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Pilot Support Systems": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Spaceport Infrastructure and Safety": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Telemetry": {
+                        "Limit": 99,
+                        "Value": 0
+                    }
+                },
+                "Bio-Technology": {
+                    "Air Revitalization and Conditioning": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Biomass Production and Storage": {
+                        "Limit": 99,
+                        "Value": 0
+                    },
+                    "Biomolecular Sensors": {
+                        "Limit": 99,
+                        "Value": 0
+                    }
+                }
+            }
+        }
+    ]
+}
