@@ -12,9 +12,9 @@ type device struct {
 }
 
 type metadata struct {
-	SystemID  int    `json:"SystemID"`
-	FileID    string `json:"FileID"`
-	SubModule string `json:"SubModule"`
+	SystemID  int    `json:"SystemID,omitempty"`
+	FileID    string `json:"FileID,omitempty"`
+	SubModule string `json:"SubModule,omitempty"`
 }
 
 type input struct {
@@ -107,7 +107,8 @@ func main() {
 		return
 	}
 	//fmt.Printf("payload %#v\n", payload)
-	payload.Payload[0].Result.Metadata = nil
+	payload.Payload[0].Result.Metadata = nil // se metadata é um ponteido
+	//payload.Payload[0].Result.Metadata = metadata{} // se metadata NÃO é um ponteido
 
 	b, err := json.MarshalIndent(payload, "", "\t")
 	if err != nil {
