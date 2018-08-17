@@ -21,7 +21,7 @@ type input struct {
 	ID      int `json:"id"`
 	Payload []struct {
 		Result struct {
-			Metadata       metadata `json:"Metadata"`
+			Metadata       *metadata `json:"Metadata,omitempty"`
 			PowerAndEnergy struct {
 				BiochemicalConversion          device `json:"Biochemical Conversion"`
 				EnergyStorage                  device `json:"Energy Storage"`
@@ -107,6 +107,7 @@ func main() {
 		return
 	}
 	//fmt.Printf("payload %#v\n", payload)
+	payload.Payload[0].Result.Metadata = nil
 
 	b, err := json.MarshalIndent(payload, "", "\t")
 	if err != nil {
