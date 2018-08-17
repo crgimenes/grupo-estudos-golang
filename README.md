@@ -38,6 +38,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [zip](./zip/)
 - [wikipedia](./wikipedia/)
 - [XML](./xml/)
+- [JSON](./json/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
