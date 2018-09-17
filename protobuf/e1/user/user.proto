@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package user;
+
+message User {
+    int64 ID = 1;
+    string email = 2;
+    string name = 3;
+}
