@@ -39,6 +39,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [wikipedia](./wikipedia/)
 - [XML](./xml/)
 - [JSON](./json/)
+- [Protocol buffers](./protobuf/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
