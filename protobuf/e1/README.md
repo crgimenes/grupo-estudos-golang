@@ -12,7 +12,7 @@ Gerando codigo direto chamando `protoc`
 protoc --go_out=. ./user/user.proto
 ```
 
-Gerando codigo usando `go generate``
+Gerando codigo usando `go generate`
 
 ```console
 go generate
