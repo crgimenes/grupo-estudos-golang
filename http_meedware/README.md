@@ -1,13 +1,3 @@
-# Exemplo usando Negroni e Gorilla mux
+# Exemplo de meedware
 
-Para testar em um terminal suba o servidor com go run
-
-``` console
-go run main.go
-```
-
-E em outro terminal use curl como cliente usuário admin senha admin :D
-
-``` console
-curl -i http://localhost:8080 -u "admin"
-```
+O exemplo *e1* usa a biblioteca padrão do Go e o exemplo *e2* usa Negroni e Gorilla mux.
