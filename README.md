@@ -41,6 +41,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [JSON](./json/)
 - [Protocol buffers](./protobuf/)
 - [goto](./goto/)
+- [http meedware](./http_meedware/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
