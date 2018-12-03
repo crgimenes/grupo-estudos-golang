@@ -42,6 +42,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [Protocol buffers](./protobuf/)
 - [goto](./goto/)
 - [http middleware](./http_middleware/)
+- [Unix Domain Socket](./unixDomainSocket/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
