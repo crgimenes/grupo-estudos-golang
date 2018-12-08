@@ -1,14 +1,10 @@
-dist: trusty
-
-sudo: required
-
 language: go
+
+go:
+    - "1.10"
 
 os:
     - linux
-
-go:
-  - 1.9
 
 env:
     global:
