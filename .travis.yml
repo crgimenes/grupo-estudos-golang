@@ -16,14 +16,14 @@ env:
         - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
 
 before_script:
-    - go get -t ./...
+    - go get -t $(go list ./... |grep -v vendor|grep -v botao_e_LED)
     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
     - chmod +x ./cc-test-reporter
     - go get github.com/axw/gocov/gocov
     - chmod 700 ./cover.sh
 
 script:
-    - go test $(go list . $(ls -d ./*/|grep -v vendor))
+    - go test $(go list ./... |grep -v vendor|grep -v botao_e_LED)
     - ./cover.sh
     - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
 
