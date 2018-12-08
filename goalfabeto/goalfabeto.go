@@ -1,4 +1,4 @@
-package goalfabeto
+package main
 
 import (
 	"fmt"
