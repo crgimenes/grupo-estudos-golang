@@ -83,11 +83,11 @@ func main() {
 Esse ultimo exemplo fica melhor se compilarmos com:
 
 ```sh
-go build http3.go
+go build http.go
 ```
 
 E então execute com:
 
 ```sh
-./http3 --help
+./http --help
 ```
