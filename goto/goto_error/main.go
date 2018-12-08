@@ -10,9 +10,9 @@ func main() {
 		esse goto não vai compilar porque goto
 		não pode pular sobre declaração de variaveis
 	*/
-	goto label
+	//goto label  // remova o comentario para testaar
 	var i = 1
 	fmt.Println("2", i)
-label:
+	//label: // remova o comentario para testar
 	fmt.Println("3")
 }
