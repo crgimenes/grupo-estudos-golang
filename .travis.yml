@@ -8,7 +8,7 @@ go:
 os:
     - linux
 
-install: false
+install: true
 
 env:
     global:
