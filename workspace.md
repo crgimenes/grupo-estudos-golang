@@ -14,7 +14,3 @@ em que o Go trabalha.
 **pkg** - Essa pasta possui os arquivos compilados de acordo com o seu SO (Sistema Operacional)
 
 **src** - Essa pasta possui todos seus códigos fontes de projetos Go ou demais linguagens ...
-
-[Inicio](README.md)
-
-[< Configurando](configurando.md) - [Olá Mundo >](./ola_mundo/)

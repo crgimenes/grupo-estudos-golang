@@ -26,15 +26,20 @@ func main() {
 		}
 	}
 
+	//Pode-se testar uma condicao, simulando o while(true) de outras linguagens
+	teste := true
+	for teste {
+		fmt.Println("Vamos imprimir mais uma linha nesse for...")
+		valor++
+		if valor == 10 {
+			teste = false
+		}
+	}
+
 	potato := "Batata"
 	for indice, letra := range potato {
 		fmt.Printf("potato[%v] = %q\r\n", indice, letra)
 	}
 }
 ```
-[Playground](https://play.golang.org/p/8kOxVxdGWT)
-
----
-[Inicio](../README.md)
-
-[< Funções](../funcoes/) - [switch >](../switch/)
+[Playground](https://play.golang.org/p/47Yf0l5hnx)

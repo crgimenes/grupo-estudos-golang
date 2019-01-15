@@ -1,4 +1,4 @@
-## Expressões Regulares
+# Expressões Regulares
 
 Um exemplo simples usando o package regexp para extrair informação de um texto.
 
@@ -66,8 +66,3 @@ Ou então compilar e executar da seguinte maneira:
 go build
 ./regexp
 ```
-
----
-[Inicio](../README.md)
-
-[< Trabalhando com Arquivo](../ioutil/) - [Tratamento de Sinais >](../signals/)

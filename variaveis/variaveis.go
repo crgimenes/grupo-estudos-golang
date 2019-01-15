@@ -19,6 +19,9 @@ func main() {
 	var s string
 
 	a = "texto 1"
+	
+	//Criação de variável utilizando  : que substitui a palavra chave var quando se cria
+	//uma variável atribuindo um valor a ela na mesma instrução
 	b := "texto 2"
 
 	ola := func() {
