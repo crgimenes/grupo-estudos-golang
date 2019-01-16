@@ -39,9 +39,3 @@ if _, err := os.Stat(nomeDoArquivo); err != nil {
     }
 }
 ```
-
-
----
-[Inicio](../README.md)
-
-[< interface](../interface/) - [goroutines >](../goroutines/)

@@ -1,8 +1,12 @@
 # Funções
 
-* Retorno duplo - Facilita a escrita e torna o código mais limpo
+Descreve o funcionamento de funções em Golang
+
+* No Go não há metodos, só funções
+* Retorno multiplo - Facilita a escrita e torna o código mais limpo
 * Retorno assinado - Facilita a leitura do código
-* Passando valor por referencia
+* Os parametros por padrão são passados por valor
+* Utilizando ponteiros é possível passar valores por referencia
 
 ```go
 package main
@@ -63,8 +67,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/6PhuELUaYq)
-
----
-[Inicio](../README.md)
-
-[< Struct](../struct/) - [Loop for >](../for/)

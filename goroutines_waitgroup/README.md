@@ -1,6 +1,7 @@
-# Goroutines com WaitGroup 
+# Goroutines com WaitGroup
 
-Para auxiliar no controle de diversos jobs simultâneos, independentes e ainda com resultados sincronizados podemos lançar mão da WaitGroup.
+Para auxiliar no controle de diversos jobs simultâneos,independentes e ainda com resultados sincronizados podemos lançar mão da WaitGroup.
+
 A WaitGroup aguarda que um determinado número de goroutines sejam finalizadas para prosseguir com a execução. 
 O programa principal faz a chamada para .Add() que recebe como parâmetro o número de goroutines que deve aguardar serem finalizadas. 
 
@@ -105,8 +106,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/HfPHat7QZQ)
-
----
-[Inicio](../README.md)
-
-[< Goroutines](../goroutines/) - [Select >](../select/)

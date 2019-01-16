@@ -1,6 +1,4 @@
-# net
-
-## Listando Interfaces e IPs
+# net Listando Interfaces e IPs
 
 Um exemplo simples listando as interfaces de rede.
 

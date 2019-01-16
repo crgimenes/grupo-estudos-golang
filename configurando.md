@@ -41,7 +41,3 @@ Para testar o git execute:
 ```bash
 git --version
 ```
----
-[Inicio](README.md)
-
-[< Instalando](instalando.md) - [Workspace >](workspace.md)

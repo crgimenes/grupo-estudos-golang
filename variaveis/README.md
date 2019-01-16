@@ -45,12 +45,15 @@ func main() {
 	var s string
 
 	/*
-	A variavel "a" vai recebem um valor mas vamos deixar
+	A variavel "a" vai rceber um valor mas vamos deixar
 	a variavel "s" sem valor propositalmente, no fim do programa
 	vamos ver que uma string vazia foi atribuída a "s" automaticamente.
 	*/
 
 	a = "texto 1"
+	
+	//Criação de variável utilizando  : que substitui a palavra chave var quando se cria
+	//uma variável atribuindo um valor a ela na mesma instrução
 	b := "texto 2"
 
 	ola := func() {
@@ -75,8 +78,3 @@ func main() {
 }
 ```
 [Playground](https://play.golang.org/p/bO5l3agwAP)
-
----
-[Inicio](../README.md)
-
-[< Olá Mundo](../ola_mundo/) - [Struct >](../struct/)

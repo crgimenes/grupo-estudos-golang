@@ -47,10 +47,3 @@ func main() {
 	fmt.Printf("rotate: %s\r\n", s)
 }
 ```
-
-
-
----
-[Inicio](../README.md)
-
-[< select](../select/) - [time >](../time/)
