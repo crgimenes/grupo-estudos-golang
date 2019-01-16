@@ -43,6 +43,8 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [goto](./goto/)
 - [http middleware](./http_middleware/)
 - [Unix Domain Socket](./unixDomainSocket/)
+- [Array](./array/)
+- [Slice](./slice/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
