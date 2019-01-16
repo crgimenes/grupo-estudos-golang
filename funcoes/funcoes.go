@@ -38,7 +38,7 @@ func variadicaInteiros(v ...int) {
 
 //funcao variadica - recebe como argumentos infinitos parâmetros do tipo interface
 func variadicaInterface(v ...interface{}) {
-	fmt.Println(v)
+	fmt.Printf("%v", v)
 }
 
 func main() {
