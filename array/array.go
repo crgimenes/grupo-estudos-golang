@@ -20,7 +20,7 @@ func main() {
 	var a3 = [3]int{7, 8, 9}
 	fmt.Println(a3)
 
-	//declarando array array especificando as posições dos elementos
+	//declarando array especificando as posições dos elementos
 	var a4 = [3]int{2: 12, 1: 11, 0: 10}
 	fmt.Println(a4)
 
