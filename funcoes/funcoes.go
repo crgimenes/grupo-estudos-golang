@@ -31,6 +31,16 @@ func printValorByRef(valor *string) {
 	fmt.Printf("Valor por referencia = %v\r\n", *valor)
 }
 
+//funcao variadica - recebe como argumentos infinitos parâmetros do tipo inteiro
+func variadicaInteiros(v ...int) {
+	fmt.Println(v)
+}
+
+//funcao variadica - recebe como argumentos infinitos parâmetros do tipo interface
+func variadicaInterface(v ...interface{}) {
+	fmt.Printf("%v", v)
+}
+
 func main() {
 	fmt.Printf("Funções!\r\n")
 
@@ -52,5 +62,11 @@ func main() {
 
 	valor := "Esse valor não vai ser copiado, só estamos passando o ponteiro"
 	printValorByRef(&valor)
+
+	//retorno da função variadica, podendo passar infinitos parâmentros do tipo inteiro
+	variadicaInteiros(1, 2, 3, 4, 5)
+
+	//retorno da função variadica, podendo passar infinitos parâmentros do tipo interface
+	variadicaInterface(1, "dois", 3, "quatro", 5, true, false)
 
 }
