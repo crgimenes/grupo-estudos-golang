@@ -34,3 +34,16 @@ psql "sslmode=require"
 Na string de conexão use `slmode=verify-full` no lugar de `sslmode=disable`. Como seu certificado não é assinado por uma entidade certificadora você vai precisar marcar ele como confiavel no seu sistema operacional. Claro que em produção o certo é usar um certificado assinado.
 
 Veja a [documentação do PostgreSQL](https://www.postgresql.org/docs/11/ssl-tcp.html) para ver mais exemplos de configuração.
+
+## Tabela exemplo
+
+```sql
+CREATE TABLE public.clients
+(
+    id integer NOT NULL DEFAULT nextval('clientes_id_seq'::regclass),
+    name character varying(200),
+    address text,
+    CONSTRAINT clientes_pkey PRIMARY KEY (id)
+);
+```
+
