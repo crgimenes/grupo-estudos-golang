@@ -33,7 +33,9 @@ func main() {
 	var inserido string
 	fmt.Scanln(&inserido)
 
-	switch numero, _ := strconv.Atoi(inserido); numero {
+	numero, _ := strconv.Atoi(inserido)
+
+	switch numero {
 	case 1, 3, 5, 7:
 		fmt.Printf("%v é primo!\n\r", numero)
 		fallthrough
@@ -46,8 +48,28 @@ func main() {
 		fmt.Printf("%v não esta entre 1 e 10!\n\r", numero)
 	}
 
+	//switch com condicional
+	fmt.Println("Checando dia de receber o salário...\r")
+	switch {
+	case numero < 5:
+		fmt.Println("Ainda não recebi meu salário.")
+	case numero == 5:
+		fmt.Println("Opa! Hoje é o dia de receber o money.")
+	case numero > 5 && numero <= 15:
+		fmt.Println("O dinheiro está acabando...!")
+	case numero == 30 || numero == 31:
+		fmt.Println("Xiii o money acabou.")
+	default:
+		fmt.Println("Parabéns! Você é rico.")
+	}
+
 	// fmt.Println(numero)
 	// ./switch.go:44: undefined: numero
 }
 ```
-[Playground](https://play.golang.org/p/jMEurQcSlE)
+[Playground](https://play.golang.org/p/BrVIIs-hbsi)
+
+---
+[Inicio](../README.md)
+
+[< Loop for](../for/) - [defer >](../defer/)

@@ -40,6 +40,24 @@ func main() {
 	for indice, letra := range potato {
 		fmt.Printf("potato[%v] = %q\r\n", indice, letra)
 	}
+
+	//varrendo um map por chave e valor com for
+	meal := map[string]string{"1": "Arroz", "2": "Feijão", "3": "Batata"}
+
+	//exemplo 1, varrendo map por chave
+	for key := range meal {
+		fmt.Println("Chave Map: ", key)
+	}
+
+	//exemplo 2, varrendo map por valor
+	for _, value := range meal {
+		fmt.Println("Valor Map: ", value)
+	}
+
+	//exemplo 3, varrendo map por chave e valor
+	for key, value := range meal {
+		fmt.Printf("Chave: %s - Valor: %s\n", key, value)
+	}
 }
 ```
-[Playground](https://play.golang.org/p/47Yf0l5hnx)
+[Playground](https://play.golang.org/p/5qGMl5sY_io)
