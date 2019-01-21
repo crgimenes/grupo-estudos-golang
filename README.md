@@ -46,6 +46,8 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [Array](./array/)
 - [Slice](./slice/)
 - [Channel](./channel/)
+- [Map](./map/)
+
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
 
