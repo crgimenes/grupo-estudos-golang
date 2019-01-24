@@ -97,6 +97,11 @@ func main() {
 		}
 		fmt.Println("id", id)
 	}
+	err = rows.Close()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
 	// insert com transação
 	// -=-=-=-=-=-=-=-=-=-=
