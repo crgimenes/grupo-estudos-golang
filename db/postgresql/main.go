@@ -172,6 +172,117 @@ func main() {
 		"Aperture Laboratories",
 		"Upper Michigan, USA")
 
+	/************
+	 ** Select **
+	 ************/
+
+	sql = `select "name", "address" from "clients" order by name`
+
+	// Select simples
+	// -=-=-=-=-=-=-=
+	r, err := db.Query(sql)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// list := []client{}
+	for r.Next() {
+		c := client{}                     // nova instancia para conter o cliente
+		err = r.Scan(&c.Name, &c.Address) // popula nova instancia
+		if err != nil {                   // verifica se erro
+			fmt.Println(err)
+			return
+		}
+		fmt.Println("Nome....:", c.Name)
+		fmt.Println("Endereço:", c.Address)
+		fmt.Println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+		// list = append(list, c)
+	}
+	err = r.Close()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// Select lendo item a item com StructScan
+	// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	rows, err = db.Queryx(sql)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// list := []client{}
+	for rows.Next() {
+		c := client{}             // nova instancia para conter o cliente
+		err = rows.StructScan(&c) // popula nova instancia
+		if err != nil {           // verifica se erro
+			fmt.Println(err)
+			return
+		}
+		fmt.Println("Nome....:", c.Name)
+		fmt.Println("Endereço:", c.Address)
+		fmt.Println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+		// list = append(list, c)
+	}
+	err = rows.Close()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// Select lendo todos os itens de uma vez usando db.Select
+	// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+	rows, err = db.Queryx(sql)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	list := []client{}
+	err = db.Select(&list, sql)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	for k, v := range list {
+		fmt.Println("Registro:", k+1) // não é o id :D
+		fmt.Println("Nome....:", v.Name)
+		fmt.Println("Endereço:", v.Address)
+		fmt.Println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+	}
+
+	// Select lendo apenas um item
+	// -=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+	// limit 1
+	sql = `select "name", "address" from "clients" limit 1`
+	c := client{}
+	err = db.Get(&c, sql)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println("Nome....:", c.Name)
+	fmt.Println("Endereço:", c.Address)
+	fmt.Println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+
+	// count
+	sql = `select count(*) from "clients"`
+	count := 0
+	err = db.Get(&count, sql)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println("count:", count)
+	fmt.Println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+
 	/***********
 	 ** Close **
 	 ***********/
@@ -181,5 +292,4 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-
 }
