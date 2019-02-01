@@ -235,12 +235,6 @@ func main() {
 	// Select lendo todos os itens de uma vez usando db.Select
 	// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-	rows, err = db.Queryx(sql)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
 	list := []client{}
 	err = db.Select(&list, sql)
 	if err != nil {
