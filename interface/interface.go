@@ -23,9 +23,9 @@ func (c Cachorro) Respirar() bool {
 func VerificandoSeEstaVivo(s Ser) {
 	if s.Respirar() {
 		fmt.Println("Está vivo.")
-	} else {
-		fmt.Println("Não está vivo.")
+		return
 	}
+	fmt.Println("Não está vivo.")
 }
 
 func main() {
