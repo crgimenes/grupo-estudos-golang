@@ -47,6 +47,7 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [Slice](./slice/)
 - [Channel](./channel/)
 - [Map](./map/)
+- [Crawler](./crawler/)
 
 ---
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
