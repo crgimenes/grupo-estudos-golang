@@ -1,4 +1,4 @@
-# Go Hands On
+#  Grupo de Estudos de Golang <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 
 Primeiros passos em Golang
 
@@ -86,5 +86,3 @@ As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de coma
 Esse material é livre, você pode usar da forma que preferir, apenas lembre de citar a fonte e não apenas copie, no lugar disso acrescente, melhore e compartilhe, assim todos ganhamos.
 
 [Veja aqui como contribuir](CONTRIBUTING.md)
-
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
