@@ -65,15 +65,15 @@ As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de coma
 - Vá aos [Meetups da comunidade brasileira](https://www.meetup.com/pt-BR/golangbr/)
 
 #### Grupo de estudos
-- Todas as quintas-feiras as 22h00 um grupo programadores faz um hangout para estudar Go e bater papo os encontros e o tema da semana são combinados no [Telegram](https://t.me/joinchat/CS0GhBfKbyqZkpl31RRxJQ)
+- Todas as quintas-feiras as 22:00 nosso grupo faz uma reunião via Meet para estudar Go e bater papo os encontros e o tema da semana são combinados no [Telegram](https://t.me/joinchat/CS0GhBfKbyqZkpl31RRxJQ)
 
-- Pagina no Facebook [https://www.facebook.com/gophers.br/](https://www.facebook.com/gophers.br/)
+- Pagina no Facebook [https://www.facebook.com/gopher.pro.br/](https://www.facebook.com/gopher.pro.br/)
 
 ---
 ### Aprenda mais
 - [Awesome-go](https://github.com/avelino/awesome-go) Uma lista de impressionantes frameworks, bibliotecas e software escritos em Go.
 - [60 days of go](https://github.com/cassiobotaro/60-days-of-go) Vários exemplos de Go em uma aventura em 60 dias!
-- [Guia de estilo para pacotes Go](https://medium.com/@avelino0/guia-de-estilo-para-pacotes-go-7e3ef10c017f) dicas importantes de como formatar seus pacotes Go.
+- [Artigos sobre go](https://crg.eti.br/tags/golang/) Muitos artigos com exemplos praticos.
 
 ---
 ### Bônus!
@@ -83,7 +83,7 @@ As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de coma
 - [beanstalk](./beanstalk/), conectando o beanstalk com Go
 
 ---
-Esse material é Free, você pode usar da forma que preferir, apenas lembre de citar a fonte e não apenas copie, no lugar disso acrescente, melhore e compartilhe, assim todos ganhamos.
+Esse material é livre, você pode usar da forma que preferir, apenas lembre de citar a fonte e não apenas copie, no lugar disso acrescente, melhore e compartilhe, assim todos ganhamos.
 
 [Veja aqui como contribuir](CONTRIBUTING.md)
 
