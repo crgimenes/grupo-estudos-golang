@@ -42,7 +42,7 @@ func main() {
 			s := scanner.Text()
 			log.Printf("helper: %q\n", s)
 			switch s {
-			case "read":
+			case "ready":
 				write(stdin, "ok\n")
 			case "ping":
 				write(stdin, "pong\n")

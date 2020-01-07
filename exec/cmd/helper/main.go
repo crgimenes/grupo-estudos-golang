@@ -26,7 +26,7 @@ func main() {
 	}()
 
 	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("read\n")
+	fmt.Print("ready\n")
 	scanner := bufio.NewScanner(reader)
 	for scanner.Scan() {
 		s := scanner.Text()
