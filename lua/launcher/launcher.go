@@ -13,9 +13,12 @@ import (
 )
 
 var (
-	waitForList = make(map[string]chan struct{})
-	helperQuit  = make(chan struct{})
-	mutex       sync.Mutex
+	triggerList    = make(map[string]*lua.LFunction)
+	waitForString  string
+	waitForChannel = make(chan struct{})
+	helperQuit     = make(chan struct{})
+	mutex          sync.Mutex
+	l              = lua.NewState()
 )
 
 func write(w io.Writer, msg string) {
@@ -72,9 +75,21 @@ func execHelper() error {
 			}
 
 			mutex.Lock()
-			for k, c := range waitForList {
+
+			if waitForString != "" &&
+				strings.Contains(s, waitForString) {
+				waitForChannel <- struct{}{}
+			}
+			for k, f := range triggerList {
 				if strings.Contains(s, k) {
-					c <- struct{}{}
+					err := l.CallByParam(lua.P{
+						Fn:      f,     // Lua function
+						NRet:    0,     // number of returned values
+						Protect: false, // return err or panic
+					})
+					if err != nil {
+						fmt.Println(err)
+					}
 				}
 			}
 			mutex.Unlock()
@@ -101,27 +116,11 @@ func execHelper() error {
 	return nil
 }
 
-func infiniteLoop(l *lua.LState) int {
-	c := make(chan struct{})
-	<-c
-	return 0
-}
-
 func waitFor(l *lua.LState) int {
-	a := l.ToString(1)
-
-	mutex.Lock()
-	c := make(chan struct{})
-	waitForList[a] = c
-	mutex.Unlock()
-
-	<-c
-
-	mutex.Lock()
-	delete(waitForList, a)
-	mutex.Unlock()
-
-	res := lua.LString(a)
+	waitForString = l.ToString(1)
+	<-waitForChannel
+	waitForString = ""
+	res := lua.LString(waitForString)
 	l.Push(res)
 	return 1
 }
@@ -130,36 +129,27 @@ func trigger(l *lua.LState) int {
 	a := l.ToString(1)
 	f := l.ToFunction(2)
 
-	waitForList[a] = make(chan struct{})
-
-	go func() {
-		for {
-			<-waitForList[a]
-			err := l.CallByParam(lua.P{
-				Fn:      f,    // Lua function
-				NRet:    0,    // number of returned values
-				Protect: true, // return err or panic
-			})
-			if err != nil {
-				fmt.Println(err)
-			}
-		}
-	}()
+	mutex.Lock()
+	triggerList[a] = f
+	mutex.Unlock()
 
 	res := lua.LString(a)
 	l.Push(res)
 	return 1
 }
 
-func runLua() error {
-	l := lua.NewState()
-	defer l.Close()
+func runLua() {
 
 	l.SetGlobal("trigger", l.NewFunction(trigger))
 	l.SetGlobal("waitFor", l.NewFunction(waitFor))
-	l.SetGlobal("infiniteLoop", l.NewFunction(infiniteLoop))
 
-	return l.DoFile("script.lua")
+	err := l.DoFile("script.lua")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	c := make(chan struct{})
+	<-c
 }
 
 func main() {
@@ -171,12 +161,6 @@ func main() {
 		}
 	}()
 
-	err := runLua()
-	if err != nil {
-		log.Println(err)
-	}
-
-	c := make(chan struct{})
-	<-c
+	runLua()
 
 }

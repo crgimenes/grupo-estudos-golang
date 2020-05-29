@@ -10,5 +10,4 @@ print("test lua script")
 waitFor("golang + lua")
 trigger("test", testTrigger)
 trigger("loop", loopTrigger)
-infiniteLoop()
 
