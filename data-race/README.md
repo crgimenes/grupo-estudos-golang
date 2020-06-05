@@ -18,7 +18,6 @@ func main() {
 
 	x++
 }
-
 ```
 
 Nesse exemplo a variável x é acessada por dois pontos, um pela função main() e outro pela goroutine que criamos e para detectar o data race usamos o seguinte comando:
