@@ -1,5 +1,9 @@
 # Exemplos com banco de dados
 
+## Conheça nosso canal no [YouTube](http://youtube.com/grupoDeEstudosDeGolang).
+
+Veja em vídeo o nosso encontro desse material: [PostgreSQL via SSL com Golang e Fyne um toolkit gráfico feito em Go](https://www.youtube.com/watch?v=9XElUkm_izg).
+
 ## Instalando sqlx
 
 ```console
@@ -38,6 +42,12 @@ Veja a [documentação do PostgreSQL](https://www.postgresql.org/docs/11/ssl-tcp
 ## Tabela exemplo
 
 ```sql
+CREATE SEQUENCE public.clientes_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+;
+
 CREATE TABLE public.clients
 (
     id integer NOT NULL DEFAULT nextval('clientes_id_seq'::regclass),
