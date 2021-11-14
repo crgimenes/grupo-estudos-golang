@@ -50,6 +50,28 @@ Uma coleção de exemplos simples e diretos para servir como referencia e materi
 - [Crawler](./crawler/)
 
 ---
+
+### Comunidade
+
+Encontros semanais, todos os Sábados as 14h00 fazemos encontros on-line, os encontros são marcados no nosso grupo do [Telegram em https://gopher.pro.br/telegram](https://gopher.pro.br/telegram) e em nosso canal no [Discord em https://gopher.pro.br/discord](https://gopher.pro.br/discord).
+
+---
+
+### Aprenda mais
+- [Awesome-go](https://github.com/avelino/awesome-go) Uma lista de impressionantes frameworks, bibliotecas e software escritos em Go.
+- [60 days of go](https://github.com/cassiobotaro/60-days-of-go) Vários exemplos de Go em uma aventura em 60 dias!
+- [Artigos sobre go](https://crg.eti.br/tags/golang/) Muitos artigos com exemplos praticos.
+
+---
+
+### Bônus!
+- [Go com C](./go_com_c/), especial para quem quer brincar com IoT!
+- [Go com Lua](./lua/), integrando lua no seu codigo Go
+- [Net](./net/), listando interfaces de rede e IPs
+- [beanstalk](./beanstalk/), conectando o beanstalk com Go
+
+---
+
 ### Exemplos inspirados nas [Funções ZZ](http://funcoeszz.net)
 
 As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de comando e aqui vamos fazer uma reimplementação escrita em Go.
@@ -57,24 +79,6 @@ As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de coma
 - [goaleatorio](./goaleatorio) Gera um número aleatório
 - [godolar](./godolar) Busca a cotação do dólar
 
-
----
-### Comunidade
-
-Encontros semanais, todos os Sábados as 14h00 fazemos encontros on-line, os encontros são marcados no nosso grupo do [Telegram em https://gopher.pro.br/telegram](https://gopher.pro.br/telegram) e em nosso canal no [Discord em https://gopher.pro.br/discord](https://gopher.pro.br/discord).
-
----
-### Aprenda mais
-- [Awesome-go](https://github.com/avelino/awesome-go) Uma lista de impressionantes frameworks, bibliotecas e software escritos em Go.
-- [60 days of go](https://github.com/cassiobotaro/60-days-of-go) Vários exemplos de Go em uma aventura em 60 dias!
-- [Artigos sobre go](https://crg.eti.br/tags/golang/) Muitos artigos com exemplos praticos.
-
----
-### Bônus!
-- [Go com C](./go_com_c/), especial para quem quer brincar com IoT!
-- [Go com Lua](./lua/), integrando lua no seu codigo Go
-- [Net](./net/), listando interfaces de rede e IPs
-- [beanstalk](./beanstalk/), conectando o beanstalk com Go
 
 ---
 Esse material é livre, você pode usar da forma que preferir, apenas lembre de citar a fonte e não apenas copie, no lugar disso acrescente, melhore e compartilhe, assim todos ganhamos.
