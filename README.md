@@ -61,13 +61,7 @@ As Funções ZZ são um conjunto de muitos pequenos aplicativos de linha de coma
 ---
 ### Comunidade
 
-- Participe dos canais de Go [Slack](https://invite.slack.golangbridge.org), procure pelos canais #brazil e [#brazilian-go-studies](http://gophers.slack.com/messages/brasilian-go-studies) e no [Telegram](https://t.me/joinchat/CS0GhBfKbyqZkpl31RRxJQ).
-- Vá aos [Meetups da comunidade brasileira](https://www.meetup.com/pt-BR/golangbr/)
-
-#### Grupo de estudos
-- Todas as quintas-feiras as 22:00 nosso grupo faz uma reunião via Meet para estudar Go e bater papo os encontros e o tema da semana são combinados no [Telegram](https://t.me/joinchat/CS0GhBfKbyqZkpl31RRxJQ)
-
-- Pagina no Facebook [https://www.facebook.com/gopher.pro.br/](https://www.facebook.com/gopher.pro.br/)
+Encontros semanais, todos os Sábados as 14h00 fazemos encontros on-line, os encontros são marcados no nosso grupo do [Telegram em https://gopher.pro.br/telegram](https://gopher.pro.br/telegram) e em nosso canal no [Discord em https://gopher.pro.br/discord](https://gopher.pro.br/discord).
 
 ---
 ### Aprenda mais
