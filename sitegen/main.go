@@ -22,15 +22,14 @@ type config struct {
 	OutputFolder string `json:"o" cfg:"o"`
 }
 
-var (
-	cfg = config{}
-)
+var cfg = config{}
 
 func execHelper(path, name string, arg ...string) (out []byte, err error) {
 	var (
 		outbuf bytes.Buffer
 		errbuf bytes.Buffer
 	)
+
 	stdout := bufio.NewWriter(&outbuf)
 	stderr := bufio.NewWriter(&errbuf)
 
@@ -38,14 +37,17 @@ func execHelper(path, name string, arg ...string) (out []byte, err error) {
 	cmd.Dir = path
 	cmd.Stdout = stdout
 	cmd.Stderr = stderr
+
 	err = cmd.Run()
 	if err != nil {
 		return
 	}
+
 	if errbuf.Len() > 0 {
 		err = errors.New(errbuf.String())
 		return
 	}
+
 	out = outbuf.Bytes()
 	return
 }
@@ -56,9 +58,11 @@ func fileExists(path string) (ret bool) {
 		if os.IsNotExist(err) {
 			return
 		}
+
 		log.Println(err)
 		return
 	}
+
 	ret = true
 	return
 }
@@ -67,30 +71,27 @@ func visit(path string, f os.FileInfo, perr error) error {
 	if perr != nil {
 		return perr
 	}
+
 	if !f.IsDir() {
 		return nil
 	}
-	fe := fileExists(path + "/README.md")
-	if !fe {
-		return nil
-	}
 
-	/*
-		if f.Name() == "vendor" {
-			return filepath.SkipDir
-		}
-	*/
 	pathAbs, err := filepath.Abs(path)
 	if err != nil {
 		return err
+	}
+
+	filePath := filepath.Join(pathAbs, "README.md")
+
+	fe := fileExists(filePath)
+	if !fe {
+		return nil
 	}
 
 	pathOutputAbs, err := filepath.Abs(cfg.OutputFolder)
 	if err != nil {
 		return err
 	}
-
-	filePath := filepath.Join(pathAbs, "/README.md")
 
 	body, err := ioutil.ReadFile(filePath)
 	if err != nil {
@@ -132,6 +133,7 @@ func visit(path string, f os.FileInfo, perr error) error {
 		if err != nil {
 			log.Fatal(err)
 		}
+
 		for _, local := range files {
 			name := fmt.Sprintf(
 				"https://github.com/go-br/estudos/blob/master/exemplos/%s/%s",
@@ -145,7 +147,7 @@ func visit(path string, f os.FileInfo, perr error) error {
 		outputFileName = filepath.Join(pathOutputAbs, outputFileName+".md")
 		fmt.Println(outputFileName)
 
-		err = ioutil.WriteFile(outputFileName, []byte(metadata), 0644)
+		err = ioutil.WriteFile(outputFileName, []byte(metadata), 0o644)
 		if err != nil {
 			return err
 		}
@@ -167,8 +169,9 @@ func main() {
 	}
 
 	err = filepath.Walk(cfg.InputFolder, visit)
-	if err == nil || err == io.EOF {
+	if err == nil || errors.Is(err, io.EOF) {
 		return
 	}
+
 	log.Println(err)
 }
