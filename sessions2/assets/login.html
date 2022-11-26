@@ -1,0 +1,22 @@
+<html lang="pt_BR">
+
+<head>
+    {{template "head.html"}}
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="col-3">
+        <h1>Login</h1>
+        <form action="/login" method="POST" class="user">
+            <input class="form-control form-control-user" type="email" id="exampleInputEmail"
+                aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email">
+            <input class="form-control form-control-user" type="password" id="exampleInputPassword"
+                placeholder="Password" name="password">
+            <button class="btn btn-primary d-block btn-user w-100" type="submit">Login</button>
+        </form>
+    </div>
+    {{template "foot.html"}}
+</body>
+
+</html>
