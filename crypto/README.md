@@ -1,11 +1,11 @@
 # Crypto
-Exemplos de funÁıes criptogr·ficas utilizando a biblioteca crypto e algoritmos padr„o
+Exemplos de fun√ß√µes criptogr√°ficas utilizando a biblioteca crypto e algoritmos padr√£o
 
-- Criptografia simÈtrica com a cifra de bloco AES em modo CTR
-- Criptografia simÈtrica autenticada com modo GCM (AEAD)
-- Criptografia simÈtrica com a cifra de fluxo Chacha20-Poly1305
-- FunÁ„o de derivaÁ„o de chave baseada em resumo criptogr·fico (HKDF)
-- FunÁ„o de derivaÁ„o de chave baseada em senha (PBKDF2)
-- CÛdigo de autenticaÁ„o de mensagem baseado em resumo criptogr·fico (HMAC)
-- Resumo criptogr·fico com a cifra de dispers„o SHA256
-- DerivaÁ„o de chave secreta (EC Diffie-Hellman) com a curva 25519
+- Criptografia sim√©trica com a cifra de bloco AES em modo CTR
+- Criptografia sim√©trica autenticada com modo GCM (AEAD)
+- Criptografia sim√©trica com a cifra de fluxo Chacha20-Poly1305
+- Fun√ß√£o de deriva√ß√£o de chave baseada em resumo criptogr√°fico (HKDF)
+- Fun√ß√£o de deriva√ß√£o de chave baseada em senha (PBKDF2)
+- C√≥digo de autentica√ß√£o de mensagem baseado em resumo criptogr√°fico (HMAC)
+- Resumo criptogr√°fico com o algoritmo de dispers√£o SHA256
+- Deriva√ß√£o de chave secreta (EC Diffie-Hellman) com a curva 25519
