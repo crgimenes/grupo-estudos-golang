@@ -6,7 +6,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/crgimenes/goconfig"
+	"crg.eti.br/go/config"
 	"github.com/tarm/serial"
 )
 

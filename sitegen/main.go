@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"strings"
 
+	"crg.eti.br/go/config"
 	"github.com/avelino/slugify"
-	"github.com/gosidekick/goconfig"
 )
 
 type config struct {
