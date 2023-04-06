@@ -1,8 +1,7 @@
-module database
+module e1
 
 go 1.20
 
-require (
-	go.etcd.io/bbolt v1.3.3
-	golang.org/x/sys v0.0.0-20200212091648-12a6c2dcc1e4 // indirect
-)
+require go.etcd.io/bbolt v1.3.7
+
+require golang.org/x/sys v0.7.0 // indirect

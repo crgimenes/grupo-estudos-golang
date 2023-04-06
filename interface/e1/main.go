@@ -1,7 +1,7 @@
 package main
 
 import (
-	"database/database/bbolt"
+	"e1/database/bbolt"
 	"fmt"
 	"log"
 )
