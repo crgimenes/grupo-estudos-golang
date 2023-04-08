@@ -4,8 +4,9 @@
 ## Comunidade
 
 
-Encontros semanais, todos os sábados as 14h00 fazemos encontros on-line, os encontros são marcados no nosso grupo do [Telegram em https://gopher.pro.br/telegram](https://gopher.pro.br/telegram) e em nosso canal no [Discord em https://gopher.pro.br/discord](https://gopher.pro.br/discord).
+Encontros semanais, todos os sábados as 14h00 fazemos encontros on-line, os encontros são marcados no nosso grupo do [Telegram em /grupo-estudos-golang/telegram](/grupo-estudos-golang/telegram) e em nosso canal no [Discord em https://crg.eti.br/grupo-estudos-golang/discord](https://crg.eti.br/grupo-estudos-golang/discord).
 
+Vídeos no YouTube em https://crg.eti.br/grupo-estudos-golang/youtube
 
 [Veja aqui como contribuir](CONTRIBUTING.md)
 
