@@ -8,7 +8,6 @@ import (
 	"flag"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -44,7 +43,7 @@ func write(w io.Writer, msg string) {
 
 func loadCfg() error {
 	d := filepath.Join(*localPath, "config.json")
-	c, err := ioutil.ReadFile(d)
+	c, err := os.ReadFile(d)
 	if err != nil {
 		return nil
 	}
@@ -339,7 +338,7 @@ func main() {
 					continue
 				}
 				log.Println(string(bt))
-				err = ioutil.WriteFile(d, bt, 0644)
+				err = os.WriteFile(d, bt, 0644)
 				if err != nil {
 					log.Println("error write to config.file", err)
 					continue
