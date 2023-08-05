@@ -24,10 +24,15 @@ func main() {
 
 	fmt.Printf("Data e hora atual local..........: %s\n", s)
 
-	// Data com timezone de Sao Paulo
+	// Data e hora com timezone de Sao Paulo
 	loc, _ := time.LoadLocation("America/Sao_Paulo") // prepara o timezone
 	s = t.In(loc).Format("2006-01-02 15:04:05")      // formato da data
 
 	fmt.Printf("Data e hora atual São Paulo......: %s\n", s)
+
+	// Data e hora subtraindo 3 horas
+	s = t.UTC().Add(-3 * time.Hour).Format("2006-01-02 15:04:05") // formato da data
+
+	fmt.Printf("Data e hora atual - 3 horas......: %s\n", s)
 
 }
