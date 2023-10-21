@@ -1,3 +1,14 @@
+---
+title: "Go e a promessa de retrocompatibilidade"
+description: "A maioria das linguagens cresce adicionando novos recursos, novas funcionalidades. Go foca em otimizar a base existente com um grande foco na retrocompatibilidade."
+tags:
+    - golang
+    - grupo-estudos-golang
+date: "2023-10-21T11:27:02-0300"
+weight: 6
+draft: false
+---
+
 # Instalando
 
 ## Download
