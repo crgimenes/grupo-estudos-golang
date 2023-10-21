@@ -8,7 +8,7 @@
 
 ### Encontros semanais
 
- Todos os sábados as 14h00 fazemos encontros on-line, os anuncios são feitos no nosso grupo do [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram) e em nosso canal no [Discord em https://crg.eti.br/grupo-estudos-golang/discord](https://crg.eti.br/grupo-estudos-golang/discord).
+ Todos os sábados as 14h00 fazemos encontros on-line, os anuncios são feitos no nosso grupo do [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram) e em nosso canal no [Discord](https://crg.eti.br/grupo-estudos-golang/discord).
 
 ## Como contribuir
 
