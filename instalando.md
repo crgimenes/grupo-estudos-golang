@@ -1,10 +1,10 @@
 ---
-title: "Go e a promessa de retrocompatibilidade"
-description: "A maioria das linguagens cresce adicionando novos recursos, novas funcionalidades. Go foca em otimizar a base existente com um grande foco na retrocompatibilidade."
+title: "Instalando Go no Windows"
+description: "Como instalar a linguagem Go no Windows."
 tags:
     - golang
     - grupo-estudos-golang
-date: "2023-10-21T11:27:02-0300"
+date: "2023-10-21T14:39:08-03:00"
 weight: 6
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
 
 ## Download
 
-Faça o download do instalador correspondente ao seu sistema operacional em  [http://golang.org/dl](http://golang.org/dl).
+Faça o download do instalador correspondente ao seu sistema operacional em [https://go.dev/dl/](https://go.dev/dl/).
 
 ### Microsoft Windows
 
