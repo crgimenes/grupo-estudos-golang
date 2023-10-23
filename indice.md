@@ -1,7 +1,5 @@
 
-
-
-
+# Indice
 
 Introdução (licença de uso, historia de origem, etc.)
 
@@ -15,6 +13,8 @@ Por que usar Go
 
 Curva de aprendizado
 
+Outros materiais de estudo
+
 Instalação
 
 IDE / editores
@@ -25,7 +25,7 @@ Olá mundo!
 
 Basico sobre execução e compilação
 
-UTF8 
+UTF8
     BOM Byte Order Mark
 
 Variaveis / constantes
@@ -88,7 +88,7 @@ Usando pacotes de terceiros
 
 //go:generate
 
-## Pacotes da biblioteca padrão 
+## Pacotes da biblioteca padrão
 
 sql
 
@@ -104,7 +104,7 @@ PostgreSQL
 
 Mongodb
 
-## Ferramentas 
+## Ferramentas
 
 go tools
 
