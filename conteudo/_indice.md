@@ -1,7 +1,10 @@
-
 # Indice
 
 Introdução (licença de uso, historia de origem, etc.)
+
+Como fazer boas perguntas
+
+Como dar boas respostas
 
 Como contribuir
 
