@@ -2,7 +2,7 @@
 
 ## Comunidade
 
-- [Telegram em /grupo-estudos-golang/telegram](https://crg.eti.br/grupo-estudos-golang/telegram)
+- [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram)
 - [Discord](https://crg.eti.br/grupo-estudos-golang/discord)
 - [YouTube](https://crg.eti.br/grupo-estudos-golang/youtube)
 
