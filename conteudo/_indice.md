@@ -47,6 +47,7 @@
 - embed
 - Usando pacotes de terceiros
 - go:generate
+- go benchmark
 - [FAQ](faq.md)
 
 
