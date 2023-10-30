@@ -1,8 +1,8 @@
 # Indice
 
 - [Prefácio](prefacio.md)
-- Como fazer boas perguntas
-- Como dar boas respostas
+- [Como fazer boas perguntas](como_fazer_boas_perguntas.md)
+- [Como dar boas respostas](como_dar_boas_respostas.md)
 - Como contribuir
 - Código de conduta
 - Mercado de trabalho
@@ -47,6 +47,9 @@
 - embed
 - Usando pacotes de terceiros
 - go:generate
+- [FAQ](faq.md)
+
+
 
 ## Pacotes da biblioteca padrão
 
