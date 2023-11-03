@@ -6,14 +6,12 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"strings"
 
-	"crg.eti.br/go/config"
 	"github.com/avelino/slugify"
 )
 
@@ -93,7 +91,7 @@ func visit(path string, f os.FileInfo, perr error) error {
 		return err
 	}
 
-	body, err := ioutil.ReadFile(filePath)
+	body, err := os.ReadFile(filePath)
 	if err != nil {
 		return err
 	}
@@ -129,7 +127,7 @@ func visit(path string, f os.FileInfo, perr error) error {
 		// coloca arquivos no rodapé
 
 		metadata += "\n### Arquivos desse post\n\n"
-		files, err := ioutil.ReadDir(path)
+		files, err := os.ReadDir(path)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -147,7 +145,7 @@ func visit(path string, f os.FileInfo, perr error) error {
 		outputFileName = filepath.Join(pathOutputAbs, outputFileName+".md")
 		fmt.Println(outputFileName)
 
-		err = ioutil.WriteFile(outputFileName, []byte(metadata), 0o644)
+		err = os.WriteFile(outputFileName, []byte(metadata), 0o644)
 		if err != nil {
 			return err
 		}

@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"net/http/httptest"
@@ -160,7 +159,7 @@ func Test_leitor(t *testing.T) {
 func Test_leEFecha(t *testing.T) {
 	expected := "hello world"
 
-	r := ioutil.NopCloser(bytes.NewReader([]byte(expected)))
+	r := io.NopCloser(bytes.NewReader([]byte(expected)))
 
 	got := leEFecha(r)
 	if got != expected {
@@ -283,7 +282,7 @@ func Test_closer(t *testing.T) {
 		if err != nil {
 			return
 		}
-		out, err = ioutil.ReadAll(r)
+		out, err = io.ReadAll(r)
 		return
 	}
 

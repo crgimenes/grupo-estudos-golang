@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 )
 
 type device struct {
@@ -94,7 +94,7 @@ type input struct {
 }
 
 func main() {
-	data, err := ioutil.ReadFile("../payload.json")
+	data, err := os.ReadFile("../payload.json")
 	if err != nil {
 		fmt.Println(err)
 		return

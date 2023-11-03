@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"os"
 	"regexp"
@@ -13,18 +13,18 @@ import (
 
 var errTratamento = errors.New("Não foi possivel encontrar valores")
 
-//BuscaRequest Busca pagina BC
+// BuscaRequest Busca pagina BC
 func BuscaRequest() (contents []byte, err error) {
 	response, err := http.Get("https://ptax.bcb.gov.br/ptax_internet/consultarUltimaCotacaoDolar.do")
 	if err != nil {
 		return
 	}
 	defer response.Body.Close()
-	contents, err = ioutil.ReadAll(response.Body)
+	contents, err = io.ReadAll(response.Body)
 	return
 }
 
-//TrataRequest Recebe o conteudo da pagina e retorna os valores de compra e venda
+// TrataRequest Recebe o conteudo da pagina e retorna os valores de compra e venda
 func TrataRequest(contents []byte) (compra, venda string, err error) {
 	re := regexp.MustCompile("[1-9],[0-9][0-9][0-9][0-9]")
 	valores := re.FindAll(contents, -1)

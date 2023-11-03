@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/url"
 	"os"
@@ -19,7 +18,7 @@ func main() {
 		}
 		defer closer(response.Body)
 		if response.StatusCode == 200 {
-			body, err := ioutil.ReadAll(response.Body)
+			body, err := io.ReadAll(response.Body)
 			if err != nil {
 				fmt.Println("[main] - Failure into reading payload body. " + err.Error())
 				return

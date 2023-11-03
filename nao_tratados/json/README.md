@@ -17,10 +17,10 @@ Vamos ver como carregar um arquivo JSON em uma map e dai percorre cada um dos el
 Usamos a função ReadFile do pacote ioutil para carregar ler o arquivo, a vantagem dessa função é que ela é muito pratica, mas você precisa tomar cuidado porque dependendo do tamanho do arquivo não é uma boa ideia carregar tudo para a RAM de uma vez.
 
 ```go
-data, err := ioutil.ReadFile("../payload.json")
+data, err := os.ReadFile("../payload.json")
 if err != nil {
-	fmt.Println(err)
-	return
+ fmt.Println(err)
+ return
 }
 ```
 
@@ -34,8 +34,8 @@ Para converter o array de bytes para um map vamos usar a função `Unmarshal` do
 payload := make(map[string]interface{})
 err = json.Unmarshal(data, &payload)
 if err != nil {
-	fmt.Println(err)
-	return
+ fmt.Println(err)
+ return
 }
 ```
 
@@ -47,7 +47,7 @@ finalmente vamos chamar a função `chkMap` que vamos ver mais abaixo para verif
 
 ```go
 if chkMap(payload) {
-	fmt.Println("Um ou mais itens abaixo do limite")
+ fmt.Println("Um ou mais itens abaixo do limite")
 }
 fmt.Println("fim")
 ```
@@ -58,42 +58,42 @@ A função `chkMap` vai percorrer cada campo do map, se algum dos objetos conter
 
 ```go
 func chkMap(payload map[string]interface{}) (ret bool) {
-	limit, lmtOk := payload["Limit"]
-	value, valOk := payload["Value"]
-	if lmtOk && valOk {
-		if value.(float64) < limit.(float64) {
-			ret = true
-			return
-		}
-	}
+ limit, lmtOk := payload["Limit"]
+ value, valOk := payload["Value"]
+ if lmtOk && valOk {
+  if value.(float64) < limit.(float64) {
+   ret = true
+   return
+  }
+ }
 
-	for _, v := range payload {
-		switch v.(type) {
-		case []interface{}:
-			ret = chkSlice(v.([]interface{}))
-		case map[string]interface{}:
-			ret = chkMap(v.(map[string]interface{}))
-		}
-		if ret {
-			return
-		}
-	}
-	return
+ for _, v := range payload {
+  switch v.(type) {
+  case []interface{}:
+   ret = chkSlice(v.([]interface{}))
+  case map[string]interface{}:
+   ret = chkMap(v.(map[string]interface{}))
+  }
+  if ret {
+   return
+  }
+ }
+ return
 }
 
 func chkSlice(pauload []interface{}) (ret bool) {
-	for _, v := range pauload {
-		switch v.(type) {
-		case []interface{}:
-			ret = chkSlice(v.([]interface{}))
-		case map[string]interface{}:
-			ret = chkMap(v.(map[string]interface{}))
-		}
-		if ret {
-			return
-		}
-	}
-	return
+ for _, v := range pauload {
+  switch v.(type) {
+  case []interface{}:
+   ret = chkSlice(v.([]interface{}))
+  case map[string]interface{}:
+   ret = chkMap(v.(map[string]interface{}))
+  }
+  if ret {
+   return
+  }
+ }
+ return
 }
 ```
 
@@ -107,9 +107,9 @@ Go fornece algumas ferramentas úteis como a tag `omitempty` que podemos usar pa
 
 ```go
 type metadata struct {
-	SystemID  int    `json:"SystemID,omitempty"`
-	FileID    string `json:"FileID,omitempty"`
-	SubModule string `json:"SubModule,omitempty"`
+ SystemID  int    `json:"SystemID,omitempty"`
+ FileID    string `json:"FileID,omitempty"`
+ SubModule string `json:"SubModule,omitempty"`
 }
 ```
 
@@ -134,11 +134,11 @@ Não precisa declarar a struct inteira, para pegar apenas esse campo podemos dec
 
 ```go
 type apenasMetadata struct {
-	Payload []struct {
-		Result struct {
-			Metadata metadata
-		}
-	}
+ Payload []struct {
+  Result struct {
+   Metadata metadata
+  }
+ }
 }
 ```
 
@@ -152,9 +152,9 @@ No exemplo abaixo a struct `produtos` só existe dentro da função `structInetn
 
 ```go
 func structInetna() {
-	type produtos struct {
-		Nome  string
-		Valor float64
+ type produtos struct {
+  Nome  string
+  Valor float64
     }
     ...
 }
@@ -164,9 +164,9 @@ E se você for usar ela apenas uma vez nem mesmo é necessário declarar um novo
 
 ```go
 func structInetna() {
-	produtos := struct {
-		Nome  string
-		Valor float64
+ produtos := struct {
+  Nome  string
+  Valor float64
     }{}
     ...
 }
@@ -180,8 +180,8 @@ Caso você queira que o campo tenha letra minúscula quando gerar o JSON mude o 
 
 ```go
 type device struct {
-	Limit int `json:"limit"`
-	Value int `json:"value"`
+ Limit int `json:"limit"`
+ Value int `json:"value"`
 ```
 
 Note que o campo na struct tem letra maiúscula o que faz com que ele seja visível para o parser mas na tag json tem letra minúscula ou seja condo for convertido de e para array de bytes vai usar letras minúsculas.

@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"io/ioutil"
 	"os"
 )
 
@@ -16,7 +15,7 @@ func main() {
 	// Parm 1: nome do artquivo
 	// Parm 2: conteúdo do arquivo
 	// Parm 3: permissão de gravação ver os.FileMode
-	erro1 := ioutil.WriteFile("arquivo1", arquivo1, 0644)
+	erro1 := os.WriteFile("arquivo1", arquivo1, 0644)
 	if erro1 != nil {
 		fmt.Println(erro1)
 		/* Neste nosso exemplo vamos convencionar que a saída 3

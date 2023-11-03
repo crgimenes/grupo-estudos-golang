@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 )
 
 func chkMap(payload map[string]interface{}) (ret bool) {
@@ -49,7 +49,7 @@ func chkSlice(pauload []interface{}) (ret bool) {
 }
 
 func main() {
-	data, err := ioutil.ReadFile("../payload.json")
+	data, err := os.ReadFile("../payload.json")
 	if err != nil {
 		fmt.Println(err)
 		return

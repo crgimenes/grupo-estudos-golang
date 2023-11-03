@@ -4,7 +4,7 @@ import (
 	"archive/zip"
 	"bytes"
 	"io"
-	"io/ioutil"
+	"os"
 )
 
 // Archive keeps data to be zipped in RAM
@@ -43,5 +43,5 @@ func (a *Archive) Save(zipFile string) error {
 	if err != nil {
 		return err
 	}
-	return ioutil.WriteFile(zipFile, a.buff.Bytes(), 0600)
+	return os.WriteFile(zipFile, a.buff.Bytes(), 0600)
 }

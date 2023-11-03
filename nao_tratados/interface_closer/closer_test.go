@@ -4,7 +4,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"testing"
 )
@@ -41,7 +40,7 @@ func TestCloser(t *testing.T) {
 		if err != nil {
 			return
 		}
-		out, err = ioutil.ReadAll(r)
+		out, err = io.ReadAll(r)
 		return
 	}
 

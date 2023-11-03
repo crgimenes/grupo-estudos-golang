@@ -2,7 +2,6 @@ package main
 
 import (
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -100,7 +99,7 @@ func FakeResponse(site string) (contents []byte) {
 	handler(w, req)
 
 	resp := w.Result()
-	contents, _ = ioutil.ReadAll(resp.Body)
+	contents, _ = io.ReadAll(resp.Body)
 	return
 }
 
