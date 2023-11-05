@@ -1,3 +1,0 @@
-# Como dar boas respostas
-
-

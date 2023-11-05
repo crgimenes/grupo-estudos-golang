@@ -1,8 +1,7 @@
 # Indice
 
 - [Prefácio](prefacio.md)
-- [Como fazer boas perguntas](como_fazer_boas_perguntas.md)
-- [Como dar boas respostas](como_dar_boas_respostas.md)
+- [Como fazer boas perguntas e dar boas respostas](boas_perguntas_e_boas_respostas.md)
 - Como contribuir
 - Código de conduta
 - Mercado de trabalho
@@ -17,14 +16,15 @@
 - UTF8 (BOM Byte Order Mark)
 - Variaveis / constantes / tipos
 - Operadores
+- Struct
 - Condicional if
 - Condicional switch
 - Loop for
 - Break Continue
 - Array / Slice
 - Funções
+- Tratamento de erros
 - Unit test
-- Struct
 - Usando pacotes
 - stdin stdout stderr
 - Ponteiros
@@ -49,8 +49,6 @@
 - go:generate
 - go benchmark
 - [FAQ](faq.md)
-
-
 
 ## Pacotes da biblioteca padrão
 
@@ -112,7 +110,7 @@ JSON
 - http_templates
 - interface
 - interface_closer
-- ioutil
+- ioutil / descontinuado
 - json
 - lua
 - map
@@ -155,4 +153,3 @@ JSON
 - xml
 - zeroconf
 - zip
-

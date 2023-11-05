@@ -1,3 +1,0 @@
-# Como fazer boas perguntas
-
-
