@@ -4,7 +4,7 @@ Algumas dicas para melhorar a interação com o grupo quando for enviar pergunta
 
 **Especifique o Problema:**
 
-   - Deixe claro qual é o problema que você está enfrentando. Uma descrição precisa auxiliará os outros a entenderem e oferecerem soluções.
+- Deixe claro qual é o problema que você está enfrentando. Uma descrição precisa auxiliará os outros a entenderem e oferecerem soluções.
 
 **Demonstração do Código:**
 
