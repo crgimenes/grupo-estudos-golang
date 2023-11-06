@@ -37,3 +37,7 @@ Algumas dicas para melhorar a interação com o grupo quando for enviar pergunta
 - Respeite a opinião dos outros. Nós programadores temos fortes opiniões sobre o que é melhor e adoramos discutir o melhor tudo, melhor procedimento, melhor editor, melhor sistema operacional, etc. Seja objetivo e não prologue discussões.
 
 - Quando escrever evite anglicismos mas tente se manter proximo da forma popular da lingua, por exemplo no adotamos alguns anglicismos como mouse, kernel, etc. são comuns e aceitáveis. Aqui tem [algumas substituições úteis](https://www.ime.usp.br/~kon/ResearchStudents/traducao.html).
+
+- Quando responder ao grupo, seja exemplar e lembre-se de que você é a referência que outros programadores seguirão.
+
+
