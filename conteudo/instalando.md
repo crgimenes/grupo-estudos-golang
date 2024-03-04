@@ -1,6 +1,6 @@
 ---
-title: "Instalando Go no Windows"
-description: "Como instalar a linguagem Go no Windows."
+title: "Instalando Go"
+description: "Como instalar a linguagem Go."
 tags:
     - golang
     - grupo-estudos-golang
@@ -11,9 +11,19 @@ draft: false
 
 # Instalando
 
+A instalação do Go é bastatnte simples, o caminho mais direto é baixar o instalador para a sua plataforma e executá-lo, ou se preferir baixar os binarios.
+
+Em ambienes UNIX/Linux geralmente é comum instalar o Go em `/usr/local/go` ou `$HOME/go`, e em ambientes Windows em `C:\Go`.
+
+Apos a instalação é necessário configurar a variável PATH para que o sistema operacional possa encontrar o compilador.
+
+Versõs antigas do Go exigiam que outras variaveis fossem condiguradas, hoje essas configurações são opcionais.
+
+**Lembre!** Caso esteja usando algum anti-virus, é necessário adicionar o diretório de instalação do Go e seu diretório de projetos na lista de exceções. É comum que o anti-virus bloqueie a execução de programas compilados com Go e as vezes de forma silenciosa.
+
 ## Download
 
-Faça o download do instalador correspondente ao seu sistema operacional em [https://go.dev/dl/](https://go.dev/dl/).
+Faça o download do instalador correspondente ao seu sistema operacional ou dos binarios em [https://go.dev/dl/](https://go.dev/dl/).
 
 ### Microsoft Windows
 
@@ -23,9 +33,6 @@ Apos executar o instalador, Go estará instalada em
 C:\Go
 ```
 
-**Lembre!** Você está instalando um compilador, desative qualquer software antivirus antes de compilar seus projetos. Muitos antivirus simplesmente bloqueiam o compilador silenciosamente, sem nenhum alerta e daí o compilador não vai conseguir gerar o executável dos exemplos.
-
----
 ### Mac OS X
 
 Apos executar o instaldor, Go estará instalada em:
@@ -33,7 +40,9 @@ Apos executar o instaldor, Go estará instalada em:
 ```
 /usr/local/go
 ```
+
 #### Mac OS X - Alternativa - Usando Homebrew
+
 Se você usa o Homebrew, o Go pode ser instalado com dois simples comandos:
 
 ```
@@ -41,62 +50,11 @@ brew update
 brew install go
 ```
 
-Após isso o Go estará instalado em:
-```
-/usr/local/bin/go
-```
-
----
 ### Linux
 
-Apos executar o instalador Go estará instalada no diretório:
+Você pode descompactar o arquivo tar.gz em `/usr/local` ou `$HOME` e configurar a variável PATH.
 
 ```
-/usr/local/go
+tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
 ```
 
----
-## Git
-
-Para seguir os exemplos que envolvem baixar pacotes diretamente do github é necessário ter o git instalado, você pode baixar uma versão para o seu sistema no site oficial.
-
-[https://git-scm.com](https://git-scm.com)
-
-
----
-# Ambiente de desenvolvimento
-
-## Atom
-
-Você pode usar qualquer editor de texto puro para editar seu código fonte em Go, um que eu gosto é o Atom, é free e muito bom. Depois de instalar vá nas configurações do editor e procure pelos plugins de Go que achar interessante.
-
-[https://atom.io](https://atom.io)
-
-Sugestões de plugins:
-
-[https://atom.io/packages/go-plus](https://atom.io/packages/go-plus)
-
-## Visual Studio Code
-
-Outro ótimo editor é o Visual Studio Code, assim como o Atom, depois de instalar o editor é necessário adicionar os plugins de Go.
-
-[https://code.visualstudio.com](https://code.visualstudio.com)
-
-## Sublime Text
-
-Se você busca o máximo de simplicidade, o Sublime poderá lhe atender. Além de ser um ótimo editor, ele também permite a intalação de plugins que auxiliam no desenvolvimento em Go.
-
-[https://www.sublimetext.com/](https://www.sublimetext.com/)
-
-Sugestões de plugins:
-
-[https://github.com/DisposaBoy/GoSublime](https://github.com/DisposaBoy/GoSublime)
-
----
-### Mas eu não quero instalar nada!
-
-Se você não quiser fazer a instalação para testar os exemplos você pode usar o [The Go Playground](https://play.golang.org)
-
----
-
-[< Inicio](README.md) - [Configurando >](configurando.md)

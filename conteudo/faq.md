@@ -1,8 +1,6 @@
 # Perguntas frequentes
 
-## Qual framework HTTP usar?
-
-## Qual ORM usar?
+## Qual framework, ORM, banco de dados, etc. usar?
 
 ## O que é migration?
 

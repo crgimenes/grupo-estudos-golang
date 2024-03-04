@@ -39,3 +39,4 @@ Algumas dicas para melhorar a interação com o grupo quando for enviar pergunta
 - Quando escrever, evite anglicismos mas tente se manter próximo da forma popular da língua. Por exemplo: nós adotamos alguns anglicismos como mouse, kernel, etc. são comuns e aceitáveis. Aqui tem [algumas substituições úteis](https://www.ime.usp.br/~kon/ResearchStudents/traducao.html).
 
 - Quando responder ao grupo, seja exemplar e lembre-se de que você é a referência que outros programadores seguirão.
+
