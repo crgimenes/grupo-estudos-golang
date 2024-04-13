@@ -6,10 +6,6 @@
 - [Discord](https://crg.eti.br/grupo-estudos-golang/discord)
 - [YouTube](https://crg.eti.br/grupo-estudos-golang/youtube)
 
-### Encontros semanais
-
- Todos os sábados as 14h00 fazemos encontros on-line, os anuncios são feitos no nosso grupo do [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram) e em nosso canal no [Discord](https://crg.eti.br/grupo-estudos-golang/discord).
-
 ## Como contribuir
 
 [Veja aqui como contribuir](CONTRIBUTING.md)
