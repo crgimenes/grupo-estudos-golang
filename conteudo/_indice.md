@@ -1,6 +1,5 @@
 # Indice
 
-- [Prefácio](prefacio.md)
 - [Como fazer boas perguntas e dar boas respostas](boas_perguntas_e_boas_respostas.md)
 - Como contribuir
 - Código de conduta

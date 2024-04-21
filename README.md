@@ -28,58 +28,70 @@ Esse material doi criado com ajuda de inumeras pessoas, sinta-se a vontade para 
 
 [CRG](https://crg.eti.br)
 
+---
 
-## Como contribuir
+# Instalando
 
-### Primeiros passos
+A instalação do Go é bastatnte simples, o caminho mais direto é baixar o instalador para a sua plataforma e executá-lo, ou se preferir baixar os binarios.
 
-De uma olhada nas issues e veja se o que você quer fazer já não esta sendo discutido, se estiver ótimo, participe da discussão e de suas ideias caso não esteja você pode criar uma nova issue para discutirmos ou se preferir pode também mandar diretamente um _pull request_, só não esqueça de descrever muito bem o que você quer mudar/adicionar.
+Em ambienes UNIX/Linux geralmente é comum instalar o Go em `/usr/local/go` ou `$HOME/go`, e em ambientes Windows em `C:\Go`.
 
-### Formato
+Apos a instalação é necessário configurar a variável PATH para que o sistema operacional possa encontrar o compilador.
 
-Material novo idealmente deve ser organizados em diretórios e ter três arquivos, um README.md descrevendo o exemplo, um exemplo.go contendo o exemplo propriamente dito e um exemplo_test.go.
+Versõs antigas do Go exigiam que outras variaveis fossem condiguradas, hoje essas configurações são opcionais.
+
+**Lembre!** Caso esteja usando algum anti-virus, é necessário adicionar o diretório de instalação do Go e seu diretório de projetos na lista de exceções. É comum que o anti-virus bloqueie a execução de programas compilados com Go e as vezes de forma silenciosa.
+
+## Download
+
+Faça o download do instalador correspondente ao seu sistema operacional ou dos binarios em [https://go.dev/dl/](https://go.dev/dl/).
+
+### Microsoft Windows
+
+Apos executar o instalador, Go estará instalada em
 
 ```
-exemplo/README.md
-exemplo/exemplo.go
-exemplo/exemplo_test.go
+C:\Go
 ```
 
-### Cuidado com o código
+### Mac OS X
 
-Antes de mandar um _pull request_ formate seu código com _go fmt_. Também é uma boa ideia passar uma ferramenta de analize estatica como golint por exemplo.
+Apos executar o instaldor, Go estará instalada em:
 
-### Não se prolongue demais
+```
+/usr/local/go
+```
 
-Uma das características que é importante manter são exemplos curtos e de fácil entendimento, tenta fazer com que os exemplos caibam em uma tela, tudo bem se não for possível, apenas mantenha isso em mente.
+#### Mac OS X - Alternativa - Usando Homebrew
 
-Exemplos rápidos, curtos, diretos e de fácil entendimento são nossa meta.
+Se você usa o Homebrew, o Go pode ser instalado com dois simples comandos:
 
-### Inclua seus exemplos no The Go Playground
+```
+brew update
+brew install go
+```
 
-Inclua um link sob os exemplos que você escrever apontando para o https://play.golang.org, dessa fora o leitor pode testar seu exemplo imediatamente. Obviamente isso não é possivel com qualquer exemplo, mas onde for possivel é bom colocar.
+### Linux
 
-### Arquivo README.md e Rodapé
+Você pode descompactar o arquivo tar.gz em `/usr/local` ou `$HOME` e configurar a variável PATH.
 
-Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial na lista do arquivo README.md, a ideia é que os tutoriais estejam em ordem complexidade.
+```
+tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
+```
 
-### Enviando uma contribuição
+---
 
-- Faça um _fork_ do projeto.
-- Crie uma _branch_ com as suas modificações `git checkout -b exemplo-fantastico`.
-- Faça _commit_ das suas alterações `git commit -m 'Implementação do novo exemplo fantástico'`.
-- Faça um _push_ na sua _branch_ `git push origin exemplo-fantastico`.
-- Faça um _pull request_ com suas alterações.
+## Perguntas frequentes
 
+### Qual framework, ORM, banco de dados, etc. usar?
 
+### O que é migration?
 
+### Qual paradigma/padrão de projeto usar em Go.
 
+### Porque o tratamento de erro é tão verborragico?
 
-
-
-
-
-
+---
 
 ## Como fazer boas perguntas e dar boas respostas
 
@@ -123,6 +135,51 @@ Algumas dicas para melhorar a interação com o grupo quando for enviar pergunta
 
 - Quando responder ao grupo, seja exemplar e lembre-se de que você é a referência que outros programadores seguirão.
 
+---
+
+## Como contribuir
+
+### Primeiros passos
+
+De uma olhada nas issues e veja se o que você quer fazer já não esta sendo discutido, se estiver ótimo, participe da discussão e de suas ideias caso não esteja você pode criar uma nova issue para discutirmos ou se preferir pode também mandar diretamente um _pull request_, só não esqueça de descrever muito bem o que você quer mudar/adicionar.
+
+### Formato
+
+Material novo idealmente deve ser organizados em diretórios e ter três arquivos, um README.md descrevendo o exemplo, um exemplo.go contendo o exemplo propriamente dito e um exemplo_test.go.
+
+```
+exemplo/README.md
+exemplo/exemplo.go
+exemplo/exemplo_test.go
+```
+
+### Cuidado com o código
+
+Antes de mandar um _pull request_ formate seu código com _go fmt_. Também é uma boa ideia passar uma ferramenta de analize estatica como golint por exemplo.
+
+### Não se prolongue demais
+
+Uma das características que é importante manter são exemplos curtos e de fácil entendimento, tenta fazer com que os exemplos caibam em uma tela, tudo bem se não for possível, apenas mantenha isso em mente.
+
+Exemplos rápidos, curtos, diretos e de fácil entendimento são nossa meta.
+
+### Inclua seus exemplos no The Go Playground
+
+Inclua um link sob os exemplos que você escrever apontando para o https://play.golang.org, dessa fora o leitor pode testar seu exemplo imediatamente. Obviamente isso não é possivel com qualquer exemplo, mas onde for possivel é bom colocar.
+
+### Arquivo README.md e Rodapé
+
+Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial na lista do arquivo README.md, a ideia é que os tutoriais estejam em ordem complexidade.
+
+### Enviando uma contribuição
+
+- Faça um _fork_ do projeto.
+- Crie uma _branch_ com as suas modificações `git checkout -b exemplo-fantastico`.
+- Faça _commit_ das suas alterações `git commit -m 'Implementação do novo exemplo fantástico'`.
+- Faça um _push_ na sua _branch_ `git push origin exemplo-fantastico`.
+- Faça um _pull request_ com suas alterações.
+
+---
 
 ## Licença de uso
 
