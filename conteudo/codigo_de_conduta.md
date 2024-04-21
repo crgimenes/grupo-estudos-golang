@@ -1,7 +1,0 @@
-Rascunho
-
-## Sobre pirataria.
-
-
-
-
