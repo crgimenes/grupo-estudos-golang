@@ -85,11 +85,23 @@ tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
 
 ### Qual framework, ORM, banco de dados, etc. usar?
 
+- Go é uma linguagem de programação minimalista, não possui um framework padrão como Django, Rails ou Laravel. Antes de procurar algo externos tente usar as bibliotecas padrão, elas são muito boas e completas.
+
+- ORM é um conceito que não é muito usado em Go, idealmente você deve usar um banco de dados que tenha um driver nativo para Go, como PostgreSQL, MySQL, SQLite, etc. e escrever seus proprios SQLs.
+
+- Frameworks web são muitos, alguns populares são o Gin, Echo, Fiber, Beego, etc. mas você pode usar o pacote `net/http` da biblioteca padrão, ele provavelmente vai resolver seu problema sem adicionar complexidade ou dependências.
+
 ### O que é migration?
+
+- Migration é uma ferramenta que permite que você controle as mudanças no banco de dados, geralmente é usado para criar tabelas, adicionar colunas, etc. Existem muitas ferramentas de migration, você pode usar uma delas ou escrever suas proprias migrations.
 
 ### Qual paradigma/padrão de projeto usar em Go.
 
+- Go esta mais para programação estruturada/procedural. Go não possui um padrão de projeto como MVC, MVVM, etc. Você pode usar o que achar melhor. Orientação a objetos é possivel em Go, mas não é muito comum.
+
 ### Porque o tratamento de erro é tão verborragico?
+
+- Go não possui exceções, o tratamento de erro é feito com o retorno de um erro, isso é uma escolha de design da linguagem. O tratamento de erro é explicito e isso é uma das coisas que torna Go uma linguagem simples e fácil de entender. Os erros são tratados imediatamente onde eles acontecem tornando o debug mais fácil. Uma dica importante é sempre tratar todos os erros, muitas vezes um erro que parece impossível de acontecer, acontece.
 
 ---
 
@@ -104,6 +116,8 @@ Algumas dicas para melhorar a interação com o grupo quando for enviar pergunta
 **Demonstração do Código:**
 
 - Forneça um trecho de código, e inclua a saída esperada e atual. Isso dará aos outros uma ideia melhor do que está acontecendo.
+
+- Você pode usar o [The Go Playground](https://go.dev/play/) para compartilhar exemplos de código. ou então use o markdown para formatar o código. Geralmente basta colocar o código entre três crases.
 
 **Ambiente de Desenvolvimento:**
 
