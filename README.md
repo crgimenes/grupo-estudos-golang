@@ -9,8 +9,6 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 
 [Sobre o Grupo de Estudos de Go](#um-pouco-de-história)
 
----
-
 # Ementa do Curso de Programação em Go
 
 ## Módulo 1: Introdução ao Go
@@ -77,19 +75,18 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 ### 10: Banco de Dados
 
 - Conexão e manipulação de bancos de dados SQL (usando SQLite como exemplo)
-- ORM com GORM
 - Transações e migrações
+- ORM com GORM
 
 ### 11: Testes em Go
 
 - Testes unitários
-- Testes de integração
 - Benchmarking
 
 ### 12: Ferramentas e Boas Práticas
 
 - Uso do Go Modules
-- Linters e formatadores de código
+- Linters e formatação de código
 - Profiling e otimização de desempenho
 
 ## Módulo 4: Projetos Práticos
@@ -254,7 +251,7 @@ De uma olhada nas issues e veja se o que você quer fazer já não esta sendo di
 
 ### Formato
 
-Material novo idealmente deve ser organizados em diretórios e ter três arquivos, um README.md descrevendo o exemplo, um exemplo.go contendo o exemplo propriamente dito e um exemplo_test.go.
+Material novo idealmente deve ser organizados em diretórios e ter três arquivos, um README.md descrevendo como executar o exemplo, um exemplo.go contendo o exemplo propriamente dito e um exemplo_test.go. (alternativamente você pode usar main.go e main_test.go). Também é necessário fazer uma descrição do exemplo no arquivo README.md do diretório principal.
 
 ```
 exemplo/README.md
@@ -276,7 +273,7 @@ Exemplos rápidos, curtos, diretos e de fácil entendimento são nossa meta.
 
 Inclua um link sob os exemplos que você escrever apontando para o https://play.golang.org, dessa fora o leitor pode testar seu exemplo imediatamente. Obviamente isso não é possivel com qualquer exemplo, mas onde for possivel é bom colocar.
 
-### Arquivo README.md e Rodapé
+### Arquivo README.md
 
 Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial na lista do arquivo README.md, a ideia é que os tutoriais estejam em ordem complexidade.
 
