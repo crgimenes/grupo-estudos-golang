@@ -5,14 +5,157 @@
 
 Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e melhorada. Os exemplos antigos estão no diretório "nao_tratados".
 
----
+--- 
 
-## Comunidade
+[Sobre o Grupo de Estudos de Go](#um-pouco-de-história)
 
-- [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram)
-- [Discord](https://crg.eti.br/grupo-estudos-golang/discord)
-- [YouTube](https://crg.eti.br/grupo-estudos-golang/youtube)
+# Ementa do Curso de Programação em Go
 
+## Módulo 1: Introdução ao Go
+
+### 1: Bem-vindo ao Go
+
+- História e filosofia do Go
+- [Instalação e configuração do ambiente](#instalação-e-configuração-do-ambiente)
+- Primeiro programa em Go: "Hello, World!"
+
+### 2: Fundamentos da Linguagem
+
+- Sintaxe básica
+- Tipos de dados primitivos
+- Variáveis e constantes
+- Estruturas de controle (if, else, switch)
+
+### 3: Funções
+
+- Declaração e chamada de funções
+- Parâmetros e retorno de funções
+- Funções anônimas e closures
+
+### 4: Estruturas de Dados
+
+- Arrays e slices
+- Mapas
+- Structs
+
+## Módulo 2: Intermediário
+
+### 5: Programação Orientada a Objetos em Go
+
+- Structs e métodos
+- Interfaces
+- Polimorfismo
+
+### 6: Manipulação de Erros
+
+- Tratamento de erros
+- Padrões de erro
+- Customização de erros
+
+### 7: Concorrência em Go
+
+- Goroutines
+- Canais (channels)
+- Select e sincronização
+
+### 8: Input e Output
+
+- Leitura e escrita de arquivos
+- Manipulação de JSON e XML
+- Uso de pacotes padrão para I/O
+
+## Módulo 3: Avançado
+
+### 9: Rede e Web
+
+- Desenvolvimento de servidores HTTP
+- Construção de APIs RESTful
+- Manipulação de sockets e comunicação em rede
+
+### 10: Banco de Dados
+
+- Conexão e manipulação de bancos de dados SQL (usando SQLite como exemplo)
+- Transações e migrações
+- ORM com GORM
+
+### 11: Testes em Go
+
+- Testes unitários
+- Benchmarking
+
+### 12: Ferramentas e Boas Práticas
+
+- Uso do Go Modules
+- Linters e formatação de código
+- Profiling e otimização de desempenho
+
+## Módulo 4: Projetos Práticos
+
+### 13: Projeto 1 - Aplicação CLI
+
+- Desenvolvimento de uma aplicação de linha de comando
+- Parsing de argumentos e flags
+- Automação de tarefas
+
+### 14: Projeto 2 - Web Application
+
+- Construção de uma aplicação web completa
+- Templates HTML e manipulação de formulários
+- Autenticação e autorização
+
+### 15: Projeto 3 - Sistema de BBS
+
+- Integração com KotobaHub
+- Implementação de funcionalidades de chat, fórum e wiki
+- Implementação de acesso e controle de usuários
+
+### 16: Projeto 4 - Bot do Telegram
+
+- Criação e configuração de um bot do Telegram
+- Uso da API do ChatGPT-4 para interações
+- Manutenção de contexto nas conversas
+
+## Módulo 5: Tópicos Especiais
+
+### 17: Desenvolvimento para Microserviços
+
+- Arquitetura de microserviços
+- Comunicação entre serviços
+- Deploy e escalabilidade
+
+### 18: Integração Contínua e Deploy Contínuo (CI/CD)
+
+- Ferramentas de CI/CD (por exemplo, GitHub Actions)
+- Automação de builds e testes
+- Deploy automático
+
+### 19: Segurança em Aplicações Go
+
+- Práticas de segurança
+- Proteção contra vulnerabilidades comuns
+- Uso de pacotes seguros
+
+### 20: Performance e Escalabilidade
+
+- Técnicas avançadas de profiling
+- Otimização de código
+- Estratégias de escalabilidade
+
+## Recursos Adicionais
+
+- [Perguntas frequentes](#perguntas-frequentes)
+- Leituras recomendadas
+- Exercícios práticos e desafios
+- [Como contribuir](#como-contribuir)
+- [Como fazer boas perguntas e dar boas respostas](#como-fazer-boas-perguntas-e-dar-boas-respostas)
+- Comunidade de desenvolvedores Go
+    - [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram)
+    - [Discord](https://crg.eti.br/grupo-estudos-golang/discord)
+    - [YouTube](https://crg.eti.br/grupo-estudos-golang/youtube)
+- Sessões de mentoria
+- Licença de uso
+
+--- 
 
 ## Um pouco de história
 
@@ -27,57 +170,6 @@ No dia 11 de maio de 2016 criei o repositório do Grupo de Estudos de Golang no 
 Esse material doi criado com ajuda de inumeras pessoas, sinta-se a vontade para usar, compartilhar e melhorar.
 
 [CRG](https://crg.eti.br)
-
----
-
-# Instalando
-
-A instalação do Go é bastatnte simples, o caminho mais direto é baixar o instalador para a sua plataforma e executá-lo, ou se preferir baixar os binarios.
-
-Em ambienes UNIX/Linux geralmente é comum instalar o Go em `/usr/local/go` ou `$HOME/go`, e em ambientes Windows em `C:\Go`.
-
-Apos a instalação é necessário configurar a variável PATH para que o sistema operacional possa encontrar o compilador.
-
-Versõs antigas do Go exigiam que outras variaveis fossem condiguradas, hoje essas configurações são opcionais.
-
-**Lembre!** Caso esteja usando algum anti-virus, é necessário adicionar o diretório de instalação do Go e seu diretório de projetos na lista de exceções. É comum que o anti-virus bloqueie a execução de programas compilados com Go e as vezes de forma silenciosa.
-
-## Download
-
-Faça o download do instalador correspondente ao seu sistema operacional ou dos binarios em [https://go.dev/dl/](https://go.dev/dl/).
-
-### Microsoft Windows
-
-Apos executar o instalador, Go estará instalada em
-
-```
-C:\Go
-```
-
-### Mac OS X
-
-Apos executar o instaldor, Go estará instalada em:
-
-```
-/usr/local/go
-```
-
-#### Mac OS X - Alternativa - Usando Homebrew
-
-Se você usa o Homebrew, o Go pode ser instalado com dois simples comandos:
-
-```
-brew update
-brew install go
-```
-
-### Linux
-
-Você pode descompactar o arquivo tar.gz em `/usr/local` ou `$HOME` e configurar a variável PATH.
-
-```
-tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
-```
 
 ---
 
@@ -159,7 +251,7 @@ De uma olhada nas issues e veja se o que você quer fazer já não esta sendo di
 
 ### Formato
 
-Material novo idealmente deve ser organizados em diretórios e ter três arquivos, um README.md descrevendo o exemplo, um exemplo.go contendo o exemplo propriamente dito e um exemplo_test.go.
+Material novo idealmente deve ser organizados em diretórios e ter três arquivos, um README.md descrevendo como executar o exemplo, um exemplo.go contendo o exemplo propriamente dito e um exemplo_test.go. (alternativamente você pode usar main.go e main_test.go). Também é necessário fazer uma descrição do exemplo no arquivo README.md do diretório principal.
 
 ```
 exemplo/README.md
@@ -181,7 +273,7 @@ Exemplos rápidos, curtos, diretos e de fácil entendimento são nossa meta.
 
 Inclua um link sob os exemplos que você escrever apontando para o https://play.golang.org, dessa fora o leitor pode testar seu exemplo imediatamente. Obviamente isso não é possivel com qualquer exemplo, mas onde for possivel é bom colocar.
 
-### Arquivo README.md e Rodapé
+### Arquivo README.md
 
 Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial na lista do arquivo README.md, a ideia é que os tutoriais estejam em ordem complexidade.
 
@@ -200,5 +292,60 @@ Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial
 Esse material é livre, sob a licença Creative Commons, CC BY-SA. você pode usar da forma que preferir, apenas lembre de citar a fonte, não apenas copie, no lugar disso acrescente, melhore e compartilhe, assim todos ganhamos.
 
 [Cesar Gimenes](crg.eti.br)
+
+---
+
+
+# Instalação e configuração do ambiente
+
+A instalação do Go é bastatnte simples, o caminho mais direto é baixar o instalador para a sua plataforma e executá-lo, ou se preferir baixar os binarios.
+
+Em ambienes UNIX/Linux geralmente é comum instalar o Go em `/usr/local/go` ou `$HOME/go`, e em ambientes Windows em `C:\Go`.
+
+Apos a instalação é necessário configurar a variável PATH para que o sistema operacional possa encontrar o compilador.
+
+Versõs antigas do Go exigiam que outras variaveis fossem condiguradas, hoje essas configurações são opcionais.
+
+**Lembre!** Caso esteja usando algum anti-virus, é necessário adicionar o diretório de instalação do Go e seu diretório de projetos na lista de exceções. É comum que o anti-virus bloqueie a execução de programas compilados com Go e as vezes de forma silenciosa.
+
+## Download
+
+Faça o download do instalador correspondente ao seu sistema operacional ou dos binarios em [https://go.dev/dl/](https://go.dev/dl/).
+
+### Microsoft Windows
+
+Apos executar o instalador, Go estará instalada em
+
+```
+C:\Go
+```
+
+### Mac OS X
+
+Apos executar o instaldor, Go estará instalada em:
+
+```
+/usr/local/go
+```
+
+#### Mac OS X - Alternativa - Usando Homebrew
+
+Se você usa o Homebrew, o Go pode ser instalado com dois simples comandos:
+
+```
+brew update
+brew install go
+```
+
+### Linux
+
+Você pode descompactar o arquivo tar.gz em `/usr/local` ou `$HOME` e configurar a variável PATH.
+
+```
+tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
+```
+
+
+
 
 
