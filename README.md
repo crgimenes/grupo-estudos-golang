@@ -18,7 +18,7 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 ### 1: Bem-vindo ao Go
 
 - História e filosofia do Go
-- [Instalação e configuração do ambiente](#instalando)
+- [Instalação e configuração do ambiente](#instalação-e-configuração-do-ambiente)
 - Primeiro programa em Go: "Hello, World!"
 
 ### 2: Fundamentos da Linguagem
