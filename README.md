@@ -15,7 +15,7 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 
 ### 1: Bem-vindo ao Go
 
-- História e filosofia do Go
+- [História e filosofia do Go](#história-e-filosofia-do-go)
 - [Instalação e configuração do ambiente](#instalação-e-configuração-do-ambiente)
 - Primeiro programa em Go: "Hello, World!"
 
@@ -295,8 +295,21 @@ Esse material é livre, sob a licença Creative Commons, CC BY-SA. você pode us
 
 ---
 
+# Bem-vindo ao Go
 
-# Instalação e configuração do ambiente
+## História e filosofia do Go
+
+Go, foi criado no Google em 2007 por Robert Griesemer, Rob Pike e Ken Thompson. 
+
+A primeira versão estável, Go 1.0, foi lançada em março de 2012. 
+
+O objetivo do Go é ser uma linguagem simples, eficiente e com uma curva de aprendizado suave, mantendo um equilíbrio entre desempenho e facilidade de uso. 
+
+Go foi projetado para resolver problemas encontrados em linguagens tradicionais como C++ e Java, oferecendo concisão, simplicidade e segurança na concorrência.
+
+Os mantenedores da linguagem Go se comprometem a manter a [retrocompatibilidade com a versão 1.0](https://go.dev/doc/go1compat), garantindo que programas escritos para versões anteriores continuem funcionando sem alterações. Esse compromisso é uma das razões pelas quais Go é uma linguagem popular para desenvolvimento de sistemas de larga escala.
+
+## Instalação e configuração do ambiente
 
 A instalação do Go é bastatnte simples, o caminho mais direto é baixar o instalador para a sua plataforma e executá-lo, ou se preferir baixar os binarios.
 
