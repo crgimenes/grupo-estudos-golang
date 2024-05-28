@@ -309,6 +309,9 @@ Go foi projetado para resolver problemas encontrados em linguagens tradicionais 
 
 Os mantenedores da linguagem Go se comprometem a manter a [retrocompatibilidade com a versão 1.0](https://go.dev/doc/go1compat), garantindo que programas escritos para versões anteriores continuem funcionando sem alterações. Esse compromisso é uma das razões pelas quais Go é uma linguagem popular para desenvolvimento de sistemas de larga escala.
 
+Outro ponto importante para lembrar é que a retrocompatibilidade não é binária, ou seja, não é garantido que um programa escrito em Go 1.0 gere o mesmo binário em versões futuras. O que é garantido é que o código fonte continuará compilando. Um exemplo onde retrocompatibilidade do binário é importante é se você precisar suportar versões antigas de sistemas operacionais ou hardware, seu programa continua compilando sem erros mas não funciona na plataforma antiga.
+
+
 ## Instalação e configuração do ambiente
 
 A instalação do Go é bastatnte simples, o caminho mais direto é baixar o instalador para a sua plataforma e executá-lo, ou se preferir baixar os binarios.
