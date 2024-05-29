@@ -17,6 +17,7 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 
 - [História e filosofia do Go](#história-e-filosofia-do-go)
 - [Instalação e configuração do ambiente](#instalação-e-configuração-do-ambiente)
+- [Verificando a instalação](#verificando-a-instalação)
 - Primeiro programa em Go: "Hello, World!"
 
 ### 2: Fundamentos da Linguagem
@@ -336,12 +337,34 @@ Apos executar o instalador, Go estará instalada em
 C:\Go
 ```
 
+#### Anti-virus
+
+Caso esteja usando algum anti-virus, é necessário fazer ajustes para que o compilador não seja bloqueado, é comum que o anti-virus bloqueie a execução de programas compilados com Go e as vezes de forma silenciosa.
+
+#### Ajuste do PATH
+
+Existem várias formas de configurar a variável PATH no Windows, uma das formas mais simples é usar o Painel de Controle. Você precisa que o diretório `C:\Go\bin` seja adicionado ao PATH.
+
+No Windows 11, você pode usand a tecla de atalho `Win + R` e digitar `sysdm.cpl` e clicar em `OK`. Na janela que abrir, clique na aba `Avançado` e depois no botão `Variáveis de Ambiente`. Na janela que abrir, clique duas vezes na variável `Path` e adicione o diretório `C:\Go\bin` no final da lista.
+
 ### Mac OS X
 
 Apos executar o instaldor, Go estará instalada em:
 
 ```
 /usr/local/go
+```
+
+#### Mac OS X - Alternativa - Usando Homebrew
+
+Preferencialmente use o instalador oficial.
+
+#### Ajuste do PATH
+
+Adicione o diretório `bin` do Go ao PATH. Abra o arquivo `~/.bash_profile` ou `~/.zshrc` e adicione a seguinte linha:
+
+```bash
+export PATH=$PATH:/usr/local/go/bin
 ```
 
 #### Mac OS X - Alternativa - Usando Homebrew
@@ -353,6 +376,8 @@ brew update
 brew install go
 ```
 
+No caso da instalação via Homebrew, o PATH é configurado automaticamente.
+
 ### Linux
 
 Você pode descompactar o arquivo tar.gz em `/usr/local` ou `$HOME` e configurar a variável PATH.
@@ -361,7 +386,36 @@ Você pode descompactar o arquivo tar.gz em `/usr/local` ou `$HOME` e configurar
 tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
 ```
 
+#### Ajuste do PATH
 
+Adicione o diretório `bin` do Go ao PATH. Abra o arquivo `~/.bashrc` ou `~/.zshrc` e adicione a seguinte linha:
 
+```bash
+export PATH=$PATH:/usr/local/go/bin
+```
+
+Uma dica importante, quando você quiser atualizar o Go é bom remover a versão antiga antes de instalar a nova, os instaladores para Mac e Windows fazem isso automaticamente, mas no Linux é necessário fazer manualmente.
+
+Como super usuário, execute o comando:
+
+```bash
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
+```
+
+Isso ira remover a versão antiga e instalar a nova.
+
+## Verificando a instalação
+
+Para verificar se a instalação foi bem sucedida, abra um terminal e execute o comando:
+
+```bash
+go version
+```
+
+Você deve ver algo como:
+
+```
+go version go1.22.0 linux/amd64
+```
 
 
