@@ -18,7 +18,7 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 - [História e filosofia do Go](#história-e-filosofia-do-go)
 - [Instalação e configuração do ambiente](#instalação-e-configuração-do-ambiente)
 - [Verificando a instalação](#verificando-a-instalação)
-- Primeiro programa em Go: "Hello, World!"
+- [Primeiro programa em Go: "Hello, World!"](#primeiro-programa-em-go-hello-world)
 
 ### 2: Fundamentos da Linguagem
 
@@ -417,5 +417,38 @@ Você deve ver algo como:
 ```
 go version go1.22.0 linux/amd64
 ```
+
+## Primeiro programa em Go: "Hello, World!"
+
+"Hello, World!" é um clássico primeiro programa, é extremamente simples, mas é ótimo para comprovar que o ambiente de desenvolvimento está funcionando corretamente.
+
+Em Go o programa inicia na função `main` e o pacote principal é `main`.
+
+```go
+package main
+
+func main() {
+    println("Hello, World!")
+}
+```
+
+A primeira linha do programa é o pacote, em Go os programas são organizados em pacotes, o pacote principal é `main`, e o nome do pacote deve ser o mesmo que o nome do diretório.
+
+A segunda linha é a função `main`, ela é a função chamada quando o programa é executado.
+
+E finalmente, terceira linha é a chamada para a função `println`, que imprime a mensagem "Hello, World!" no terminal.
+
+Para executar o programa, salve o código em um arquivo chamado `hello.go` e execute o comando:
+
+```bash
+go run hello.go
+```
+
+Você deve ver a mensagem "Hello, World!" impressa no terminal.
+
+Go não tem versão interpretada, mesmo esse teste usando `go run` é compilado antes de ser executado, o executável é temporário e é removido após a execução.
+
+---
+
 
 
