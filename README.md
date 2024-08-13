@@ -22,7 +22,7 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 
 ### 2: Fundamentos da Linguagem
 
-- Sintaxe básica
+- [Sintaxe básica](#sintaxe-básica)
 - Tipos de dados primitivos
 - Variáveis e constantes
 - Estruturas de controle (if, else, switch)
@@ -449,6 +449,66 @@ Você deve ver a mensagem "Hello, World!" impressa no terminal.
 Go não tem versão interpretada, mesmo esse teste usando `go run` é compilado antes de ser executado, o executável é temporário e é removido após a execução.
 
 ---
+
+## 2: Fundamentos da Linguagem
+
+### Sintaxe básica
+
+Go é uma linguagem de programação com sintaxe minimalista parecida com C e linguagens derivadas. Se você já programou em C, C++, Java ou JavaScript, vai sentir muita familiaridade com Go.
+
+Aqui vamos fazer uma passagem rápida sobre a sintaxe, você pode encontrar mais detalhes na [documentação oficial](https://golang.org/doc/).
+
+#### Pacotes
+
+No decorrer deste texto falaremos muito sobre pacotes, eles são uma parte fundamental da organização de código em Go.
+
+Um pacote é composto por um ou mais arquivos fonte em Go e é organizado em diretórios. idealmente o nome do pacote deve ser o mesmo que o nome do diretório.
+
+Não é permitido ter mais de um pacote em um mesmo diretório.
+
+Todo programa Go começa na função `main` do pacote `main`.
+
+Você pode criar múltiplos pacotes para organizar seu código e pode importar pacotes de outros pacotes. Falaremos mais sobre importação de pacotes de terceiros quando falarmos de ferramentas como o `go mod`.
+
+Os pacotes são importados no início do arquivo com a palavra-chave `import`.
+
+Exemplo:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+
+Nesse exemplo, foi importado o pacote `fmt` que é um pacote da biblioteca padrão de Go, ele é usado para formatar a saída do programa.
+
+Você pode também importar múltiplos pacotes com um único comando import.
+
+```go
+import (
+    "fmt"
+    "os"
+)
+```
+
+Um ponto importante para ter em mente quando estiver organizando seu projeto é que as dependências do Go crescem em apenas uma direção, em outras palavras, um pacote não pode importar um pacote que o importa, isso criaria uma dependência circular e resultaria em um erro de compilação.
+
+#### Comentários
+
+#### Variáveis e constantes
+
+#### Tipos de dados primitivos
+
+#### Funções
+
+#### Estruturas de controle (if, else, switch)
+
+
+
 
 
 
