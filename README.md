@@ -520,6 +520,26 @@ linhas
 
 #### Estruturas de controle (if, else, switch)
 
+#### Loops
+
+#### Arrays e slices
+
+#### Mapas
+
+#### Structs
+
+#### ponteiros
+
+#### Interfaces
+
+#### Funções anônimas e closures
+
+#### Defer
+
+#### Panic e Recover
+
+
+
 
 
 
