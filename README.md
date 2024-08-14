@@ -499,6 +499,19 @@ Um ponto importante para ter em mente quando estiver organizando seu projeto é 
 
 #### Comentários
 
+Comentários em Go são feitos com `//` para comentários de linha e `/* */` para comentários multiplas linhas, igual a C e C++ e tantas outras linguagens `C-like`.
+
+```go
+// Este é um comentário de linha
+
+/*
+Este é um comentário
+com múltiplas 
+linhas
+*/
+```
+
+
 #### Variáveis e constantes
 
 #### Tipos de dados primitivos
