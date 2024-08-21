@@ -514,6 +514,47 @@ linhas
 
 #### Variáveis e constantes
 
+Variáveis em Go são declaradas com a palavra-chave `var`, seguida pelo nome da variável e o tipo.
+
+```go
+var nome string
+var idade int
+```
+
+Você pode também declarar múltiplas variáveis em uma única linha.
+
+```go
+var nome, sobrenome string
+var idade, altura int
+```
+
+Go também permite que você declare variáveis sem especificar o tipo, o compilador irá inferir o tipo da variável baseado no valor atribuído.
+
+```go
+var nome = "Alice"
+var idade = 30
+```
+
+Outra forma de declarar variáveis é usando a forma curta `:=`, essa forma é usada para declarar e inicializar variáveis ao mesmo tempo.
+
+```go
+nome := "Alice"
+idade := 30
+```
+
+Constantes são declaradas com a palavra-chave `const`.
+
+```go
+const pi = 3.14159
+const maxTentativas = 5
+```
+
+Ao contratio de variáveis, constantes não podem ser declaradas usando a forma curta `:=` e devem ser inicializadas com um valor constante. Você não executar uma e atribuir o retorno na constante.
+
+```go
+const pi = math.Pi // Errado
+```
+
 #### Tipos de dados primitivos
 
 #### Funções
