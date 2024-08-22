@@ -552,12 +552,39 @@ const maxTentativas = 5
 Ao contratio de variáveis, constantes não podem ser declaradas usando a forma curta `:=` e devem ser inicializadas com um valor constante. Você não executar uma e atribuir o retorno na constante.
 
 ```go
-const pi = math.Pi // Errado
+const value = math.Sin(math.Pi / 4) // Errado
 ```
 
-#### Tipos de dados primitivos
+#### Tipos de dados
+
+Go é uma linguaem de tipagem estática, isso significa que você deve declarar o tipo de uma variável antes de usá-la e o tipo de uma variável não pode ser alterado depois de declarado.
+
+Go possui os seguintes tipos de dados primitivos:
+
+- `bool`: Tipo booleano, pode ser `true` ou `false`.
+- `string`: Tipo string, uma sequência de caracteres.
+- `int`, `int8`, `int16`, `int32`, `int64`: Tipos inteiros com sinal.
+- `uint`, `uint8`, `uint16`, `uint32`, `uint64`: Tipos inteiros sem sinal.
+- `uintptr`: Tipo inteiro sem sinal grande o suficiente para armazenar o valor de um ponteiro.
+- `float32`, `float64`: Tipos de ponto flutuante.
+- `complex64`, `complex128`: Tipos de números complexos.
+- `byte`: Sinônimo para `uint8`.
+- `rune`: Sinônimo para `int32`, representa um caractere Unicode.
+- `func`: Tipo de função.
+- `interface`: Tipo de interface.
+- `chan`: Tipo de canal.
+- `struct`: Tipo de estrutura.
+- `map`: Tipo de mapa.
+- `array`: Tipo de array.
+- `slice`: Tipo de slice.
+
+Go também suporta ponteiros mas não aritmética de ponteiros. Isso significa que você pode usar ponteiros para passar valores por referência, mas não pode alocar uma area arbitrária de memória e acessar como ponteiros de um tipo de dado como em C.
 
 #### Funções
+
+
+
+
 
 #### Estruturas de controle (if, else, switch)
 
