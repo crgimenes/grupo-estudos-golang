@@ -606,7 +606,9 @@ Go também suporta ponteiros mas não aritmética de ponteiros. Isso significa q
 
 #### Panic e Recover
 
+#### Controle de erros
 
+---
 
 
 
