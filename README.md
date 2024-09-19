@@ -11,150 +11,137 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 
 # Ementa do Curso de Programação em Go
 
-## Módulo 1: Introdução ao Go
+## Módulo: Introdução ao Go
 
-### 1: Bem-vindo ao Go
+### Bem-vindo ao Go
 
 - [História e filosofia do Go](#história-e-filosofia-do-go)
 - [Instalação e configuração do ambiente](#instalação-e-configuração-do-ambiente)
 - [Verificando a instalação](#verificando-a-instalação)
 - [Primeiro programa em Go: "Hello, World!"](#primeiro-programa-em-go-hello-world)
 
-### 2: Fundamentos da Linguagem
+### Fundamentos da Linguagem
 
-- Sintaxe básica
-- Tipos de dados primitivos
-- Variáveis e constantes
-- Estruturas de controle (if, else, switch)
+- [Sintaxe básica](#sintaxe-básica)
+- [Tipos de dados primitivos](#tipos-de-dados-primitivos)
+- [Variáveis e constantes](#variáveis-e-constantes)
+- [Estruturas de controle (if, else, switch)](#estruturas-de-controle-if-else-switch)
 
-### 3: Funções
+### Funções
 
-- Declaração e chamada de funções
-- Parâmetros e retorno de funções
-- Funções anônimas e closures
+- [Declaração e chamada de funções](#declaração-e-chamada-de-funções)
+- [Parâmetros e retorno de funções](#parâmetros-e-retorno-de-funções)
+- [Funções anônimas e closures](#funções-anônimas-e-closures)
 
-### 4: Estruturas de Dados
+### Estruturas de Dados
 
-- Arrays e slices
-- Mapas
-- Structs
+- [Arrays e slices](#arrays-e-slices)
+- [Mapas](#mapas)
+- [Structs](#structs)
 
-## Módulo 2: Intermediário
+## Módulo: Intermediário
 
-### 5: Programação Orientada a Objetos em Go
+### Programação Orientada a Objetos em Go
 
-- Structs e métodos
-- Interfaces
-- Polimorfismo
+- [Structs e métodos](#structs-e-métodos)
+- [Interfaces](#interfaces)
 
-### 6: Manipulação de Erros
+### Manipulação de Erros
 
-- Tratamento de erros
-- Padrões de erro
-- Customização de erros
+- [Tratamento de erros](#tratamento-de-erros)
+- [Padrões de erro](#padrões-de-erro)
+- [Customização de erros](#customização-de-erros)
 
-### 7: Concorrência em Go
+### Concorrência em Go
 
-- Goroutines
-- Canais (channels)
-- Select e sincronização
+- [Goroutines](#goroutines)
+- [Canais (channels)](#canais-channels)
+- [Select e sincronização](#select-e-sincronização)
 
-### 8: Input e Output
+### Input e Output
 
-- Leitura e escrita de arquivos
-- Manipulação de JSON e XML
-- Uso de pacotes padrão para I/O
+- [Leitura e escrita de arquivos](#leitura-e-escrita-de-arquivos)
+- [Manipulação de JSON e XML](#manipulação-de-json-e-xml)
+- [Uso de pacotes padrão para I/O](#uso-de-pacotes-padrão-para-io)
 
-## Módulo 3: Avançado
+## Módulo: Avançado
 
-### 9: Rede e Web
+### Rede e Web
 
-- Desenvolvimento de servidores HTTP
-- Construção de APIs RESTful
-- Manipulação de sockets e comunicação em rede
+- [Desenvolvimento de servidores HTTP](#desenvolvimento-de-servidores-http)
+- [Construção de APIs RESTful](#construção-de-apis-restful)
+- [Manipulação de sockets e comunicação em rede](#manipulação-de-sockets-e-comunicação-em-rede)
 
-### 10: Banco de Dados
+### Banco de Dados
 
-- Conexão e manipulação de bancos de dados SQL (usando SQLite como exemplo)
-- Transações e migrações
-- ORM com GORM
+- [Conexão e manipulação de bancos de dados SQL](#conexão-e-manipulação-de-bancos)
+- [Transações e migrações](#transações-e-migrações)
 
-### 11: Testes em Go
+### Testes em Go
 
-- Testes unitários
-- Benchmarking
+- [Testes unitários](#testes-unitários)
+- [Benchmarking](#benchmarking)
+- [Profiling](#profiling)
 
-### 12: Ferramentas e Boas Práticas
+### Ferramentas e Boas Práticas
 
-- Uso do Go Modules
-- Linters e formatação de código
-- Profiling e otimização de desempenho
+- [Uso do Go Modules](#uso-do-go-modules)
+- [Linters e formatação de código](#linters-e-formatação-de-código)
 
-## Módulo 4: Projetos Práticos
+## Módulo: Projetos Práticos
 
-### 13: Projeto 1 - Aplicação CLI
+### Projeto Aplicação CLI
 
-- Desenvolvimento de uma aplicação de linha de comando
-- Parsing de argumentos e flags
-- Automação de tarefas
+- [Desenvolvimento de uma aplicação de linha de comando](#desenvolvimento-de-uma-aplicação-de-linha-de-comando)
+- [Parsing de argumentos e flags](#parsing-de-argumentos-e-flags)
+- [Automação de tarefas](#automação-de-tarefas)
 
-### 14: Projeto 2 - Web Application
+### Projeto API RESTful
 
-- Construção de uma aplicação web completa
-- Templates HTML e manipulação de formulários
-- Autenticação e autorização
+### Projeto Web Application
 
-### 15: Projeto 3 - Sistema de BBS
+- [Construção de uma aplicação web completa](#construção-de-uma-aplicação-web-completa)
+- [Templates HTML e manipulação de formulários](#templates-html-e-manipulação-de-formulários)
 
-- Integração com KotobaHub
-- Implementação de funcionalidades de chat, fórum e wiki
-- Implementação de acesso e controle de usuários
+### Projeto Integrações com APIs
 
-### 16: Projeto 4 - Bot do Telegram
+- [Criação e configuração de um bot do Telegram](#criação-e-configuração-de-um-bot-do-telegram)
+- [Uso da API do ChatGPT para interações](#uso-da-api-do-chatgpt-para-interações)
 
-- Criação e configuração de um bot do Telegram
-- Uso da API do ChatGPT-4 para interações
-- Manutenção de contexto nas conversas
+## Módulo: Tópicos Especiais
 
-## Módulo 5: Tópicos Especiais
+### Desenvolvimento para Microserviços
 
-### 17: Desenvolvimento para Microserviços
+- [Arquitetura de microserviços](#arquitetura-de-microserviços)
+- [Comunicação entre serviços](#comunicação-entre-serviços)
 
-- Arquitetura de microserviços
-- Comunicação entre serviços
-- Deploy e escalabilidade
+### Integração Contínua e Deploy Contínuo (CI/CD)
 
-### 18: Integração Contínua e Deploy Contínuo (CI/CD)
+- [Ferramentas de CI/CD](#ferramentas-de-cicd)
+- [Automação de builds e testes](#automação-de-builds-e-testes)
+- [Deploy automático](#deploy-automático)
 
-- Ferramentas de CI/CD (por exemplo, GitHub Actions)
-- Automação de builds e testes
-- Deploy automático
+### Segurança em Aplicações Go
 
-### 19: Segurança em Aplicações Go
+- [Práticas de segurança](#práticas-de-segurança)
+- [Proteção contra vulnerabilidades comuns](#proteção-contra-vulnerabilidades-comuns)
+- [Uso de pacotes seguros](#uso-de-pacotes-seguros)
 
-- Práticas de segurança
-- Proteção contra vulnerabilidades comuns
-- Uso de pacotes seguros
+### Performance e Escalabilidade
 
-### 20: Performance e Escalabilidade
-
-- Técnicas avançadas de profiling
-- Otimização de código
-- Estratégias de escalabilidade
+- [Otimização de código](#otimização-de-código)
+- [Estratégias de escalabilidade](#estratégias-de-escalabilidade)
 
 ## Recursos Adicionais
 
 - [Perguntas frequentes](#perguntas-frequentes)
-- Leituras recomendadas
-- Exercícios práticos e desafios
+- [Leituras recomendadas](#leituras-recomendadas)
+- [Exercícios práticos e desafios](#exercícios-práticos-e-desafios)
 - [Como contribuir](#como-contribuir)
 - [Como fazer boas perguntas e dar boas respostas](#como-fazer-boas-perguntas-e-dar-boas-respostas)
-- Comunidade de desenvolvedores Go
-    - [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram)
-    - [Discord](https://crg.eti.br/grupo-estudos-golang/discord)
-    - [YouTube](https://crg.eti.br/grupo-estudos-golang/youtube)
-- Sessões de mentoria
-- Licença de uso
+- [Comunidade de desenvolvedores Go](#comunidade-de-desenvolvedores-go)
+- [Sessões de mentoria](#sessões-de-mentoria)
+- [Licença de uso](#licença-de-uso)
 
 --- 
 
@@ -171,128 +158,6 @@ No dia 11 de maio de 2016 criei o repositório do Grupo de Estudos de Golang no 
 Esse material doi criado com ajuda de inumeras pessoas, sinta-se a vontade para usar, compartilhar e melhorar.
 
 [CRG](https://crg.eti.br)
-
----
-
-## Perguntas frequentes
-
-### Qual framework, ORM, banco de dados, etc. usar?
-
-- Go é uma linguagem de programação minimalista, não possui um framework padrão como Django, Rails ou Laravel. Antes de procurar algo externos tente usar as bibliotecas padrão, elas são muito boas e completas.
-
-- ORM é um conceito que não é muito usado em Go, idealmente você deve usar um banco de dados que tenha um driver nativo para Go, como PostgreSQL, MySQL, SQLite, etc. e escrever seus proprios SQLs.
-
-- Frameworks web são muitos, alguns populares são o Gin, Echo, Fiber, Beego, etc. mas você pode usar o pacote `net/http` da biblioteca padrão, ele provavelmente vai resolver seu problema sem adicionar complexidade ou dependências.
-
-### O que é migration?
-
-- Migration é uma ferramenta que permite que você controle as mudanças no banco de dados, geralmente é usado para criar tabelas, adicionar colunas, etc. Existem muitas ferramentas de migration, você pode usar uma delas ou escrever suas proprias migrations.
-
-### Qual paradigma/padrão de projeto usar em Go.
-
-- Go esta mais para programação estruturada/procedural. Go não possui um padrão de projeto como MVC, MVVM, etc. Você pode usar o que achar melhor. Orientação a objetos é possivel em Go, mas não é muito comum.
-
-### Porque o tratamento de erro é tão verborragico?
-
-- Go não possui exceções, o tratamento de erro é feito com o retorno de um erro, isso é uma escolha de design da linguagem. O tratamento de erro é explicito e isso é uma das coisas que torna Go uma linguagem simples e fácil de entender. Os erros são tratados imediatamente onde eles acontecem tornando o debug mais fácil. Uma dica importante é sempre tratar todos os erros, muitas vezes um erro que parece impossível de acontecer, acontece.
-
----
-
-## Como fazer boas perguntas e dar boas respostas
-
-Algumas dicas para melhorar a interação com o grupo quando for enviar perguntas ou respostas.
-
-**Especifique o Problema:**
-
-- Deixe claro qual é o problema que você está enfrentando. Uma descrição precisa auxiliará os outros a entenderem e oferecerem soluções.
-
-**Demonstração do Código:**
-
-- Forneça um trecho de código, e inclua a saída esperada e atual. Isso dará aos outros uma ideia melhor do que está acontecendo.
-
-- Você pode usar o [The Go Playground](https://go.dev/play/) para compartilhar exemplos de código. ou então use o markdown para formatar o código. Geralmente basta colocar o código entre três crases.
-
-**Ambiente de Desenvolvimento:**
-
-- Mencione a versão do Go que você está usando e outras configurações de ambiente que possam ser relevantes para o problema, como o sistema operacional, por exemplo.
-
-**Formato é importante:**
-
-- Formate sua pergunta de maneira clara e legível, com uso adequado de marcações, para facilitar a leitura por outros membros do grupo.
-
-**Revise o Texto:**
-
-- Antes de perguntar utilize as ferramentas de busca. Mesmo que não encontre a resposta, isso ajudará a formular sua dúvida de maneira mais clara.
-
-- Consulte nosso [FAQ](#faq) e o [código de conduta](#codigo-de-conduta).
-
-- Ao formular uma pergunta, inclua as etapas que já tentou para resolver o problema.
-
-- Mantenha a pergunta concisa; perguntas mais curtas tendem a ser respondidas mais rapidamente.
-
-- É útil demonstrar o problema com um trecho de código. Evite enviar imagens da tela; em vez disso, crie um pequeno exemplo que ilustre a dúvida ou problema em poucas linhas.
-
-- Se desejar, use o [The Go Playground](https://go.dev/play/). No entanto, esteja ciente de que o playground grava os exemplos compartilhados, então evite colocar dados ou códigos sensíveis.
-
-- Se ninguém responder sua pergunta, não se preocupe. Pode ser que ninguém tenha a resposta no momento. Não leve para o lado pessoal.
-
-- Respeite a opinião dos outros. Nós programadores temos fortes opiniões sobre o que é melhor e adoramos discutir o melhor de tudo: melhor procedimento, melhor editor, melhor sistema operacional, etc. Seja objetivo e não prolongue discussões.
-
-- Quando escrever, evite anglicismos mas tente se manter próximo da forma popular da língua. Por exemplo: nós adotamos alguns anglicismos como mouse, kernel, etc. são comuns e aceitáveis. Aqui tem [algumas substituições úteis](https://www.ime.usp.br/~kon/ResearchStudents/traducao.html).
-
-- Quando responder ao grupo, seja exemplar e lembre-se de que você é a referência que outros programadores seguirão.
-
----
-
-## Como contribuir
-
-### Primeiros passos
-
-De uma olhada nas issues e veja se o que você quer fazer já não esta sendo discutido, se estiver ótimo, participe da discussão e de suas ideias caso não esteja você pode criar uma nova issue para discutirmos ou se preferir pode também mandar diretamente um _pull request_, só não esqueça de descrever muito bem o que você quer mudar/adicionar.
-
-### Formato
-
-Material novo idealmente deve ser organizados em diretórios e ter três arquivos, um README.md descrevendo como executar o exemplo, um exemplo.go contendo o exemplo propriamente dito e um exemplo_test.go. (alternativamente você pode usar main.go e main_test.go). Também é necessário fazer uma descrição do exemplo no arquivo README.md do diretório principal.
-
-```
-exemplo/README.md
-exemplo/exemplo.go
-exemplo/exemplo_test.go
-```
-
-### Cuidado com o código
-
-Antes de mandar um _pull request_ formate seu código com _go fmt_. Também é uma boa ideia passar uma ferramenta de analize estatica como golint por exemplo.
-
-### Não se prolongue demais
-
-Uma das características que é importante manter são exemplos curtos e de fácil entendimento, tenta fazer com que os exemplos caibam em uma tela, tudo bem se não for possível, apenas mantenha isso em mente.
-
-Exemplos rápidos, curtos, diretos e de fácil entendimento são nossa meta.
-
-### Inclua seus exemplos no The Go Playground
-
-Inclua um link sob os exemplos que você escrever apontando para o https://play.golang.org, dessa fora o leitor pode testar seu exemplo imediatamente. Obviamente isso não é possivel com qualquer exemplo, mas onde for possivel é bom colocar.
-
-### Arquivo README.md
-
-Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial na lista do arquivo README.md, a ideia é que os tutoriais estejam em ordem complexidade.
-
-### Enviando uma contribuição
-
-- Faça um _fork_ do projeto.
-- Crie uma _branch_ com as suas modificações `git checkout -b exemplo-fantastico`.
-- Faça _commit_ das suas alterações `git commit -m 'Implementação do novo exemplo fantástico'`.
-- Faça um _push_ na sua _branch_ `git push origin exemplo-fantastico`.
-- Faça um _pull request_ com suas alterações.
-
----
-
-## Licença de uso
-
-Esse material é livre, sob a licença Creative Commons, CC BY-SA. você pode usar da forma que preferir, apenas lembre de citar a fonte, não apenas copie, no lugar disso acrescente, melhore e compartilhe, assim todos ganhamos.
-
-[Cesar Gimenes](crg.eti.br)
 
 ---
 
@@ -450,5 +315,259 @@ Go não tem versão interpretada, mesmo esse teste usando `go run` é compilado 
 
 ---
 
+### Fundamentos da Linguagem
 
+#### Sintaxe básica
+#### Tipos de dados primitivos
+#### Variáveis e constantes
+#### Estruturas de controle (if, else, switch)
+
+### Funções
+
+#### Declaração e chamada de funções
+#### Parâmetros e retorno de funções
+#### Funções anônimas e closures
+
+### Estruturas de Dados
+
+#### Arrays e slices
+#### Mapas
+#### Structs
+
+## Módulo: Intermediário
+
+### Programação Orientada a Objetos em Go
+
+#### Structs e métodos
+#### Interfaces
+
+### Manipulação de Erros
+
+#### Tratamento de erros
+#### Padrões de erro
+#### Customização de erros
+
+### Concorrência em Go
+
+#### Goroutines
+#### Canais (channels)
+#### Select e sincronização
+
+### Input e Output
+
+#### Leitura e escrita de arquivos
+#### Manipulação de JSON e XML
+#### Uso de pacotes padrão para I/O
+
+## Módulo Avançado
+
+### Rede e Web
+
+#### Desenvolvimento de servidores HTTP
+#### Construção de APIs RESTful
+#### Manipulação de sockets e comunicação em rede
+
+### Banco de Dados
+
+#### Conexão e manipulação de bancos de dados SQL
+#### Transações e migrações
+
+### Testes em Go
+
+#### Testes unitários
+#### Benchmarking
+#### Profiling
+
+### Ferramentas e Boas Práticas
+
+#### Uso do Go Modules
+#### Linters e formatação de código
+
+## Módulo Projetos Práticos
+
+### Projeto Aplicação CLI
+
+#### Desenvolvimento de uma aplicação de linha de comando
+#### Parsing de argumentos e flags
+#### Automação de tarefas
+
+### Projeto Web Application
+
+#### Construção de uma aplicação web completa
+#### Templates HTML e manipulação de formulários
+#### Autenticação e autorização
+
+### Projeto API RESTful
+
+### Integrações com APIs
+
+#### Criação e configuração de um bot do Telegram
+#### Uso da API do ChatGPT
+
+## Módulo Tópicos Especiais
+
+### Desenvolvimento para Microserviços
+
+#### Arquitetura de microserviços
+#### Comunicação entre serviços
+#### Deploy e escalabilidade
+
+### Integração Contínua e Deploy Contínuo (CI/CD)
+
+#### Ferramentas de CI/CD
+#### Automação de builds e testes
+#### Deploy automático
+
+### Segurança em Aplicações Go
+
+#### Práticas de segurança
+#### Proteção contra vulnerabilidades comuns
+#### Uso de pacotes seguros
+
+### Performance e Escalabilidade
+
+#### Otimização de código
+#### Estratégias de escalabilidade
+
+## Recursos Adicionais
+
+### Perguntas frequentes
+
+#### Qual framework, ORM, banco de dados, etc. usar?
+
+- Go é uma linguagem de programação minimalista, não possui um framework padrão como Django, Rails ou Laravel. Antes de procurar algo externos tente usar as bibliotecas padrão, elas são muito boas e completas.
+
+- ORM é um conceito que não é muito usado em Go, idealmente você deve usar um banco de dados que tenha um driver nativo para Go, como PostgreSQL, MySQL, SQLite, etc. e escrever seus proprios SQLs.
+
+- Frameworks web são muitos, alguns populares são o Gin, Echo, Fiber, Beego, etc. mas você pode usar o pacote `net/http` da biblioteca padrão, ele provavelmente vai resolver seu problema sem adicionar complexidade ou dependências.
+
+#### O que é migration?
+
+- Migration é uma ferramenta que permite que você controle as mudanças no banco de dados, geralmente é usado para criar tabelas, adicionar colunas, etc. Existem muitas ferramentas de migration, você pode usar uma delas ou escrever suas proprias migrations.
+
+#### Qual paradigma/padrão de projeto usar em Go.
+
+- Go esta mais para programação estruturada/procedural. Go não possui um padrão de projeto como MVC, MVVM, etc. Você pode usar o que achar melhor. Orientação a objetos é possivel em Go, mas não é muito comum.
+
+#### Porque o tratamento de erro é tão verborragico?
+
+- Go não possui exceções, o tratamento de erro é feito com o retorno de um erro, isso é uma escolha de design da linguagem. O tratamento de erro é explicito e isso é uma das coisas que torna Go uma linguagem simples e fácil de entender. Os erros são tratados imediatamente onde eles acontecem tornando o debug mais fácil. Uma dica importante é sempre tratar todos os erros, muitas vezes um erro que parece impossível de acontecer, acontece.
+
+---
+
+
+### Leituras recomendadas
+### Exercícios práticos e desafios
+
+## Como contribuir
+
+### Primeiros passos
+
+De uma olhada nas issues e veja se o que você quer fazer já não esta sendo discutido, se estiver ótimo, participe da discussão e de suas ideias caso não esteja você pode criar uma nova issue para discutirmos ou se preferir pode também mandar diretamente um _pull request_, só não esqueça de descrever muito bem o que você quer mudar/adicionar.
+
+### Formato
+
+Material novo idealmente deve ser organizados em diretórios e ter três arquivos, um README.md descrevendo como executar o exemplo, um exemplo.go contendo o exemplo propriamente dito e um exemplo_test.go. (alternativamente você pode usar main.go e main_test.go). Também é necessário fazer uma descrição do exemplo no arquivo README.md do diretório principal.
+
+```
+exemplo/README.md
+exemplo/exemplo.go
+exemplo/exemplo_test.go
+```
+
+### Cuidado com o código
+
+Antes de mandar um _pull request_ formate seu código com _go fmt_. Também é uma boa ideia passar uma ferramenta de analize estatica como golint por exemplo.
+
+### Não se prolongue demais
+
+Uma das características que é importante manter são exemplos curtos e de fácil entendimento, tenta fazer com que os exemplos caibam em uma tela, tudo bem se não for possível, apenas mantenha isso em mente.
+
+Exemplos rápidos, curtos, diretos e de fácil entendimento são nossa meta.
+
+### Inclua seus exemplos no The Go Playground
+
+Inclua um link sob os exemplos que você escrever apontando para o https://play.golang.org, dessa fora o leitor pode testar seu exemplo imediatamente. Obviamente isso não é possivel com qualquer exemplo, mas onde for possivel é bom colocar.
+
+### Arquivo README.md
+
+Discuta com os outros desenvolvedores o melhor lugar para colocar o seu tutorial na lista do arquivo README.md, a ideia é que os tutoriais estejam em ordem complexidade.
+
+### Enviando uma contribuição
+
+- Faça um _fork_ do projeto.
+- Crie uma _branch_ com as suas modificações `git checkout -b exemplo-fantastico`.
+- Faça _commit_ das suas alterações `git commit -m 'Implementação do novo exemplo fantástico'`.
+- Faça um _push_ na sua _branch_ `git push origin exemplo-fantastico`.
+- Faça um _pull request_ com suas alterações.
+
+---
+
+## Como fazer boas perguntas e dar boas respostas
+
+Algumas dicas para melhorar a interação com o grupo quando for enviar perguntas ou respostas.
+
+**Especifique o Problema:**
+
+- Deixe claro qual é o problema que você está enfrentando. Uma descrição precisa auxiliará os outros a entenderem e oferecerem soluções.
+
+**Demonstração do Código:**
+
+- Forneça um trecho de código, e inclua a saída esperada e atual. Isso dará aos outros uma ideia melhor do que está acontecendo.
+
+- Você pode usar o [The Go Playground](https://go.dev/play/) para compartilhar exemplos de código. ou então use o markdown para formatar o código. Geralmente basta colocar o código entre três crases.
+
+**Ambiente de Desenvolvimento:**
+
+- Mencione a versão do Go que você está usando e outras configurações de ambiente que possam ser relevantes para o problema, como o sistema operacional, por exemplo.
+
+**Formato é importante:**
+
+- Formate sua pergunta de maneira clara e legível, com uso adequado de marcações, para facilitar a leitura por outros membros do grupo.
+
+**Revise o Texto:**
+
+- Antes de perguntar utilize as ferramentas de busca. Mesmo que não encontre a resposta, isso ajudará a formular sua dúvida de maneira mais clara.
+
+- Consulte nosso [FAQ](#faq) e o [código de conduta](#codigo-de-conduta).
+
+- Ao formular uma pergunta, inclua as etapas que já tentou para resolver o problema.
+
+- Mantenha a pergunta concisa; perguntas mais curtas tendem a ser respondidas mais rapidamente.
+
+- É útil demonstrar o problema com um trecho de código. Evite enviar imagens da tela; em vez disso, crie um pequeno exemplo que ilustre a dúvida ou problema em poucas linhas.
+
+- Se desejar, use o [The Go Playground](https://go.dev/play/). No entanto, esteja ciente de que o playground grava os exemplos compartilhados, então evite colocar dados ou códigos sensíveis.
+
+- Se ninguém responder sua pergunta, não se preocupe. Pode ser que ninguém tenha a resposta no momento. Não leve para o lado pessoal.
+
+- Respeite a opinião dos outros. Nós programadores temos fortes opiniões sobre o que é melhor e adoramos discutir o melhor de tudo: melhor procedimento, melhor editor, melhor sistema operacional, etc. Seja objetivo e não prolongue discussões.
+
+- Quando escrever, evite anglicismos mas tente se manter próximo da forma popular da língua. Por exemplo: nós adotamos alguns anglicismos como mouse, kernel, etc. são comuns e aceitáveis. Aqui tem [algumas substituições úteis](https://www.ime.usp.br/~kon/ResearchStudents/traducao.html).
+
+- Quando responder ao grupo, seja exemplar e lembre-se de que você é a referência que outros programadores seguirão.
+
+---
+
+
+### Comunidade de desenvolvedores Go
+    
+- [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram)
+- [Discord](https://crg.eti.br/grupo-estudos-golang/discord)
+- [YouTube](https://crg.eti.br/grupo-estudos-golang/youtube)
+
+---
+
+### Sessões de mentoria
+
+
+---
+
+### Licença de uso
+
+Este material é livre, sob a licença Creative Commons e CC BY-SA. Você pode usar da maneira que preferir, mas lembre-se de citar a fonte. Não copie, acrescente, melhore e compartilhe. Assim todos ganham.
+
+[Cesar Gimenes](crg.eti.br)
+
+---
 
