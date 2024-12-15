@@ -5,7 +5,7 @@
 
 Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e melhorada. Os exemplos antigos estão no diretório "nao_tratados".
 
---- 
+---
 
 [Sobre o Grupo de Estudos de Go](#um-pouco-de-história)
 
@@ -143,13 +143,13 @@ Os exemplos estão sendo reescritos, muita coisa antiga precisa ser ajustada e m
 - [Sessões de mentoria](#sessões-de-mentoria)
 - [Licença de uso](#licença-de-uso)
 
---- 
+---
 
 ## Um pouco de história
 
 Por volta de 2015 eu estava procurando uma linguagem de programação moderna que atendesse a alguns critérios que considero importantes, deveria ser simples, compilada, abrangente e com uma boa comunidade. Com capacidade para criar executáveis multiplataforma e que aproveitasse as características de multi-processamento das máquinas modernas.
 
-Go caiu como uma luva e comecei a usar nos meus projetos. No início de 2016 no ABC Makerspace criei um pequeno curso, o Go-Hands-On e de lá iniciamos o que acabaria se tornando o grupo de estudos. 
+Go caiu como uma luva e comecei a usar nos meus projetos. No início de 2016 no ABC Makerspace criei um pequeno curso, o Go-Hands-On e de lá iniciamos o que acabaria se tornando o grupo de estudos.
 
 Desde aquela época os objetivos do grupo continuam praticamente os mesmos, estudar a linguagem de programação Go e tecnologias relacionadas, dar apoio para quem está iniciando assim como manter atualizados os programadores mais experientes, criar conteúdo em português falado no Brasil.
 
@@ -165,11 +165,11 @@ Esse material doi criado com ajuda de inumeras pessoas, sinta-se a vontade para 
 
 ## História e filosofia do Go
 
-Go, foi criado no Google em 2007 por Robert Griesemer, Rob Pike e Ken Thompson. 
+Go, foi criado no Google em 2007 por Robert Griesemer, Rob Pike e Ken Thompson.
 
-A primeira versão estável, Go 1.0, foi lançada em março de 2012. 
+A primeira versão estável, Go 1.0, foi lançada em março de 2012.
 
-O objetivo do Go é ser uma linguagem simples, eficiente e com uma curva de aprendizado suave, mantendo um equilíbrio entre desempenho e facilidade de uso. 
+O objetivo do Go é ser uma linguagem simples, eficiente e com uma curva de aprendizado suave, mantendo um equilíbrio entre desempenho e facilidade de uso.
 
 Go foi projetado para resolver problemas encontrados em linguagens tradicionais como C++ e Java, oferecendo concisão, simplicidade e segurança na concorrência.
 
@@ -316,6 +316,21 @@ Go não tem versão interpretada, mesmo esse teste usando `go run` é compilado 
 ---
 
 ### Fundamentos da Linguagem
+
+Go é conhecida por sua simplicidade e eficiência.
+
+Alguns de seus fundamentos incluem:
+
+- Concorrência: Utiliza goroutines e channels para facilitar a programação concorrente de forma simples e segura.
+- Tipagem Estática e Compilada: Oferece verificação de tipos em tempo de compilação, garantindo maior performance e segurança.
+- Sintaxe Simples: Facilita a leitura e manutenção do código, promovendo a produtividade dos desenvolvedores.
+- Gerenciamento de Memória: Implementa garbage collection automático, reduzindo a complexidade no gerenciamento de memória.
+- Ferramentas Integradas: Inclui ferramentas como go fmt para formatação de código e go build para compilação, agilizando o desenvolvimento.
+- Modularidade: Suporta módulos e pacotes, permitindo a organização eficiente de projetos grandes.
+- Desempenho: Compilado para código nativo, oferece alta performance semelhante a linguagens como C.
+- Retrocompatibilidade: Go mantém a compatibilidade com versões anteriores, garantindo que programas escritos para Go 1.0 continuem funcionando sem alterações, isso traz muita confiabilidade para os desenvolvedores.
+
+Esses fundamentos fazem do Go uma escolha popular.
 
 #### Sintaxe básica
 #### Tipos de dados primitivos
@@ -551,7 +566,7 @@ Algumas dicas para melhorar a interação com o grupo quando for enviar pergunta
 
 
 ### Comunidade de desenvolvedores Go
-    
+
 - [Telegram](https://crg.eti.br/grupo-estudos-golang/telegram)
 - [Discord](https://crg.eti.br/grupo-estudos-golang/discord)
 - [YouTube](https://crg.eti.br/grupo-estudos-golang/youtube)
