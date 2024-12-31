@@ -56,12 +56,6 @@ func updateTerminalSize() {
 	mx.Unlock()
 }
 
-func moveCursor(x, y int) {
-	sy := strconv.Itoa(y)
-	sx := strconv.Itoa(x)
-	os.Stdout.WriteString("\033[" + sy + ";" + sx + "H")
-}
-
 func randomColor() string {
 	colors := []string{
 		ANSI_RED,
@@ -154,9 +148,8 @@ func main() {
 				updateTerminalSize()
 			case os.Interrupt, syscall.SIGTERM:
 				os.Stdout.WriteString(
-					ANSI_SHOW_CURSOR + ANSI_RESET + ANSI_CLEAR + "\r\n",
+					ANSI_SHOW_CURSOR + ANSI_RESET + ANSI_CLEAR + "\033[1;1H\r\n",
 				)
-				moveCursor(1, 1)
 
 				os.Exit(0)
 			}
