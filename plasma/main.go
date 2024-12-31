@@ -63,6 +63,7 @@ func precalculateValues(r, c int) {
 		preSinX[x] = math.Sin(aX)
 		preCosX[x] = math.Cos(aX)
 	}
+
 	for y := 0; y < r; y++ {
 		aY := (float64(y) / float64(r)) * math.Pi * 3
 		preSinY[y] = math.Sin(aY)
@@ -99,7 +100,6 @@ func main() {
 						ANSI_CLEAR +
 						ANSI_MOVE_CURSOR_TOP,
 				)
-				os.Stdout.WriteString("Bye!\n")
 				os.Exit(0)
 			}
 		}
