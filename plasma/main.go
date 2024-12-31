@@ -15,11 +15,11 @@ import (
 )
 
 const (
-	clearScreen   = "\x1b[2J"
-	hideCursor    = "\x1b[?25l"
-	showCursor    = "\x1b[?25h"
-	moveCursorTop = "\x1b[H"
-	resetColor    = "\x1b[0m"
+	ANSI_RESET           = "\033[0m"
+	ANSI_CLEAR           = "\033[2J"
+	ANSI_HIDE_CURSOR     = "\033[?25l"
+	ANSI_SHOW_CURSOR     = "\033[?25h"
+	ANSI_MOVE_CURSOR_TOP = "\033[H"
 )
 
 var (
@@ -82,7 +82,7 @@ func precalculateColorStrings() {
 }
 
 func main() {
-	fmt.Print(hideCursor)
+	fmt.Print(ANSI_HIDE_CURSOR)
 	precalculateColorStrings()
 
 	c := make(chan os.Signal, 1)
@@ -93,7 +93,12 @@ func main() {
 			case syscall.SIGWINCH:
 				updateTerminalSize()
 			case os.Interrupt:
-				os.Stdout.WriteString(resetColor + showCursor + clearScreen + moveCursorTop)
+				os.Stdout.WriteString(
+					ANSI_RESET +
+						ANSI_SHOW_CURSOR +
+						ANSI_CLEAR +
+						ANSI_MOVE_CURSOR_TOP,
+				)
 				os.Stdout.WriteString("Bye!\n")
 				os.Exit(0)
 			}
@@ -120,7 +125,7 @@ func main() {
 		cT := math.Cos(t)
 
 		buf = buf[:0]
-		buf = append(buf, moveCursorTop...)
+		buf = append(buf, ANSI_MOVE_CURSOR_TOP...)
 
 		for y := 0; y < r; y++ {
 			for x := 0; x < cc; x++ {
