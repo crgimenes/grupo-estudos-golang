@@ -36,7 +36,7 @@ const (
 var (
 	rows, cols int
 	mx         sync.Mutex
-	bannerBuff []byte
+	bannerBuff []rune
 )
 
 func updateTerminalSize() {
@@ -47,9 +47,11 @@ func updateTerminalSize() {
 	mx.Lock()
 	rows, cols = r, c
 
-	bannerBuff = make([]byte, 0, cols)
+	bannerBuff = make([]rune, 0, cols)
+	runes := []rune(BANNER)
+
 	for i := 0; i < cols; i++ {
-		bannerBuff = append(bannerBuff, BANNER[i%len(BANNER)])
+		bannerBuff = append(bannerBuff, runes[i%len(runes)])
 	}
 
 	os.Stdout.WriteString(ANSI_CLEAR)
