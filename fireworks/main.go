@@ -150,7 +150,10 @@ func main() {
 				updateTerminalSize()
 			case os.Interrupt, syscall.SIGTERM:
 				os.Stdout.WriteString(
-					ANSI_SHOW_CURSOR + ANSI_RESET + ANSI_CLEAR + "\033[1;1H\r\n",
+					ANSI_SHOW_CURSOR +
+						ANSI_RESET +
+						ANSI_CLEAR +
+						"\033[1;1H\r\n",
 				)
 
 				os.Exit(0)
