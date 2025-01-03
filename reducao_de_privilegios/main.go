@@ -30,14 +30,14 @@ func main() {
 	uid, _ := strconv.Atoi(u.Uid)
 	gid, _ := strconv.Atoi(u.Gid)
 
-	// ajusta o id do usuário
+	// ajusta o id do grupo
 	err = syscall.Setgid(gid)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	// ajusta o id do grupo
+	// ajusta o id do usuário
 	err = syscall.Setuid(uid)
 	if err != nil {
 		fmt.Println(err)
