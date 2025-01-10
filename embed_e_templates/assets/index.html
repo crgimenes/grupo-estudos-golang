@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>{{ .Title }}</h2>
+    </header>
+
+    <main>
+      <h1>{{ .SubTitle }}</h1>
+      <p>{{ .Content }}</p>
+      <p>Valor: {{ printf "%.2f" .Value }}</p>
+      <p>
+        {{ if .InitPage }}
+        <a href="/pagina2" class="button">Ir para a página 2</a>
+        {{ end }} {{ if .ShowReturnButton }}
+        <a href="/" class="button">Retornar</a>
+        {{ end }}
+      </p>
+    </main>
+
+    <footer>
+      <p>{{ .Footer }}</p>
+    </footer>
+  </body>
+</html>
+
