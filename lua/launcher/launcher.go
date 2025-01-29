@@ -117,7 +117,9 @@ func execHelper() error {
 }
 
 func waitFor(l *lua.LState) int {
+	mutex.Lock()
 	waitForString = l.ToString(1)
+	mutex.Unlock()
 	<-waitForChannel
 	waitForString = ""
 	res := lua.LString(waitForString)
