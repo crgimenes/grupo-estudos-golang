@@ -67,6 +67,7 @@ func execHelper() error {
 		for scanner.Scan() {
 			s := scanner.Text()
 			log.Println("helper stdout:", s)
+
 			switch s {
 			case "ready":
 				write(stdin, "ok\n")
