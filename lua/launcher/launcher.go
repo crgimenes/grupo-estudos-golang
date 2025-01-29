@@ -121,8 +121,10 @@ func waitFor(l *lua.LState) int {
 	waitForString = l.ToString(1)
 	mutex.Unlock()
 	<-waitForChannel
-	waitForString = ""
+	mutex.Lock()
 	res := lua.LString(waitForString)
+	waitForString = ""
+	mutex.Unlock()
 	l.Push(res)
 	return 1
 }
