@@ -34,6 +34,15 @@ func deferOrder() string {
 }
 
 func main() {
-	_, err := safeDivide(10, 0)
-	fmt.Println(err != nil)
+	if v, err := safeDivide(10, 2); err != nil {
+		fmt.Println("unexpected error:", err)
+	} else {
+		fmt.Println("10/2 =", v)
+	}
+
+	if _, err := safeDivide(10, 0); err != nil {
+		fmt.Println("recovered:", err)
+	}
+
+	fmt.Println("defer order:", deferOrder())
 }

@@ -21,5 +21,10 @@ func MapSlice[T any, U any](in []T, fn func(T) U) []U {
 }
 
 func main() {
-	fmt.Println(Min(10, 3))
+	nums := []int{2, 4, 6}
+	asText := MapSlice(nums, func(v int) string {
+		return fmt.Sprintf("n=%d", v)
+	})
+
+	fmt.Printf("min-int=%d min-string=%q mapped=%v\n", Min(10, 3), Min("go", "golang"), asText)
 }

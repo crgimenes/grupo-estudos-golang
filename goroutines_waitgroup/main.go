@@ -1,6 +1,9 @@
 package main
 
-import "sync"
+import (
+	"fmt"
+	"sync"
+)
 
 func ConcurrentSquare(values []int) []int {
 	out := make([]int, len(values))
@@ -14,4 +17,9 @@ func ConcurrentSquare(values []int) []int {
 	}
 	wg.Wait()
 	return out
+}
+
+func main() {
+	values := []int{2, 3, 4, 5}
+	fmt.Printf("in=%v out=%v\n", values, ConcurrentSquare(values))
 }

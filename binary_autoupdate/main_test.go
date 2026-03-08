@@ -10,3 +10,9 @@ func TestIsNewerVersion(t *testing.T) {
 		t.Fatal("did not expect update")
 	}
 }
+
+func TestCompareVersionsInvalid(t *testing.T) {
+	if _, err := CompareVersions("1.0", "1.0.1"); err == nil {
+		t.Fatal("expected invalid version error")
+	}
+}

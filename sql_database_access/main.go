@@ -36,5 +36,8 @@ func (s *UserStore) List() []User {
 func main() {
 	store := NewUserStore()
 	store.Insert("gopher")
-	fmt.Println(len(store.List()))
+	store.Insert("go-bot")
+	for _, u := range store.List() {
+		fmt.Printf("id=%d name=%s\n", u.ID, u.Name)
+	}
 }

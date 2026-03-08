@@ -18,5 +18,9 @@ func SMTPAuth(user, pass, host string) smtp.Auth {
 }
 
 func main() {
-	fmt.Println(string(BuildMessage("a@x", "b@y", "hi", "body")) != "")
+	msg := BuildMessage("noreply@example.com", "team@example.com", "status report", "all services are up")
+	auth := SMTPAuth("api-user", "secret", "smtp.example.com")
+
+	fmt.Printf("auth=%T\n", auth)
+	fmt.Println(string(msg))
 }
