@@ -44,6 +44,26 @@
 - [Context](../context_cancellation/README.md)
 - [Sincronização e race conditions](../sync_and_race_conditions/README.md)
 
+## I/O, dados, rede e web
+
+- [I/O básico: arquivos e streams](../io_streams_files/README.md)
+- [Embed e templates](../embed_and_templates/README.md)
+- [Diretórios e `io/fs`](../filesystem_iofs/README.md)
+- [Variáveis de ambiente e execução externa](../env_and_exec/README.md)
+- [JSON e XML](../json_xml/README.md)
+- [CSV, TSV e dados tabulares](../csv_tsv_tabular/README.md)
+- [Parsing textual e regex](../text_parsing_regexp/README.md)
+- [Tempo, datas, timezone e timers](../time_dates_timezones_timers/README.md)
+- [Checksums](../checksums/README.md)
+- [Compressão e arquivamento](../compression_archiving/README.md)
+- [Fundamentos de HTTP](../http_fundamentals/README.md)
+- [Middleware HTTP, templates e sessões](../http_middleware_templates_sessions/README.md)
+- [API RESTful](../rest_api_crud/README.md)
+- [Rede de baixo nível](../low_level_networking/README.md)
+- [Observabilidade básica](../service_observability/README.md)
+- [Sinais e encerramento gracioso](../signals_graceful_shutdown/README.md)
+- [Envio de e-mail com `net/smtp`](../smtp_email/README.md)
+
 ## Projetos de demonstração
 
 - [fireworks](../fireworks/README.md)
