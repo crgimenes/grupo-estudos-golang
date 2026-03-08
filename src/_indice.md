@@ -1,154 +1,38 @@
-# Indice
+# Índice
 
+## Guias do repositório
+
+- [Padrão mínimo para tópicos](padrao_de_topicos.md)
+- [Como contribuir com exemplos](como_contribuir.md)
 - [Como fazer boas perguntas e dar boas respostas](boas_perguntas_e_boas_respostas.md)
-- Como contribuir
-- Código de conduta
-- Mercado de trabalho
-- Por que usar Go
-- Curva de aprendizado
-- Outros materiais de estudo
-- Instalação
-- IDE / editores
-- Usando o terminal
-- Olá mundo!
-- Basico sobre execução e compilação
-- UTF8 (BOM Byte Order Mark)
-- Variaveis / constantes / tipos
-- Operadores
-- Struct
-- Condicional if
-- Condicional switch
-- Loop for
-- Break Continue
-- Array / Slice
-- Funções
-- Tratamento de erros
-- Unit test
-- Usando pacotes
-- stdin stdout stderr
-- Ponteiros
-- Escopo de variaveis
-- Debug usando IDE
-- Debug usando gdb
-- Debug com printf
-- enum
-- Usando variaveis para funções
-- goroutines
-- canais
-- select
-- Usamdo pacotes da biblioteca padrão
-- Criando pacotes
-- Isolando código com interfaces
-- Integrando com código C/C++
-- Olá mundo dos servidores HTTP
-- Templates de texto
-- Templates HTML
-- embed
-- Usando pacotes de terceiros
-- go:generate
-- go benchmark
-- [FAQ](faq.md)
 
-## Pacotes da biblioteca padrão
+## Fundamentos
 
-sql
+- [Instalação e ambiente](../installation_and_environment/README.md)
+- [Olá, mundo!](../hello_world/README.md)
+- [Variáveis, constantes e tipos](../variables_constants_types/README.md)
+- [Strings, runas, UTF-8 e BOM](../strings_runes_utf8_bom/README.md)
+- [Operadores e controle de fluxo](../control_flow_and_operators/README.md)
+- [Funções](../functions/README.md)
+- [Arrays, slices e mapas](../arrays_slices_maps/README.md)
+- [Structs, métodos e composição](../structs_methods_composition/README.md)
+- [Ponteiros, escopo e shadowing](../pointers_scope_shadowing/README.md)
+- [Interfaces](../interfaces/README.md)
 
-JSON
+## Tópicos organizados
 
-## Pacotes de terceiros
+- [goto e labels](../goto/README.md)
+- [embed e templates](../embed_e_templates/README.md)
+- [database/sqlite](../database/sqlite)
+- [Lua](../lua/README.md)
+- [Telegram](../telegram/help.md)
+- [Redução de privilégios](../reducao_de_privilegios/README.md)
 
-- sqlx
-- SQLite
-- PostgreSQL
-- Mongodb
+## Projetos de demonstração
 
-## Ferramentas
+- [fireworks](../fireworks/README.md)
+- [plasma](../plasma/README.md)
 
-- go tools
-- linters
-- Containers Docker / Podman
-- Caddy
-- TinyGo
+## Conteúdo em migração
 
-## Exemplos antigos para organizar
-
-- ascii7
-- assets
-- autoupdate
-- beanstalk
-- botao_e_LED
-- build_tags
-- channel
-- configurando.md
-- context
-- cpp
-- crawler
-- crc
-- data-race
-- db
-- defer
-- doomfire
-- embed
-- env
-- error
-- exec
-- for
-- funcoes
-- go_com_c
-- goaleatorio
-- goalfabeto
-- godoc
-- godolar
-- goenglish
-- goroutines
-- goroutines_waitgroup
-- goto
-- http
-- http_get
-- http_middleware
-- http_templates
-- interface
-- interface_closer
-- ioutil / descontinuado
-- json
-- lua
-- map
-- myfs
-- net
-- ola_mundo
-- package
-- plugin
-- ponteiros
-- protobuf
-- pwm
-- quine
-- ras
-- rascunhos
-- readline
-- reflection
-- regexp
-- reverse_proxy
-- select
-- serial
-- server
-- sessions
-- sessions2
-- shadow
-- signals
-- sitegen
-- slice
-- sliceXarray
-- smtp
-- struct
-- switch
-- syncMap
-- tcp
-- testing
-- time
-- unixDomainSocket
-- variaveis
-- wikipedia
-- workspace.md
-- xml
-- zeroconf
-- zip
+- [Diretório `nao_tratados`](../nao_tratados)
