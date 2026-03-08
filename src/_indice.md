@@ -28,6 +28,22 @@
 - [Telegram](../telegram/help.md)
 - [Redução de privilégios](../reducao_de_privilegios/README.md)
 
+## Organização de código, testes e concorrência
+
+- [Tratamento de erros](../error_handling/README.md)
+- [Defer, panic e recover](../defer_panic_recover/README.md)
+- [Pacotes e módulos](../packages_and_modules/README.md)
+- [Ferramentas do ecossistema Go](../go_tooling/README.md)
+- [Generics](../generics/README.md)
+- [Reflection](../reflection/README.md)
+- [Testes em Go](../testing_in_go/README.md)
+- [Benchmark e profiling](../benchmark_profiling/README.md)
+- [Fuzzing](../fuzzing/README.md)
+- [Goroutines e WaitGroup](../goroutines_waitgroup/README.md)
+- [Canais e select](../channels_select/README.md)
+- [Context](../context_cancellation/README.md)
+- [Sincronização e race conditions](../sync_and_race_conditions/README.md)
+
 ## Projetos de demonstração
 
 - [fireworks](../fireworks/README.md)
