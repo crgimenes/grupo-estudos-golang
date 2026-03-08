@@ -1,6 +1,14 @@
-# Redução de privilégios
+# Práticas de segurança em Go
 
-Demonstra o uso de syscall.Setuid e syscall.Setgid para reduzir os privilégios de um programa.
+Este tópico consolida privilégios mínimos, validação de entrada e gestão de segredos.
 
-Redução de privilégios é uma técnica de segurança que consiste em executar um programa com o minimo de privilégios necessários para a execução da tarefa. Isso é feito para limitar o impacto de um ataque bem sucedido.
+## Princípios
 
+- executar com menor privilégio possível;
+- validar toda entrada externa;
+- usar timeout/cancelamento em I/O de rede;
+- proteger segredos com variáveis de ambiente e rotação.
+
+## Prática de privilégios
+
+`syscall.Setuid` e `syscall.Setgid` ajudam a reduzir impacto em caso de exploração.

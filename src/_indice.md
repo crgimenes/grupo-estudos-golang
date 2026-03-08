@@ -64,11 +64,25 @@
 - [Sinais e encerramento gracioso](../signals_graceful_shutdown/README.md)
 - [Envio de e-mail com `net/smtp`](../smtp_email/README.md)
 
+## Banco de dados, integrações e tópicos especiais
+
+- [Acesso a banco SQL](../sql_database_access/README.md)
+- [SQLite e PostgreSQL: diferenças práticas](../sqlite_postgresql_comparison/README.md)
+- [Protobuf: introdução moderna](../protobuf_basics/README.md)
+- [Integração com C/C++ (cgo)](../cgo_cpp_integration/README.md)
+- [Go com Lua](../lua/README.md)
+- [Sistema de plugins](../go_plugins/README.md)
+- [Integrações com APIs externas](../telegram/README.md)
+- [Introdução a microserviços](../microservices_intro/README.md)
+- [Práticas de segurança](../reducao_de_privilegios/README.md)
+- [Atualização de binários](../binary_autoupdate/README.md)
+- [Build e release multiplataforma](../build_release_multiplatform/README.md)
+- [Trilha de hardware/TinyGo](../hardware_tinygo_track/README.md)
+- [Projetos de demonstração](../special_demos/README.md)
+- [Projeto prático CLI](../cli_project/README.md)
+- [Decisões de arquivamento](legacy_archival_decisions.md)
+
 ## Projetos de demonstração
 
 - [fireworks](../fireworks/README.md)
 - [plasma](../plasma/README.md)
-
-## Conteúdo em migração
-
-- [Diretório `nao_tratados`](../nao_tratados)

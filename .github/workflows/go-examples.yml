@@ -1,0 +1,23 @@
+name: Go Examples CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.x'
+      - name: Validate key modules
+        run: |
+          for d in hello_world variables_constants_types strings_runes_utf8_bom control_flow_and_operators functions arrays_slices_maps structs_methods_composition pointers_scope_shadowing interfaces error_handling defer_panic_recover packages_and_modules go_tooling generics reflection testing_in_go benchmark_profiling fuzzing goroutines_waitgroup channels_select context_cancellation sync_and_race_conditions io_streams_files embed_and_templates filesystem_iofs env_and_exec json_xml csv_tsv_tabular text_parsing_regexp time_dates_timezones_timers checksums compression_archiving http_fundamentals http_middleware_templates_sessions rest_api_crud low_level_networking service_observability signals_graceful_shutdown smtp_email sql_database_access microservices_intro binary_autoupdate cli_project; do
+            (cd "$d" && go fmt ./... && go fix ./... && go vet ./... && go test -timeout 30s -count 1 ./...)
+          done
+      - name: Validate docs links
+        run: |
+          test -f README.md
+          test -f src/_indice.md
