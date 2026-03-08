@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"errors"
+	"flag"
 	"fmt"
 	"io"
 	"log"
@@ -120,13 +121,14 @@ func visit(path string, f os.FileInfo, perr error) error {
 
 		description := fmt.Sprintf("description = \"%s\"\n", strings.TrimSpace(s[1]))
 		tags := "tags = [\"golang\"]\n"
-		metadata := "+++\n" + title + date + description + tags + "+++\n\n"
+		var metadata strings.Builder
+		metadata.WriteString("+++\n" + title + date + description + tags + "+++\n\n")
 
-		metadata += string(body)
+		metadata.WriteString(string(body))
 
 		// coloca arquivos no rodapé
 
-		metadata += "\n### Arquivos desse post\n\n"
+		metadata.WriteString("\n### Arquivos desse post\n\n")
 		files, err := os.ReadDir(path)
 		if err != nil {
 			log.Fatal(err)
@@ -137,7 +139,7 @@ func visit(path string, f os.FileInfo, perr error) error {
 				"https://github.com/go-br/estudos/blob/master/exemplos/%s/%s",
 				f.Name(),
 				local.Name())
-			metadata += fmt.Sprintf("- [%s/%s](%s)\n", f.Name(), local.Name(), name)
+			metadata.WriteString(fmt.Sprintf("- [%s/%s](%s)\n", f.Name(), local.Name(), name))
 
 			fmt.Println(name)
 		}
@@ -145,7 +147,7 @@ func visit(path string, f os.FileInfo, perr error) error {
 		outputFileName = filepath.Join(pathOutputAbs, outputFileName+".md")
 		fmt.Println(outputFileName)
 
-		err = os.WriteFile(outputFileName, []byte(metadata), 0o644)
+		err = os.WriteFile(outputFileName, []byte(metadata.String()), 0o644)
 		if err != nil {
 			return err
 		}
@@ -155,18 +157,16 @@ func visit(path string, f os.FileInfo, perr error) error {
 }
 
 func main() {
-	err := goconfig.Parse(&cfg)
-	if err != nil {
-		log.Println(err)
-		return
-	}
+	flag.StringVar(&cfg.InputFolder, "i", "./", "input folder")
+	flag.StringVar(&cfg.OutputFolder, "o", "", "output folder")
+	flag.Parse()
 
 	if cfg.OutputFolder == "" {
 		log.Println("error output folder not indicated")
 		return
 	}
 
-	err = filepath.Walk(cfg.InputFolder, visit)
+	err := filepath.Walk(cfg.InputFolder, visit)
 	if err == nil || errors.Is(err, io.EOF) {
 		return
 	}
