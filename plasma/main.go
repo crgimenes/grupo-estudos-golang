@@ -53,22 +53,22 @@ func precalculateValues(r, c int) {
 	preSinXY = make([][]float64, r)
 	preCosXY = make([][]float64, r)
 
-	for i := 0; i < r; i++ {
+	for i := range r {
 		preSinXY[i] = make([]float64, c)
 		preCosXY[i] = make([]float64, c)
 	}
 
-	for x := 0; x < c; x++ {
+	for x := range c {
 		aX := (float64(x) / float64(c)) * math.Pi * 3
 		preSinX[x] = math.Sin(aX)
 		preCosX[x] = math.Cos(aX)
 	}
 
-	for y := 0; y < r; y++ {
+	for y := range r {
 		aY := (float64(y) / float64(r)) * math.Pi * 3
 		preSinY[y] = math.Sin(aY)
 		preCosY[y] = math.Cos(aY)
-		for x := 0; x < c; x++ {
+		for x := range c {
 			aXY := ((float64(x) + float64(y)) / float64(c)) * math.Pi * 3
 			preSinXY[y][x] = math.Sin(aXY)
 			preCosXY[y][x] = math.Cos(aXY)
@@ -77,7 +77,7 @@ func precalculateValues(r, c int) {
 }
 
 func precalculateColorStrings() {
-	for i := 0; i < 256; i++ {
+	for i := range 256 {
 		colorStrings[i] = "\x1b[48;5;" + strconv.Itoa(i) + "m\x1b[38;5;0m"
 	}
 }
@@ -127,8 +127,8 @@ func main() {
 		buf = buf[:0]
 		buf = append(buf, ANSI_MOVE_CURSOR_TOP...)
 
-		for y := 0; y < r; y++ {
-			for x := 0; x < cc; x++ {
+		for y := range r {
+			for x := range cc {
 				sumSin := preSinX[x] + preSinY[y] + preSinXY[y][x]
 				sumCos := preCosX[x] + preCosY[y] + preCosXY[y][x]
 				val := sumSin*cT + sumCos*sT
