@@ -2,7 +2,7 @@
 
 ## Estado atual
 
-Este repositório está em processo de modernização didática. O conteúdo antigo permanece em `nao_tratados/` até ser reintegrado em tópicos novos e navegáveis.
+Este repositório está em processo contínuo de evolução didática, com tópicos organizados para estudo progressivo.
 
 ## Navegação rápida
 
