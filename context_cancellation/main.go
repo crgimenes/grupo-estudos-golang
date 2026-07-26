@@ -7,8 +7,11 @@ import (
 )
 
 func Work(ctx context.Context, d time.Duration) error {
+	timer := time.NewTimer(d)
+	defer timer.Stop()
+
 	select {
-	case <-time.After(d):
+	case <-timer.C:
 		return nil
 	case <-ctx.Done():
 		return ctx.Err()
@@ -18,15 +21,19 @@ func Work(ctx context.Context, d time.Duration) error {
 func main() {
 	okCtx, okCancel := context.WithTimeout(context.Background(), 200*time.Millisecond)
 	defer okCancel()
-	if err := Work(okCtx, 20*time.Millisecond); err != nil {
+
+	err := Work(okCtx, 20*time.Millisecond)
+	if err != nil {
 		fmt.Println("unexpected:", err)
-	} else {
-		fmt.Println("work finished without cancellation")
+		return
 	}
+	fmt.Println("work finished without cancellation")
 
 	cancelCtx, cancel := context.WithTimeout(context.Background(), 5*time.Millisecond)
 	defer cancel()
-	if err := Work(cancelCtx, 50*time.Millisecond); err != nil {
+
+	err = Work(cancelCtx, 50*time.Millisecond)
+	if err != nil {
 		fmt.Println("canceled with:", err)
 	}
 }
