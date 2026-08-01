@@ -1,8 +1,12 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
+	"fmt"
 	"net/http"
+	"net/http/httptest"
+	"sort"
 	"strconv"
 	"strings"
 	"sync"
@@ -38,47 +42,105 @@ func (s *Store) Handler(w http.ResponseWriter, r *http.Request) {
 func (s *Store) handleCollection(w http.ResponseWriter, r *http.Request) {
 	s.mu.Lock()
 	defer s.mu.Unlock()
+
 	switch r.Method {
 	case http.MethodGet:
 		list := make([]Item, 0, len(s.items))
-		for _, it := range s.items {
-			list = append(list, it)
+		for _, item := range s.items {
+			list = append(list, item)
 		}
-		w.Header().Set("Content-Type", "application/json")
-		_ = json.NewEncoder(w).Encode(list)
+		sort.Slice(list, func(i, j int) bool {
+			return list[i].ID < list[j].ID
+		})
+		writeJSON(w, http.StatusOK, list)
 	case http.MethodPost:
-		var in Item
-		if err := json.NewDecoder(r.Body).Decode(&in); err != nil || strings.TrimSpace(in.Name) == "" {
+		var input Item
+		err := json.NewDecoder(r.Body).Decode(&input)
+		if err != nil || strings.TrimSpace(input.Name) == "" {
 			http.Error(w, "invalid payload", http.StatusBadRequest)
 			return
 		}
-		in.ID = s.next
+		input.ID = s.next
 		s.next++
-		s.items[in.ID] = in
-		w.WriteHeader(http.StatusCreated)
-		_ = json.NewEncoder(w).Encode(in)
+		s.items[input.ID] = input
+		writeJSON(w, http.StatusCreated, input)
 	default:
 		http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
 	}
 }
 
 func (s *Store) handleItem(w http.ResponseWriter, r *http.Request) {
-	idStr := strings.TrimPrefix(r.URL.Path, "/items/")
-	id, err := strconv.Atoi(idStr)
-	if err != nil {
+	id, ok := itemID(r.URL.Path)
+	if !ok {
 		http.Error(w, "invalid id", http.StatusBadRequest)
 		return
 	}
+
 	s.mu.Lock()
 	defer s.mu.Unlock()
-	if r.Method == http.MethodDelete {
-		if _, ok := s.items[id]; !ok {
-			http.NotFound(w, r)
-			return
-		}
-		delete(s.items, id)
-		w.WriteHeader(http.StatusNoContent)
+
+	item, exists := s.items[id]
+	if !exists {
+		http.NotFound(w, r)
 		return
 	}
-	http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
+
+	switch r.Method {
+	case http.MethodGet:
+		writeJSON(w, http.StatusOK, item)
+	case http.MethodPut:
+		var input Item
+		err := json.NewDecoder(r.Body).Decode(&input)
+		if err != nil || strings.TrimSpace(input.Name) == "" {
+			http.Error(w, "invalid payload", http.StatusBadRequest)
+			return
+		}
+		input.ID = id
+		s.items[id] = input
+		writeJSON(w, http.StatusOK, input)
+	case http.MethodDelete:
+		delete(s.items, id)
+		w.WriteHeader(http.StatusNoContent)
+	default:
+		http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
+	}
+}
+
+func itemID(path string) (int, bool) {
+	value := strings.TrimPrefix(path, "/items/")
+	id, err := strconv.Atoi(value)
+	if err != nil || id < 1 {
+		return 0, false
+	}
+	return id, true
+}
+
+func writeJSON(w http.ResponseWriter, status int, value any) {
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(status)
+	_ = json.NewEncoder(w).Encode(value)
+}
+
+func main() {
+	store := NewStore()
+
+	requests := []struct {
+		method string
+		path   string
+		body   string
+	}{
+		{method: http.MethodPost, path: "/items", body: `{"name":"notebook"}`},
+		{method: http.MethodGet, path: "/items/1"},
+		{method: http.MethodPut, path: "/items/1", body: `{"name":"pen"}`},
+		{method: http.MethodDelete, path: "/items/1"},
+	}
+
+	for _, request := range requests {
+		body := bytes.NewBufferString(request.body)
+		req := httptest.NewRequest(request.method, request.path, body)
+		res := httptest.NewRecorder()
+		store.Handler(res, req)
+
+		fmt.Printf("%s %s -> %d\n", request.method, request.path, res.Code)
+	}
 }
