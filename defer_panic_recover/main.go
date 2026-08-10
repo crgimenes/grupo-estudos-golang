@@ -14,16 +14,18 @@ func divideOrPanic(a, b int) int {
 
 func safeDivide(a, b int) (result int, err error) {
 	defer func() {
-		if r := recover(); r != nil {
-			err = fmt.Errorf("recovered panic: %v", r)
+		recovered := recover()
+		if recovered != nil {
+			err = fmt.Errorf("recovered panic: %v", recovered)
 		}
 	}()
+
 	result = divideOrPanic(a, b)
 	return result, nil
 }
 
 func deferOrder() string {
-	parts := []string{}
+	var parts []string
 	func() {
 		defer func() { parts = append(parts, "third") }()
 		defer func() { parts = append(parts, "second") }()
@@ -34,13 +36,15 @@ func deferOrder() string {
 }
 
 func main() {
-	if v, err := safeDivide(10, 2); err != nil {
+	value, err := safeDivide(10, 2)
+	if err != nil {
 		fmt.Println("unexpected error:", err)
-	} else {
-		fmt.Println("10/2 =", v)
+		return
 	}
+	fmt.Println("10/2 =", value)
 
-	if _, err := safeDivide(10, 0); err != nil {
+	_, err = safeDivide(10, 0)
+	if err != nil {
 		fmt.Println("recovered:", err)
 	}
 
