@@ -37,7 +37,8 @@ var mapDados = map[int][]string{
 	25: {"Z", "Zulu", "Zebra", "Zebra", "Zebra", "Zebra", "Zebra", "Zebra", "Zulmira", "Zebedee", "Zebra", "--.."},
 }
 
-/**
+/*
+*
 ordenaTabela - função que ordena a lista, de modo crescente, para uma melhor leitura
 */
 func ordenaTabela(tabela map[int][]string) (keys []int) {
@@ -48,7 +49,8 @@ func ordenaTabela(tabela map[int][]string) (keys []int) {
 	return
 }
 
-/*MostraTabela - função que imprime a tabela gerada.
+/*
+MostraTabela - função que imprime a tabela gerada.
 Tendo uma única coluna, imprime o valor do índice
 Tendo mais que uma coluna, imprime o slice inteiro
 */
@@ -65,7 +67,8 @@ func MostraTabela(tabela map[int][]string) {
 	}
 }
 
-/**
+/*
+*
 populaMapa - função que popula um mapa reduzido com o resultado do mapa maior
 */
 func populaMapa(tabela map[int][]string, index int) (mapa map[int][]string) {
@@ -78,7 +81,8 @@ func populaMapa(tabela map[int][]string, index int) (mapa map[int][]string) {
 	return mapa
 }
 
-/**
+/*
+*
 convertePalavra - função que converte a palavra desejada ao alfabeto desejado
 */
 func convertePalavra(tabela map[int][]string, palavra string) {
@@ -129,7 +133,7 @@ func MontaAlfabeto(tipo string, valor string) {
 	}
 }
 
-//GETMap - função GET que retorna a tabela de alfabetos disponíveis
+// GETMap - função GET que retorna a tabela de alfabetos disponíveis
 func GETMap() map[int][]string {
 	return mapDados
 }
