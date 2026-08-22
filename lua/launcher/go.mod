@@ -1,5 +1,5 @@
 module launcher
 
-go 1.26
+go 1.27
 
 require github.com/yuin/gopher-lua v1.1.1

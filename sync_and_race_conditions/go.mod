@@ -1,3 +1,3 @@
 module sync_and_race_conditions
 
-go 1.26
+go 1.27

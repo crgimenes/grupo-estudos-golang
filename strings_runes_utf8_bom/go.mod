@@ -1,3 +1,3 @@
 module strings_runes_utf8_bom
 
-go 1.26
+go 1.27

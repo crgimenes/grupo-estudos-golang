@@ -47,8 +47,7 @@ func main() {
 				fmt.Printf("id=%d -> not found\n", id)
 				continue
 			}
-			var ve ValidationError
-			if errors.As(err, &ve) {
+			if ve, ok := errors.AsType[ValidationError](err); ok {
 				fmt.Printf("id=%d -> validation error on %s\n", id, ve.Field)
 				continue
 			}

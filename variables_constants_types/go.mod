@@ -1,3 +1,3 @@
 module variables_constants_types
 
-go 1.26
+go 1.27

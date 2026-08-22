@@ -1,6 +1,6 @@
 module sitegen
 
-go 1.26
+go 1.27
 
 require github.com/avelino/slugify v0.0.0-20180501145920-855f152bd774
 

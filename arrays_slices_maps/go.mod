@@ -1,3 +1,3 @@
 module arrays_slices_maps
 
-go 1.26
+go 1.27

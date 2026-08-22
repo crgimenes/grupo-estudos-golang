@@ -1,3 +1,3 @@
 module control_flow_and_operators
 
-go 1.26
+go 1.27

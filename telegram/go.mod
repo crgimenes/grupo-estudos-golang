@@ -1,6 +1,6 @@
 module botarmy
 
-go 1.26
+go 1.27
 
 require (
 	github.com/sashabaranov/go-openai v1.41.2

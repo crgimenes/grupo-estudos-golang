@@ -1,6 +1,6 @@
 module exemplo
 
-go 1.26
+go 1.27
 
 require modernc.org/sqlite v1.46.1
 

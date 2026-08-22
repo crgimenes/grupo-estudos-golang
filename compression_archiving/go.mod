@@ -1,3 +1,3 @@
 module compression_archiving
 
-go 1.26
+go 1.27

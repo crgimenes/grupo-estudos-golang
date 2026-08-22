@@ -1,3 +1,3 @@
 module sql_database_access
 
-go 1.26
+go 1.27
