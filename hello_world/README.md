@@ -66,3 +66,7 @@ go test ./...
 - A entrada do programa sempre é a função `main`.
 - `go run` compila e executa temporariamente.
 - `go build` gera binário para execução posterior.
+
+## Próximo tópico recomendado
+
+- [Variáveis, constantes e tipos](https://github.com/crgimenes/grupo-estudos-golang/blob/master/variables_constants_types/README.md)
