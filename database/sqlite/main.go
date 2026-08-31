@@ -51,4 +51,9 @@ func main() {
 		}
 		println("ID:", id, "Name:", name)
 	}
+
+	err = rows.Err()
+	if err != nil {
+		panic(err)
+	}
 }
